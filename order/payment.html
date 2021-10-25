@@ -5,23 +5,36 @@
     <title>payment</title>
     <link rel="stylesheet" href="../style.css">
   </head>
-  <body id="payment_body">
+  <body id="payment-body">
     <figure>
       <img clas="logo" src="" alt="">
     </figure>
 
-    <label for="Name">Full name</label>
-    <input type="text" name="name" placeholder="Insert your name" required>
-
+<form id="payment-form" action="confirmation.html" method="post">
+  <div class="payment-name">
+    <label for="name">Full name</label> <br>
+    <input type="text" id="name" placeholder="Your full name" required>
+  </div>
     <h2>Payment method</h2>
+  <div class="payment-option">
+    <div class="payment-option-choice">
+      <input type="radio" id="visa" name="option" value="">
+      <label for="visa">Visa</label> <br>
+    </div>
+    <div class="payment-option-choice">
+      <input type="radio" id="paypal" name="option" value="">
+      <label for="paypal">PayPal</label> <br>
+    </div>
+    <div class="payment-option-choice">
+      <input type="radio" id="vipps" name="option" value="">
+      <label for="vipps">Vipps</label> <br>
+    </div>
+  </div>
 
-    <select class="payment_method" name="method">
-      <option value="Visa">Visa</option>
-      <option value="Vipps">Vipps</option>
-      <option value="Paypal">Paypal</option>
-    </select> <br>
+    <br>
+    <input type="submit" id="submitbtn" name="pay now" value="pay now">
 
-    <input type="button" name="pay now" value="pay now">
+    </form>
 
 
     <ul class="order_summary">

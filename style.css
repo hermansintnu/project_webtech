@@ -12,6 +12,39 @@ body {
 
 /* This section is for payment.html */
 
+#payment-form {
+margin: 10px;
+}
+
+.input-name label {
+  height: 40px;
+  font-size: 20px;
+}
+
+.payment-name input {
+  width: 20%;
+  height: 30px;
+}
+
+.payment-option {
+
+}
+
+.payment-option-choice {
+  background-color: white;
+  width: 20%;
+  margin-bottom: 10px;
+  height: 30px;
+  border-style: solid;
+  border-width: thin;
+}
+
+#submitbtn {
+  width: 110px;
+  height: 75px;
+  font-size: 1.5em;
+}
+
 /* payment end */
 
 /* This section is for confirmation.html */
