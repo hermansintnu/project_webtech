@@ -16,9 +16,9 @@ body {
 margin: 10px;
 }
 
-.input-name label {
-  height: 40px;
-  font-size: 20px;
+.payment-name {
+  font-size: 1.5em;
+  height: 75px;
 }
 
 .payment-name input {
