@@ -1,10 +1,11 @@
 @font-face {
-  font-family: Barlow;
-  src: url('Barlow/Barlow-Medium.ttf');
+  font-family: BarlowBold;
+  src: url('Barlow/Barlow-Bold.ttf');
 }
 
 body {
     background-color: #fcd116;
+    
 }
 
 nav{
@@ -12,6 +13,8 @@ nav{
   height: 50px;
   line-height: 50px;
   color: black;
+  font-family: BarlowBold;
+  font-size: 1.5em;
 }
 
 nav ul{
