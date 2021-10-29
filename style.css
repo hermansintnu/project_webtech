@@ -90,4 +90,9 @@ margin: 10px;
 
 /* This section is for location.html */
 
+.location-schedule {
+  text-align: left;
+  width: 35%;
+}
+
 /* location end */
