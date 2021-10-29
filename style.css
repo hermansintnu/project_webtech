@@ -81,12 +81,36 @@ margin: 10px;
 /* payment end */
 
 /* This section is for confirmation.html */
+#logoConf {
+  width: 150px;
+}
+
+#yourOrder {
+  background-color: #c4c4c4;
+  width: 300px;
+  height: 130px;
+}
+
+#orderNumber {
+  background-color: #c4c4c4;
+  width: 250px;
+  height: 130px;
+}
+
+#orderPickUp{
+  background-color: #c4c4c4;
+  width: 300px;
+  height: 200px;
+}
+
 
 /* confirmation end */
+
 
 /* this section is for about.html */
 
 /* about ends */
+
 
 /* This section is for location.html */
 
