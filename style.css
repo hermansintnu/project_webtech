@@ -2,7 +2,22 @@
   font-family: BarlowBold;
   src: url('Barlow/Barlow-Bold.ttf');
 }
-
+@font-face {
+  font-family: BarlowRegular;
+  src: url('Barlow/Barlow-Regular.ttf');
+}
+@font-face {
+  font-family: BarlowSemibold;
+  src: url('Barlow/Barlow-SemiBold.ttf');
+}
+@font-face {
+  font-family: BarlowMediumItalic;
+  src: url('Barlow/Barlow-MediumItalic.ttf');
+}
+@font-face {
+  font-family: BarlowMedium;
+  src: url('Barlow/Barlow-Medium.ttf');
+}
 body {
     background-color: #fcd116;
 }
@@ -36,27 +51,101 @@ nav ul li a{
 nav ul li:hover{
   color:white;
 }
+h1{
+  font-family: BarlowBold;
+}
+h2{
+  font-family: BarlowBold;
+  font-size: 18px;
+}
+p{
+  font-family: BarlowRegular;
+}
 
 /* this section is for homepage.html */
 
 
 /* homepage ends */
 /* this section is for menu.html */
+.menu-title{
+  margin-top: 400px;
+  margin-left: 80px;
+  font-size: 32px;
+}
 .menu-group{
   display: grid;
   grid-template-columns:repeat(2,1fr);
   width: 900px;
   column-gap: 17px;
   row-gap: 17px;
-  margin-top: 400px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 .menu-item{
   background-color: #FADD44;
-  padding-left: 10px;
+  padding-left: 19px;
   padding-right: 10px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 8px #0000003d;
+  padding-top: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.18);
+  height: 154px;
+  width: 468px;
+}
+.menu-item h2{
+  margin: 0;
+}
+.allergies{
+  margin: 0;
+  color: #0000007a;
+}
+.menu-text{
+  width: 291px;
+  margin: 0;
+  font-family: BarlowMediumItalic;
+  font-size: 14px;
+  color: #000000b6;
+  margin-top: 10px;
+}
+.pris{
+  font-family: BarlowSemibold;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 11px;
+}
+.menu-bilde{
+  width: 120px;
+  height: 120px;
+  position: relative;
+  left: 335px;
+  bottom: 129px;
+  border-radius: 9px;
+}
+.your-order{
+  background-color: #D9D8C3;
+  width: 344px;
+  position: absolute;
+  right: 25px;
+  top: 516px;
+  border-radius: 15px;
+  min-height: 200px;
+}
+.your-order-text{
+  font-family: BarlowMedium;
+  color: #000000bd;
+  padding-left: 1px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.151);
+  width: 293px;
+  margin-left: 25px;
+}
+.checkout-button{
+  color: white;
+  position: absolute;
+  font-size: 24px;
+  bottom: 25px;
+  left: 26px;
+  background-color: #4B5F24;
+  width: 293px;
+  text-align: center;
+  border-radius: 9px;
 }
 /* menu ends */
 
