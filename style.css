@@ -92,7 +92,7 @@ top: 685px;
 /* this section is for menu.html */
 .menu-title{
   position: absolute;
-  top: 440px;
+  top: 140px;
   margin-left: 80px;
   font-size: 32px;
 }
@@ -101,7 +101,7 @@ top: 685px;
   font-size: 18px;
   width: 400px;
   position: absolute;
-  top: 456px;
+  top: 156px;
   margin-left: 175px;
 }
 .menu-group{
@@ -112,7 +112,7 @@ top: 685px;
   row-gap: 17px;
   margin-left: 25px;
   position: absolute;
-  top: 516px;
+  top: 216px;
 }
 .menu-item{
   background-color: #FADD44;
@@ -159,7 +159,7 @@ top: 685px;
   width: 344px;
   position: absolute;
   left: 1070px;
-  top: 516px;
+  top: 216px;
   border-radius: 15px;
   min-height: 200px;
 }
