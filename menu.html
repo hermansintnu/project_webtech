@@ -25,15 +25,17 @@
   <h1 class="menu-title">Menu</h1>
   <h3 class="allergies-info">Allergies: Nuts (n), Gluten (g), Lactose (l).</h3>
   <div class="menu-group">
-    <div class="menu-item">
-      <h2>Patacones</h2>
-      <p class="allergies">g, n</p>
-      <p class="menu-text">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole, salsa or . . .</p>
-      <p class="pris"> 69 NOK</p>
-      <img class="menu-bilde" src="img/patacones.png" alt="">
-    </div>
+  
+      <div onclick="openOverlay()" class="menu-item">  
+        <h2>Patacones</h2>
+        <p class="allergies">g, n</p>
+        <p class="menu-text">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole, salsa or . . .</p>
+        <p class="pris"> 69 NOK</p>
+        <img class="menu-bilde" src="img/patacones.png" alt="">
+      </div>
 
-    <div class="menu-item">
+
+    <div onclick="openOverlay()" class="menu-item">
       <h2>Ajico</h2>
       <p class="allergies">g, n</p>
       <p class="menu-text">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . .</p>
@@ -41,7 +43,7 @@
       <img class="menu-bilde" src="img/ajico.png" alt="">
     </div>
 
-    <div class="menu-item">
+    <div onclick="openOverlay()" class="menu-item">
       <h2>Carimanolas</h2>
       <p class="allergies">g, n</p>
       <p class="menu-text">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . .</p>
@@ -49,7 +51,7 @@
       <img class="menu-bilde" src="img/carimanola.png" alt="">
     </div>
 
-    <div class="menu-item">
+    <div onclick="openOverlay()" class="menu-item">
       <h2>Bandeja paisa</h2>
       <p class="allergies">g, n</p>
       <p class="menu-text">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . .</p>
@@ -57,7 +59,7 @@
       <img class="menu-bilde" src="img/bandejapaisa.png" alt="">
     </div>
 
-    <div class="menu-item">
+    <div onclick="openOverlay()" class="menu-item">
       <h2>Arepas</h2>
       <p class="allergies">g, n</p>
       <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At maxime odio ea officiis dolores nostrum smultring kneipp . . .</p>
@@ -65,7 +67,7 @@
       <img class="menu-bilde" src="img/Arepas.png" alt="">
     </div>
 
-    <div class="menu-item">
+    <div onclick="openOverlay()" class="menu-item">
       <h2>Carne Oreada</h2>
       <p class="allergies">g, n</p>
       <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At maxime odio ea officiis dolores nostrum smultring kneipp . . .</p>
@@ -73,7 +75,28 @@
       <img class="menu-bilde" src="img/carneoreada.png" alt="">
     </div>
 
+
+
+    <!-- selve overlay-->
+    
+   
+    <div id="myOverlay" class="overlay">
+      <!-- lukk overlay-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+      
+      <!--innhold overlay-->
+      <div class="overlay-content">
+        <h1>Halla baby</h1>
+      </div>
+    </div>
+
+    <div id="backOverlay"></div>
+   
+
   </div>
+
+
+
   <div class="your-order">
     <p class="your-order-text">Your order</p>
     <div class="checkout-button">
@@ -81,8 +104,10 @@
     </div>
 
   </div>
+</div> 
 
 
-</div>
+
+<script src="/scripts/overlay.js"></script>
 </body>
 </html>

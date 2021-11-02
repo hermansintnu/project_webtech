@@ -188,6 +188,56 @@ top: 685px;
 }
 /* menu ends */
 
+/* overlay menu*/
+
+.overlay {
+  height: 0%;
+  width: 800px;
+  position: fixed;
+  z-index: 1;
+  top: 10%;
+  bottom: 10%;
+  left: 100px;
+  background-color:rgb(255, 255, 255);
+  background-color: rgba(0,0,0,0,8);
+  overflow-y: hidden;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+.
+.overlay.content {
+  position: relative;
+  top: 25%;
+  left: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 45px;
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+}
+
+/* forsøk tinted bakgrunn */
+.backOverlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0,0,0,0,9);
+
+}
+
+/* overlay menu ends*/
+
+
 /* This section is for payment.html */
 
 #payment-form {
