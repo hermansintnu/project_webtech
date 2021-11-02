@@ -2,9 +2,30 @@
   font-family: BarlowBold;
   src: url('Barlow/Barlow-Bold.ttf');
 }
-
+@font-face {
+  font-family: BarlowRegular;
+  src: url('Barlow/Barlow-Regular.ttf');
+}
+@font-face {
+  font-family: BarlowSemibold;
+  src: url('Barlow/Barlow-SemiBold.ttf');
+}
+@font-face {
+  font-family: BarlowMediumItalic;
+  src: url('Barlow/Barlow-MediumItalic.ttf');
+}
+@font-face {
+  font-family: BarlowMedium;
+  src: url('Barlow/Barlow-Medium.ttf');
+}
 body {
     background-color: #fcd116;
+}
+
+#logo { 
+  float: left;
+  display: inline-block;
+  width: 212px;
 }
 
 nav{
@@ -14,37 +35,157 @@ nav{
   color: black;
   font-family: BarlowBold;
   font-size: 1.5em;
+  position: absolute;
 }
+
 
 nav ul{
   float: right;
   margin-right: 100px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 nav ul li{
   list-style-type: none;
   display: inline-block;
-  transition: 0.7s all;
 }
 
 nav ul li a{
-  text-decoration: none;
   color: black;
+  text-decoration: none;
   padding: 30px;
 }
 
-nav ul li:hover{
-  color:white;
+nav ul li a:hover{
+  font-style: italic;
+}
+
+nav ul li a:visited{
+  text-decoration: underline;
+}
+
+h1{
+  font-family: BarlowBold;
+}
+h2{
+  font-family: BarlowBold;
+  font-size: 18px;
+}
+p{
+  font-family: BarlowRegular;
 }
 
 /* this section is for homepage.html */
+#fritertbanan {
+width: 606.33px;
+height: 552.48px;
+left: 165px;
+top: 191.28px;
+transform: rotate(-4.66deg);
+}
 
-
-
+#OrderNow {
+padding: 0;
+border: none;
+background: none;
+height: 106px;
+width: 206px;
+left: 984px;
+top: 685px;
+}
 /* homepage ends */
-
 /* this section is for menu.html */
+.menu-title{
+  position: absolute;
+  top: 140px;
+  margin-left: 80px;
+  font-size: 32px;
+}
+.allergies-info{
+  font-family: BarlowSemibold;
+  font-size: 18px;
+  width: 400px;
+  position: absolute;
+  top: 156px;
+  margin-left: 175px;
+}
+.menu-group{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  width: 900px;
+  column-gap: 17px;
+  row-gap: 17px;
+  margin-left: 25px;
+  position: absolute;
+  top: 216px;
+}
+.menu-item{
+  background-color: #FADD44;
+  padding-left: 19px;
+  padding-right: 10px;
+  padding-top: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.18);
+  height: 154px;
+  width: 468px;
+}
+.menu-item h2{
+  margin: 0;
+}
+.allergies{
+  margin: 0;
+  color: #0000007a;
+}
 
+.menu-text{
+  width: 291px;
+  margin: 0;
+  font-family: BarlowMediumItalic;
+  font-size: 14px;
+  color: #000000b6;
+  margin-top: 10px;
+}
+.pris{
+  font-family: BarlowSemibold;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 11px;
+}
+.menu-bilde{
+  width: 120px;
+  height: 120px;
+  position: relative;
+  left: 335px;
+  bottom: 129px;
+  border-radius: 9px;
+}
+.your-order{
+  background-color: #D9D8C3;
+  width: 344px;
+  position: absolute;
+  left: 1070px;
+  top: 216px;
+  border-radius: 15px;
+  min-height: 200px;
+}
+.your-order-text{
+  font-family: BarlowMedium;
+  color: #000000bd;
+  padding-left: 1px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.151);
+  width: 293px;
+  margin-left: 25px;
+}
+.checkout-button{
+  color: white;
+  position: absolute;
+  font-size: 24px;
+  bottom: 25px;
+  left: 26px;
+  background-color: #4B5F24;
+  width: 293px;
+  text-align: center;
+  border-radius: 9px;
+}
 /* menu ends */
 
 /* This section is for payment.html */
@@ -108,6 +249,30 @@ margin: 10px;
 
 
 /* this section is for about.html */
+
+.about {
+display: inline-block;
+max-width: 100%;
+margin-top: 15%;
+}
+
+#aboutpic {
+  float: left;
+ margin-bottom: -50%;
+ margin-left: 1%;
+}
+
+#abouttext {
+  float: right;
+  max-width: 40%;
+  margin-right: 200px;
+}
+
+#abouttext p{
+  font-family: BarlowMedium;
+  font-size: 1.3em;
+  
+}
 
 /* about ends */
 
