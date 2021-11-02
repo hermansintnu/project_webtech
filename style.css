@@ -19,7 +19,7 @@
   src: url('Barlow/Barlow-Medium.ttf');
 }
 body {
-    background-color: #fcd116;
+    background-color: #FCD116;
 }
 
 #logo {
@@ -161,33 +161,38 @@ top: 685px;
   bottom: 129px;
   border-radius: 9px;
 }
-.your-order{
-  background-color: #D9D8C3;
+.your-order-group{
+  background-color: #FCD116;
   width: 344px;
   position: absolute;
   left: 1070px;
-  top: 216px;
-  border-radius: 15px;
-  min-height: 200px;
+  top: 180px;
+  border-radius: 80px;
+  height: 600px;
+  box-shadow: -7px 0px 4px -3px rgba(0, 0, 0, 0.2);
 }
 .your-order-text{
   font-family: BarlowMedium;
   color: #000000bd;
+  margin-top: 45px;
   padding-left: 1px;
+  position: relative;
+  left: 30px;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.151);
-  width: 293px;
+  width: 280px;
   margin-left: 25px;
 }
 .checkout-button{
   color: white;
   position: absolute;
   font-size: 24px;
-  bottom: 25px;
-  left: 26px;
+  bottom: 60px;
+  left: 55px;
   background-color: #4B5F24;
-  width: 293px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 3px 3px rgba(255, 255, 255, 0.25);
   text-align: center;
-  border-radius: 9px;
 }
 /* menu ends */
 
