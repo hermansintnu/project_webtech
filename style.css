@@ -18,10 +18,28 @@
   font-family: BarlowMedium;
   src: url('Barlow/Barlow-Medium.ttf');
 }
+
+/* General styles  */
 body {
     background-color: #FCD116;
 }
 
+h1{
+  font-family: BarlowBold;
+  font-size: 2.7em;
+}
+h2{
+  font-family: BarlowBold;
+  font-size: 1.8em;
+}
+p{
+  font-family: BarlowRegular;
+}
+
+
+/* End general */
+
+/* Nav style */
 #logo {
   float: left;
   display: inline-block;
@@ -63,18 +81,8 @@ nav ul li a:hover{
   font-style: italic;
 }
 
+/* End nav style */
 
-h1{
-  font-family: BarlowBold;
-  font-size: 2.7em;
-}
-h2{
-  font-family: BarlowBold;
-  font-size: 1.8em;
-}
-p{
-  font-family: BarlowRegular;
-}
 
 /* this section is for homepage.html */
 #fritertbanan {
