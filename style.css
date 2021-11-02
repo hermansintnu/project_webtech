@@ -66,10 +66,11 @@ nav ul li a:hover{
 
 h1{
   font-family: BarlowBold;
+  font-size: 2.7em;
 }
 h2{
   font-family: BarlowBold;
-  font-size: 18px;
+  font-size: 1.8em;
 }
 p{
   font-family: BarlowRegular;
@@ -250,8 +251,6 @@ margin: 10px;
   width: 300px;
   height: 200px;
 }
-
-
 /* confirmation end */
 
 
@@ -285,7 +284,7 @@ margin-top: 15%;
 
 
 /* This section is for location.html */
-.location-container {
+#location-container {
   display: grid;
   grid-template-columns: 48% 48%;
 }
@@ -315,11 +314,11 @@ margin-top: 15%;
 }
 
 .location-schedule th {
-  font-size: 22px;
+  font-size: 1.4em;
 }
 
 .location-schedule td {
-  font-size: 20px;
+  font-size: 1.2em;
 }
 
 /* location end */

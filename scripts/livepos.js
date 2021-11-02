@@ -2,27 +2,32 @@
 
 function whichDay() {
     var d = new Date();
-    var elem = document.getElementById("h2-day");
-//    var tungaMap = document.getElementById('map2');
-  //  var kalvskinnetMap = document.getElementById('map3');
-    //var dragvollMap = document.getElementById('map4');
+    var tunga = document.getElementById("tungah2");
+    var kalvskinnet = document.getElementById("kalvh2");
+    var dragvoll = document.getElementById("dragvollh2");
 
     if (d.getDay() == 1,2) {
-        elem.innerHTML = "Tunga";
-        elem.className = "tunga";
+        tunga.innerHTML = "Tunga position";
+        tunga.className = "tunga";
         document.getElementById('map3').style.display = "none";
         document.getElementById('map4').style.display = "none";
     }
     else if (d.getDay() == 3) {
-      elem.innerHTML = "Kalvskinnet";
-      elem.className = "kalvskinnet";
+      kalvskinner.innerHTML = "Kalvskinnet position";
+      kalvskinnet.className = "kalvskinnet";
       document.getElementById('map2').style.display = "none";
       document.getElementById('map4').style.display = "none";
     }
     else if (d.getDay() == 4,5) {
-      elem.innerHTML = "Dragvoll"
-      elem.className = "dragvoll"
+      dragvoll.innerHTML = "Dragvoll position"
+      dragvoll.className = "dragvoll"
       document.getElementById('map2').style.display = "none";
       document.getElementById('map3').style.display = "none";
+    }
+    else {
+      document.getElementById('livePosH1').innerHTML = "We are closed, come back on monday";
+      document.getElementById('tungah2').innerHTML = "Tunga position";
+      document.getElementById('kalvh2').innerHTML = "Kalvskinnet position";
+      document.getElementById('dragvollh2').innerHTML = "Dragvoll position";
     }
 }
