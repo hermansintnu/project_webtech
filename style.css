@@ -73,6 +73,14 @@ p{
   margin-left: 80px;
   font-size: 32px;
 }
+.allergies-info{
+  font-family: BarlowSemibold;
+  font-size: 18px;
+  width: 400px;
+  position: absolute;
+  top: 456px;
+  margin-left: 175px;
+}
 .menu-group{
   display: grid;
   grid-template-columns:repeat(2,1fr);
@@ -100,6 +108,7 @@ p{
   margin: 0;
   color: #0000007a;
 }
+
 .menu-text{
   width: 291px;
   margin: 0;
