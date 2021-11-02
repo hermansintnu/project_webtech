@@ -83,7 +83,10 @@ transform: rotate(-4.66deg);
 padding: 0;
 border: none;
 background: none;
-position: absolute;
+height: 106px;
+width: 206px;
+left: 984px;
+top: 685px;
 }
 /* homepage ends */
 /* this section is for menu.html */
@@ -255,6 +258,11 @@ max-width: 40%;
 
 #abouttext {
   float: right;
+  
+}
+
+#abouttext p{
+  font-family: BarlowMedium;
   
 }
 
