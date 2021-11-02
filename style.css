@@ -22,7 +22,7 @@ body {
     background-color: #fcd116;
 }
 
-#logo { 
+#logo {
   float: left;
   display: inline-block;
   width: 212px;
@@ -37,7 +37,6 @@ nav{
   font-size: 1.5em;
   position: absolute;
 }
-
 
 nav ul{
   float: right;
@@ -89,6 +88,7 @@ left: 984px;
 top: 685px;
 }
 /* homepage ends */
+
 /* this section is for menu.html */
 .menu-title{
   position: absolute;
@@ -258,12 +258,12 @@ max-width: 40%;
 
 #abouttext {
   float: right;
-  
+
 }
 
 #abouttext p{
   font-family: BarlowMedium;
-  
+
 }
 
 /* about ends */
@@ -274,6 +274,10 @@ max-width: 40%;
 .location-schedule {
   text-align: left;
   width: 35%;
+}
+
+#location-container {
+  
 }
 
 /* location end */
