@@ -284,14 +284,40 @@ margin-top: 15%;
 
 
 /* This section is for location.html */
+.location-container {
+  display: grid;
+  grid-template-columns: 48% 48%;
+}
+
+ .maps {
+   grid-column-start: 0;
+   grid-column-end: 1;
+ }
+
+ iframe {
+   width: 400px;
+ }
+
+ .schedule-container {
+   width: 100%;
+   margin-left: 20%;
+   border-left-style: solid;
+   border-width: thin;
+   padding: 12px;
+ }
 
 .location-schedule {
   text-align: left;
-  width: 35%;
+  width: 100%;
+  grid-column-start: 1;
 }
 
-#location-container {
+.location-schedule th {
+  font-size: 22px;
+}
 
+.location-schedule td {
+  font-size: 20px;
 }
 
 /* location end */
