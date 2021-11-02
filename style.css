@@ -68,7 +68,8 @@ p{
 /* homepage ends */
 /* this section is for menu.html */
 .menu-title{
-  margin-top: 400px;
+  position: absolute;
+  top: 440px;
   margin-left: 80px;
   font-size: 32px;
 }
@@ -79,6 +80,8 @@ p{
   column-gap: 17px;
   row-gap: 17px;
   margin-left: 25px;
+  position: absolute;
+  top: 516px;
 }
 .menu-item{
   background-color: #FADD44;
@@ -123,7 +126,7 @@ p{
   background-color: #D9D8C3;
   width: 344px;
   position: absolute;
-  right: 25px;
+  left: 1070px;
   top: 516px;
   border-radius: 15px;
   min-height: 200px;
