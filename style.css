@@ -51,7 +51,6 @@ nav ul{
 nav ul li{
   list-style-type: none;
   display: inline-block;
-  position: sticky;
 }
 
 nav ul li a{
@@ -319,3 +318,14 @@ margin-top: 15%;
 }
 
 /* location end */
+
+@media only screen and (max-width: 772px) {
+  nav ul{
+   
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-left: -30px;
+    position: absolute;
+    display: inline-block;
+  }
+}
