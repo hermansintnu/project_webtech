@@ -88,9 +88,18 @@ position: absolute;
 /* homepage ends */
 /* this section is for menu.html */
 .menu-title{
-  margin-top: 400px;
+  position: absolute;
+  top: 440px;
   margin-left: 80px;
   font-size: 32px;
+}
+.allergies-info{
+  font-family: BarlowSemibold;
+  font-size: 18px;
+  width: 400px;
+  position: absolute;
+  top: 456px;
+  margin-left: 175px;
 }
 .menu-group{
   display: grid;
@@ -99,6 +108,8 @@ position: absolute;
   column-gap: 17px;
   row-gap: 17px;
   margin-left: 25px;
+  position: absolute;
+  top: 516px;
 }
 .menu-item{
   background-color: #FADD44;
@@ -117,6 +128,7 @@ position: absolute;
   margin: 0;
   color: #0000007a;
 }
+
 .menu-text{
   width: 291px;
   margin: 0;
@@ -143,7 +155,7 @@ position: absolute;
   background-color: #D9D8C3;
   width: 344px;
   position: absolute;
-  right: 25px;
+  left: 1070px;
   top: 516px;
   border-radius: 15px;
   min-height: 200px;
