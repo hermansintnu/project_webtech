@@ -22,7 +22,7 @@ body {
     background-color: #fcd116;
 }
 
-#logo { 
+#logo {
   float: left;
   display: inline-block;
   width: 212px;
@@ -44,12 +44,11 @@ nav{
   position: fixed;
 }
 
-
 nav ul{
   float: right;
   margin-right: 100px;
   margin-top: 30px;
-  
+
 }
 
 nav ul li{
@@ -99,6 +98,7 @@ left: 984px;
 top: 685px;
 }
 /* homepage ends */
+
 /* this section is for menu.html */
 .menu-title{
   position: absolute;
@@ -277,7 +277,7 @@ margin-top: 15%;
 #abouttext p{
   font-family: BarlowMedium;
   font-size: 1.3em;
-  
+
 }
 
 /* about ends */
@@ -288,6 +288,10 @@ margin-top: 15%;
 .location-schedule {
   text-align: left;
   width: 35%;
+}
+
+#location-container {
+
 }
 
 /* location end */
