@@ -292,12 +292,13 @@ margin-top: 15%;
  }
 
  iframe {
-   width: 400px;
+   width: 600px;
+   height: 300px;
  }
 
  .schedule-container {
    width: 100%;
-   margin-left: 20%;
+   margin-left: 10%;
    border-left-style: solid;
    border-width: thin;
    padding: 12px;
