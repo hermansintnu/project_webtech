@@ -30,9 +30,8 @@ body {
 
 #navcontainer {
   width: 100%;
-  margin-bottom: 30px;
   padding-bottom: 10%;
-  position: sticky;
+  position: static;
 }
 
 nav{
@@ -41,19 +40,18 @@ nav{
   color: black;
   font-family: BarlowBold;
   font-size: 1.5em;
-  position: fixed;
 }
 
 nav ul{
   float: right;
   margin-right: 100px;
   margin-top: 30px;
-
 }
 
 nav ul li{
   list-style-type: none;
   display: inline-block;
+  position: sticky;
 }
 
 nav ul li a{
@@ -65,7 +63,6 @@ nav ul li a{
 nav ul li a:hover{
   font-style: italic;
 }
-
 
 
 h1{
