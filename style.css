@@ -76,6 +76,11 @@ p{
 }
 
 /* this section is for homepage.html */
+#homepage p {
+  font-family: BarlowSemibold;
+  font-size: 1.2em;
+}
+
 #fritertbanan {
 width: 606.33px;
 height: 552.48px;
@@ -253,27 +258,30 @@ margin: 10px;
 /* this section is for about.html */
 
 .about {
-display: inline-block;
+display: flex;
 max-width: 100%;
-margin-top: 15%;
+margin-top: 5%;
+margin-bottom: -70%;
 }
 
 #aboutpic {
-  float: left;
+float: left;
  margin-bottom: -50%;
  margin-left: 1%;
+ position: static;
 }
 
 #abouttext {
   float: right;
-  max-width: 40%;
+  max-width: 45%;
+  min-width: 45%;
   margin-right: 200px;
+  position: static;
 }
 
 #abouttext p{
   font-family: BarlowMedium;
   font-size: 1.3em;
-
 }
 
 /* about ends */
@@ -320,11 +328,10 @@ margin-top: 15%;
 
 @media only screen and (max-width: 772px) {
   nav ul{
-   
-    margin-right: 100px;
-    margin-top: 30px;
     margin-left: -30px;
     position: absolute;
     display: inline-block;
   }
+  
+
 }
