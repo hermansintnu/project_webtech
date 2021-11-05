@@ -117,13 +117,18 @@ top: 685px;
 }
 .menu-group{
   display: grid;
-  grid-template-columns:repeat(2,1fr);
+  grid-template-columns:repeat(1fr);
   width: 900px;
   column-gap: 17px;
   row-gap: 17px;
   margin-left: 25px;
   position: absolute;
   top: 216px;
+}
+@media only screen and (min-width: 1000px) {
+  .menu-group {
+    grid-template-columns:repeat(2,1fr);
+  }
 }
 .menu-item{
   background-color: #FADD44;
@@ -344,7 +349,7 @@ float: left;
 
 
 /* This section is for location.html */
-.location-container {
+#location-container {
   display: grid;
   grid-template-columns: 48% 48%;
 }
