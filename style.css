@@ -76,17 +76,13 @@ p{
 }
 
 /* this section is for homepage.html */
+#homepagebody {
+  margin: 0%;
+}
+
 #homepage p {
   font-family: BarlowSemibold;
   font-size: 1.2em;
-}
-
-#fritertbanan {
-width: 606.33px;
-height: 552.48px;
-left: 165px;
-top: 191.28px;
-transform: rotate(-4.66deg);
 }
 
 #OrderNow {
@@ -97,6 +93,18 @@ height: 106px;
 width: 206px;
 left: 984px;
 top: 685px;
+}
+
+#asphaltandres andreshome {
+  position: relative;
+  top: 400px;
+}
+
+#asphalt {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0%;
+  bottom: 0;
 }
 /* homepage ends */
 
