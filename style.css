@@ -95,15 +95,16 @@ left: 984px;
 top: 685px;
 }
 
-#andreshome {
-  margin-bottom: -10%;
-  position: absolute;
+#asphaltandres andreshome {
+  position: relative;
+  top: 400px;
 }
 
 #asphalt {
   width: 100%;
   margin: 0 0 0 0;
   padding: 0%;
+  bottom: 0;
 }
 /* homepage ends */
 
