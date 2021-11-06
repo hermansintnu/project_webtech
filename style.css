@@ -133,7 +133,7 @@ top: 685px;
   position: absolute;
   top: 216px;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1045px) {
   .menu-group {
     grid-template-columns:repeat(2,1fr);
   }
