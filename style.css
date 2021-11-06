@@ -190,7 +190,7 @@ top: 685px;
 
 /* overlay menu*/
 
-}
+
 #overlay-back {
     position   : absolute;
     top        : 0;
@@ -268,7 +268,7 @@ top: 685px;
   width: 400px;
   position: absolute;
   margin: 0;
-  top: 350px;
+  top: 340px;
   left: 100px;
   
 }
@@ -277,21 +277,22 @@ top: 685px;
   font-family: BarlowBold;
   font-size: 20px;
   position: absolute;
-  top: 410px;
+  top: 400px;
   left: 100px;
 }
 
 #choices{ 
   font-family: BarlowMedium;
+  font-size: 20px;
   position: absolute;
   margin: 0;
-  bottom: 110px;
+  bottom: 100px;
   left: 55px;
   list-style-type: none; 
 }
 
 #choices li{
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 #choices input{
@@ -300,21 +301,83 @@ top: 685px;
 
 
 #choicesPrice li{
-  margin-top: 5px;
+  margin-top: 2px;
   text-align: right;
 }
 
 #choicesPrice{ 
   font-family: BarlowMedium;
+  font-size: 20px;
   position: absolute;
   margin: 0;
-  bottom: 110px;
+  bottom: 100px;
   right: 100px;
   list-style-type: none;
 }
 
 
+#orderCounter{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  font-family: BarlowBold;
+  font-size: 20px;
+}
 
+#minusOverlay{
+  font-family: BarlowBold;
+  text-align: center;
+  height: 30px;
+  width: 35px;
+  font-size: 20px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #4B5F24;
+  color: #FFF;
+  border: none;
+}
+
+#plussOverlay{
+  font-family: BarlowBold;
+  text-align: center;
+  height: 30px;
+  width: 35px;
+  font-size: 20px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #4B5F24;
+  color: #FFF;
+  border: none;
+}
+
+#tellerOverlay{
+  width: 30px;
+  height: 24px;
+  text-align: center;
+  background-color: #fff;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border
+}
+
+.addToCart{
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  font-family: BarlowMedium;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  background: #4B5F24;
+  padding-top: 0px;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  border-style: none;
+
+}
 
 .overlay .closebtn {
   position: absolute;
