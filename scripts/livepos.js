@@ -6,7 +6,7 @@ function whichDay() {
     var kalvskinnet = document.getElementById("kalvh2");
     var dragvoll = document.getElementById("dragvollh2");
 
-    if (d.getDay() == 1,2) {
+    if (d.getDay() == 1) {
         tunga.innerHTML = "Tunga position";
         tunga.className = "tunga";
         document.getElementById('map3').style.display = "none";
