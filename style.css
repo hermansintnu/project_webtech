@@ -91,20 +91,24 @@ border: none;
 background: none;
 height: 106px;
 width: 206px;
-left: 984px;
-top: 685px;
+float: right;
 }
 
-#asphaltandres andreshome {
-  position: relative;
-  top: 400px;
-}
 
 #asphalt {
   width: 100%;
   margin: 0 0 0 0;
   padding: 0%;
   bottom: 0;
+}
+
+#andreshome {
+  position: relative;
+  max-width: 100%;
+  min-width: 1%;
+ top: -800px;
+margin-bottom: -600px;
+padding-bottom: 0;
 }
 /* homepage ends */
 
