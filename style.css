@@ -112,7 +112,7 @@ float: right;
 }
 
 #vei {
-  
+
   margin: -10%;
   width: 100%;
 }
@@ -192,6 +192,8 @@ float: right;
   right: 10px;
   border-radius: 9px;
 }
+
+/* Section for shopping cart */
 .your-order-container{
   background-color: #FCD116;
   width: 364px;
@@ -274,7 +276,7 @@ button:hover{
   left: 47px;
 }
 
-/* menu ends */
+/* Shopping cart ends */
 
 /* overlay menu*/
 
@@ -314,8 +316,6 @@ button:hover{
 
   /* box-shadow: 0 0 0 2038px rgba(0,0,0,.5); */
 }
-
-
 
 .overlayBilde {
   width: 574px;
@@ -486,6 +486,8 @@ button:hover{
 } */
 
 /* overlay menu ends*/
+
+/* Menu end */
 
 
 /* This section is for payment.html */
