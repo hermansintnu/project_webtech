@@ -122,6 +122,7 @@ float: right;
   grid-row-start: 1;
   grid-column-start: 1;
   max-width: 100%;
+  width: 40%;
 }
 /* homepage ends */
 
