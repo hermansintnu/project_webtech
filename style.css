@@ -111,10 +111,10 @@ float: right;
   grid-template-columns: 1fr;
 }
 
-#asphalt {
+#vei {
+  
+  margin: -10%;
   width: 100%;
-  grid-row-start: 2;
-  grid-column-start: 1;
 }
 
 #andreshome {
