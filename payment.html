@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>payment</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body id="payment-body">
+  <body id="payment-body" onload="chooseLocation()">
     <figure>
       <img clas="logo" src="" alt="">
     </figure>
@@ -30,6 +30,17 @@
       <label for="vipps">Vipps</label> <br>
     </div>
   </div>
+  <h2>Where do you want to pick up the food?</h2>
+  <div class="payment-location">
+    <div class="payment-option-choice">
+      <input type="radio" id="gloshaugen" name="option" value="">
+      <label for="gloshaugen"> Gløshaugen </label>
+    </div>
+    <div class="payment-option-choice">
+      <input type="radio" id="annet" name="option" value="">
+      <label for="annet" id="choice2"></label>
+    </div>
+  </div>
 
     <br>
     <input type="submit" id="submitbtn" name="pay now" value="pay now">
@@ -38,7 +49,21 @@
 
 
     <ul class="order_summary">
-
     </ul>
+    <script type="text/javascript">
+    function chooseLocation() {
+        var d = new Date();
+        if (d.getDay() == 1,2) {
+          document.getElementById('choice2').innerHTML = "Tunga"
+        }
+        else if (d.getDay() == 3) {
+          document.getElementById('choice2').innerHTML = "Kalvskinnet"
+        }
+        else {
+          document.getElementById('choice2').innerHTML = "Dragvoll"
+        }
+      }
+
+    </script>
   </body>
 </html>

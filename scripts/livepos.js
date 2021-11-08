@@ -1,12 +1,11 @@
 // Pål and Herman
-
 function whichDay() {
     var d = new Date();
     var tunga = document.getElementById("tungah2");
     var kalvskinnet = document.getElementById("kalvh2");
     var dragvoll = document.getElementById("dragvollh2");
 
-    if (d.getDay() == 1) {
+    if (d.getDay() == 1,2) {
         tunga.innerHTML = "Tunga position";
         tunga.className = "tunga";
         document.getElementById('map3').style.display = "none";
