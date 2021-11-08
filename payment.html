@@ -7,7 +7,7 @@
   </head>
   <body id="payment-body" onload="chooseLocation()">
     <figure>
-      <img clas="logo" src="" alt="">
+      <img class="logo" src="homepage.html" alt="">
     </figure>
 
 <form id="payment-form" action="confirmation.html" method="post">
@@ -41,16 +41,12 @@
       <label for="annet" id="choice2"></label>
     </div>
   </div>
-
     <br>
     <input type="submit" id="submitbtn" name="pay now" value="pay now">
-
-    </form>
-
-
+  </form>
     <ul class="order_summary">
     </ul>
-    <script type="text/javascript">
+    <script>
     function chooseLocation() {
         var d = new Date();
         if (d.getDay() == 1,2) {
@@ -63,7 +59,6 @@
           document.getElementById('choice2').innerHTML = "Dragvoll"
         }
       }
-
     </script>
   </body>
 </html>
