@@ -113,14 +113,16 @@ float: right;
 
 #vei {
 
-  margin: -10%;
+  margin-top: -10%;
   width: 100%;
+  min-width: 70%;
 }
 
 #andreshome {
   grid-row-start: 1;
   grid-column-start: 1;
   max-width: 100%;
+  width: 40%;
 }
 /* homepage ends */
 
@@ -545,7 +547,7 @@ margin: 10px;
 #yourOrder {
   position: relative;
   grid-column: auto;
-  left: 5%;
+  left: 10%;
   top: 10%;
   background-color: #c4c4c4;
   width: 400px;
