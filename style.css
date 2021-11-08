@@ -114,6 +114,7 @@ float: right;
 #vei {
   margin-top: -10%;
   width: 100%;
+  min-width: 70%;
 }
 
 #andreshome {
