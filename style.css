@@ -112,14 +112,14 @@ float: right;
 }
 
 #vei {
-  margin-top: -10%;
+
+  margin: -10%;
   width: 100%;
 }
 
 #andreshome {
   grid-row-start: 1;
   grid-column-start: 1;
-  width: 50%;
   max-width: 100%;
 }
 /* homepage ends */
@@ -276,8 +276,7 @@ button:hover{
   left: 47px;
 }
 
-/* Shopping cart ends */
-
+/* Shopping cart ends*/
 /* overlay menu*/
 
 
@@ -316,6 +315,8 @@ button:hover{
 
   /* box-shadow: 0 0 0 2038px rgba(0,0,0,.5); */
 }
+
+
 
 .overlayBilde {
   width: 574px;
@@ -486,8 +487,8 @@ button:hover{
 } */
 
 /* overlay menu ends*/
+/* menu ends */
 
-/* Menu end */
 
 
 /* This section is for payment.html */
