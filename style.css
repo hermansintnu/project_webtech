@@ -472,7 +472,6 @@ button:hover{
   top: 10px;
   right: 45px;
   font-size: 60px;
-  font-style: bold;
   color: rgb(255, 255, 255);
 }
 
@@ -589,13 +588,14 @@ float: left;
 }
 
  .maps {
-   grid-column-start: 0;
-   grid-column-end: 1;
+   grid-column-start: 1;
+   grid-column-end: 2;
  }
 
  iframe {
    width: 600px;
    height: 300px;
+   border-width: 2.5px;
  }
 
  .schedule-container {
@@ -609,7 +609,7 @@ float: left;
 .location-schedule {
   text-align: left;
   width: 100%;
-  grid-column-start: 1;
+  grid-column-start: 2;
 }
 
 .location-schedule th {
