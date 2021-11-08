@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
   font-family: BarlowBold;
   src: url('Barlow/Barlow-Bold.ttf');
@@ -18,9 +19,27 @@
   font-family: BarlowMedium;
   src: url('Barlow/Barlow-Medium.ttf');
 }
+
+/* Fonts end*/
+
+/* Universal */
+
 body {
     background-color: #FCD116;
 }
+
+h1, th{
+  font-family: BarlowBold, helvetica, sans-serif;
+}
+h2{
+  font-family: BarlowBold, helvetica, sans-serif;
+  font-size: 22px;
+}
+p, td{
+  font-family: BarlowRegular, helvetica, sans-serif;
+}
+
+/* Navigation */
 
 #logo {
   float: left;
@@ -38,7 +57,7 @@ nav{
   width: 100%;
   height: 50px;
   color: black;
-  font-family: BarlowBold;
+  font-family: BarlowBold, helvetica, sans-serif;
   font-size: 1.5em;
 }
 
@@ -63,17 +82,7 @@ nav ul li a:hover{
   font-style: italic;
 }
 
-
-h1{
-  font-family: BarlowBold;
-}
-h2{
-  font-family: BarlowBold;
-  font-size: 18px;
-}
-p{
-  font-family: BarlowRegular;
-}
+/*End navigation*/
 
 /* this section is for homepage.html */
 #homepagebody {
