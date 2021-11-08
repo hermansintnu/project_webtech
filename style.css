@@ -109,11 +109,12 @@ padding-bottom: 0;
 
 #andreshome {
   position: relative;
+  float: right;
   max-width: 100%;
   min-width: 1%;
  top: -800px;
 margin-bottom: 0px;
-padding-bottom: 0px;
+
 }
 /* homepage ends */
 
