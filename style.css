@@ -41,7 +41,7 @@ p, td{
 
 /* Navigation */
 
-#logo {
+.logo {
   float: left;
   display: inline-block;
   width: 212px;
@@ -104,18 +104,17 @@ float: right;
 }
 
 #asphaltandres {
- 
   margin-top: 50px;
-
+  width: 100%;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
 }
 
-#asphalt {
+#vei {
+
+  margin: -10%;
   width: 100%;
-  grid-row-start: 2;
-  grid-column-start: 1;
 }
 
 #andreshome {
@@ -193,6 +192,8 @@ float: right;
   right: 10px;
   border-radius: 9px;
 }
+
+/* Section for shopping cart */
 .your-order-container{
   background-color: #FCD116;
   width: 364px;
@@ -275,8 +276,7 @@ button:hover{
   left: 47px;
 }
 
-/* menu ends */
-
+/* Shopping cart ends*/
 /* overlay menu*/
 
 
@@ -472,7 +472,6 @@ button:hover{
   top: 10px;
   right: 45px;
   font-size: 60px;
-  font-style: bold;
   color: rgb(255, 255, 255);
 }
 
@@ -488,6 +487,8 @@ button:hover{
 } */
 
 /* overlay menu ends*/
+/* menu ends */
+
 
 
 /* This section is for payment.html */
@@ -623,13 +624,14 @@ float: left;
 }
 
  .maps {
-   grid-column-start: 0;
-   grid-column-end: 1;
+   grid-column-start: 1;
+   grid-column-end: 2;
  }
 
  iframe {
    width: 600px;
    height: 300px;
+   border-width: 2.5px;
  }
 
  .schedule-container {
@@ -643,7 +645,7 @@ float: left;
 .location-schedule {
   text-align: left;
   width: 100%;
-  grid-column-start: 1;
+  grid-column-start: 2;
 }
 
 .location-schedule th {
