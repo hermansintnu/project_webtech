@@ -142,11 +142,6 @@ padding-bottom: 0px;
   position: absolute;
   top: 216px;
 }
-@media only screen and (min-width: 1045px) {
-  .menu-group {
-    grid-template-columns:repeat(2,1fr);
-  }
-}
 .menu-item{
   background-color: #FADD44;
   padding-left: 19px;
@@ -418,3 +413,12 @@ float: left;
   
 }
 
+/* Responsive design below*/
+
+/* Menu Start*/
+@media only screen and (min-width: 1045px) {
+  .menu-group {
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+/* Menu end*/
