@@ -23,8 +23,8 @@
   <h1 class="menu-title">Menu</h1>
   <h3 class="allergies-info">Allergies: Nuts (n), Gluten (g), Lactose (l).</h3>
   <div class="menu-group">
-  
-      <div onclick="openOverlay()" class="menu-item">  
+
+      <div onclick="openOverlay()" class="menu-item">
         <h2>Patacones</h2>
         <p class="allergies">g, n</p>
         <p class="menu-text">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole, salsa or . . .</p>
@@ -72,17 +72,17 @@
       <p class="pris"> 69 NOK</p>
       <img class="menu-bilde" src="img/carneoreada.png" alt="">
       </div>
-    
+
 
     <!-- selve overlay-->
-    
-    
+
+
     <div id="overlay-back"></div>
     <div id="myOverlay" class="overlay">
-    
+
       <!-- lukk overlay-->
       <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
-      
+
       <!--innhold overlay-->
       <div id="overlayContent">
         <img class="overlayBilde" src="img/patacones.png">
@@ -91,7 +91,7 @@
         <p class="allergiesOverlay"> g, n</p>
         <p class="priceOverlay">69 kr</p>
         <p class="infoOverlay">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole or salsa. </p>
-        
+
         <p class="extraTopping">Extra Toppings</p>
         <ul id="choices">
           <li><label><input type="checkbox"><span>Meat</span></label></li>
@@ -112,20 +112,20 @@
           <li>8 kr</li>
           <li>5 kr</li>
         </ul>
-        
+
         <div id="orderCounter">
           <button id="minusOverlay">-</button>
           <div id="tellerOverlay">1</div>
           <button id="plussOverlay">+</button>
         </div>
           <button class="addToCart"> Add to cart</div>
-      
+
         </div>
     </div>
 
   </div>
     <!-- <div id="backOverlay"></div> -->
-   
+
 
   </div>
   <div class="your-order-container">
@@ -140,13 +140,13 @@
 
       <div class="your-order-item">
         <button class="minus" onclick="decrement()">-</button>
-        <h2 id="root" class="pluss-minus"></h2>
+        <h2 id="root2" class="pluss-minus"></h2>
         <button class="plus" onclick="increment()">+</button>
       </div>
 
             <div class="your-order-item">
         <button class="minus" onclick="decrement()">-</button>
-        <h2 id="root" class="pluss-minus"></h2>
+        <h2 id="root3" class="pluss-minus"></h2>
         <button class="plus" onclick="increment()">+</button>
       </div>
     </div>
@@ -161,12 +161,12 @@
     </div>
 
   </div>
-</div> 
+</div>
 
 
 </div>
 <script src="scripts/menu.js"></script>
 
-<script src="/scripts/overlay.js"></script>
+<script src="scripts/overlay.js"></script>
 </body>
 </html>

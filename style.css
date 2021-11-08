@@ -303,7 +303,7 @@ button:hover{
   overflow-y: hidden;
   transition: 0.5s;
   border-radius: 40px;
-  
+
   /* box-shadow: 0 0 0 2038px rgba(0,0,0,.5); */
 }
 
@@ -350,7 +350,7 @@ button:hover{
   margin: 0;
   top: 340px;
   left: 100px;
-  
+
 }
 
 .extraTopping {
@@ -361,14 +361,14 @@ button:hover{
   left: 100px;
 }
 
-#choices{ 
+#choices{
   font-family: BarlowMedium;
   font-size: 20px;
   position: absolute;
   margin: 0;
   bottom: 100px;
   left: 55px;
-  list-style-type: none; 
+  list-style-type: none;
 }
 
 #choices li{
@@ -385,7 +385,7 @@ button:hover{
   text-align: right;
 }
 
-#choicesPrice{ 
+#choicesPrice{
   font-family: BarlowMedium;
   font-size: 20px;
   position: absolute;
@@ -621,7 +621,7 @@ float: left;
     position: absolute;
     display: inline-block;
   }
-  
+
 }
 
 /* Responsive design below*/
