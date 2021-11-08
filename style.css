@@ -103,10 +103,10 @@ width: 206px;
 float: right;
 }
 
-#homepage {
-  margin-bottom: 0%;
+#asphaltandres {
+ 
   margin-top: 50px;
-  padding-bottom: 0;
+
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
@@ -114,10 +114,7 @@ float: right;
 
 #asphalt {
   width: 100%;
-  margin: 0 0 0 0;
-  padding: 0%;
-  bottom: 0;
-  grid-row-start: 1;
+  grid-row-start: 2;
   grid-column-start: 1;
 }
 
@@ -343,7 +340,7 @@ button:hover{
   font-size: 25px;
   color: #0000007a;
   top: 290px;
-  right: 250px;
+  right: 200px;
   margin: 0;
 }
 
@@ -475,7 +472,8 @@ button:hover{
   top: 10px;
   right: 45px;
   font-size: 60px;
-  color: rgb(0, 0, 0);
+  font-style: bold;
+  color: rgb(255, 255, 255);
 }
 
 /* forsøk tinted bakgrunn */
