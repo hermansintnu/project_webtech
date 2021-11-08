@@ -482,17 +482,6 @@ button:hover{
   color: rgb(255, 255, 255);
 }
 
-/* forsøk tinted bakgrunn */
-/* .backOverlay {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0,0,0,0,9);
-
-} */
-
 /* overlay menu ends*/
 /* menu ends */
 
