@@ -112,14 +112,14 @@ float: right;
 }
 
 #vei {
-
-  margin: -10%;
+  margin-top: -10%;
   width: 100%;
 }
 
 #andreshome {
   grid-row-start: 1;
   grid-column-start: 1;
+  width: 50%;
   max-width: 100%;
 }
 /* homepage ends */
