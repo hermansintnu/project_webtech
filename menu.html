@@ -23,23 +23,25 @@
   <h1 class="menu-title">Menu</h1>
   <h3 class="allergies-info">Allergies: Nuts (n), Gluten (g), Lactose (l).</h3>
   <div class="menu-group">
-    <div class="menu-item">
-      <h2>Patacones</h2>
-      <p class="allergies">g, n</p>
-      <p class="menu-text">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole, salsa or . . .</p>
-      <p class="pris"> 69 NOK</p>
-      <img class="menu-bilde" src="img/patacones.png" alt="">
-    </div>
+  
+      <div onclick="openOverlay()" class="menu-item">  
+        <h2>Patacones</h2>
+        <p class="allergies">g, n</p>
+        <p class="menu-text">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole, salsa or . . .</p>
+        <p class="pris"> 69 NOK</p>
+        <img class="menu-bilde" src="img/patacones.png" alt="">
+      </div>
 
-    <div class="menu-item">
-      <h2>Ajiaco</h2>
+
+    <div onclick="openOverlay()" class="menu-item">
+      <h2>Ajico</h2>
       <p class="allergies">g, n</p>
       <p class="menu-text">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . .</p>
       <p class="pris"> 69 NOK</p>
       <img class="menu-bilde" src="img/ajico.png" alt="">
     </div>
 
-    <div class="menu-item">
+    <div onclick="openOverlay()" class="menu-item">
       <h2>Carimanolas</h2>
       <p class="allergies">g, n</p>
       <p class="menu-text">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . .</p>
@@ -47,7 +49,7 @@
       <img class="menu-bilde" src="img/carimanola.png" alt="">
     </div>
 
-    <div class="menu-item">
+    <div onclick="openOverlay()" class="menu-item">
       <h2>Bandeja paisa</h2>
       <p class="allergies">g, n</p>
       <p class="menu-text">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . .</p>
@@ -55,23 +57,75 @@
       <img class="menu-bilde" src="img/bandejapaisa.png" alt="">
     </div>
 
-    <div class="menu-item">
-      <div class="menu-item-5">
+    <div onclick="openOverlay()" class="menu-item">
       <h2>Arepas</h2>
       <p class="allergies">g, n</p>
       <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At maxime odio ea officiis dolores nostrum smultring kneipp . . .</p>
       <p class="pris"> 69 NOK</p>
       <img class="menu-bilde" src="img/Arepas.png" alt="">
-      </div>
     </div>
 
-    <div class="menu-item">
+    <div onclick="openOverlay()" class="menu-item">
       <h2>Carne Oreada</h2>
       <p class="allergies">g, n</p>
       <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At maxime odio ea officiis dolores nostrum smultring kneipp . . .</p>
       <p class="pris"> 69 NOK</p>
       <img class="menu-bilde" src="img/carneoreada.png" alt="">
+      </div>
+    
+
+    <!-- selve overlay-->
+    
+    
+    <div id="overlay-back"></div>
+    <div id="myOverlay" class="overlay">
+    
+      <!-- lukk overlay-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+      
+      <!--innhold overlay-->
+      <div id="overlayContent">
+        <img class="overlayBilde" src="img/patacones.png">
+
+        <h2 class="dish">Patacones </h2>
+        <p class="allergiesOverlay"> g, n</p>
+        <p class="priceOverlay">69 kr</p>
+        <p class="infoOverlay">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole or salsa. </p>
+        
+        <p class="extraTopping">Extra Toppings</p>
+        <ul id="choices">
+          <li><label><input type="checkbox"><span>Meat</span></label></li>
+          <li><label><input type="checkbox"><span>Chicken</span></label></li>
+          <li><label><input type="checkbox"><span>Beans</span></label></li>
+          <li><label><input type="checkbox"><span>Salsa</span></label></li>
+          <li><label><input type="checkbox"><span>Guacamole</span></label></li>
+          <li><label><input type="checkbox"><span>Paprika</span></label></li>
+          <li><label><input type="checkbox"><span>Koriander</span></label></li>
+        </ul>
+
+        <ul id="choicesPrice">
+          <li>30 kr</li>
+          <li>25 kr</li>
+          <li>20 kr</li>
+          <li>15 kr</li>
+          <li>15 kr</li>
+          <li>8 kr</li>
+          <li>5 kr</li>
+        </ul>
+        
+        <div id="orderCounter">
+          <button id="minusOverlay">-</button>
+          <div id="tellerOverlay">1</div>
+          <button id="plussOverlay">+</button>
+        </div>
+          <button class="addToCart"> Add to cart</div>
+      
+        </div>
     </div>
+
+  </div>
+    <!-- <div id="backOverlay"></div> -->
+   
 
   </div>
   <div class="your-order-container">
@@ -97,14 +151,22 @@
       </div>
     </div>
 
+
+
+
+  <div class="your-order">
+    <!-- <p class="your-order-text">Your order</p> -->
     <div class="checkout-button">
       <h2>Check out</h2>
     </div>
 
   </div>
+</div> 
 
 
 </div>
 <script src="scripts/menu.js"></script>
+
+<script src="/scripts/overlay.js"></script>
 </body>
 </html>
