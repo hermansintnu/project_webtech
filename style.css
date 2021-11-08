@@ -101,10 +101,13 @@ background: none;
 height: 106px;
 width: 206px;
 float: right;
+position: relative;
+margin-right: 20%;
+margin-top: 20%;
 }
 
 #asphaltandres {
-  margin-top: 50px;
+  margin-top: -30%;
   width: 100%;
   display: grid;
   grid-template-rows: 1fr;
