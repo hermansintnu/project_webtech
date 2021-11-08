@@ -104,9 +104,8 @@ float: right;
 }
 
 #asphaltandres {
-
   margin-top: 50px;
-
+  width: 100%;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
