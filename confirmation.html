@@ -10,35 +10,56 @@
 </head>
 
 <body>
-    <figure> <a href="homepage.html">
-        <img src="img/logo.png" id="logoConf" alt="Logo"> </a>
-      </figure>
+
+<div id="navcontainer">
+<a href="homepage.html">
+    <img src="img/logo.png" id="logo" alt="Logo">
+</a>
+<nav>
+    <ul>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="location.html">Location</a></li>
+    </ul>
+</nav>
+
+</div>
 
     <h1>Order confirmation</h1>
 
+<div id="structure">
+    
 
-<div class="box" id="yourOrder">
+<div id="yourOrder">
 <h3>Order summary:</h3>
 </div>
 
-<div class="box" id="orderNumber">
+<div id="orderNumber">
     <h3> Order number: </h3>
+   
+    <p id="demo"></p>
+    
+<script>
+document.getElementById("demo").innerHTML = 
+Math.floor(Math.Random() * 100);
+</script>
+
 </div>
 
-<div class="box" id="orderPickUp">
+<div id="orderPickUp">
     <h3>Your order can be picked up at: jsfunc livepos</h3>
     google maps bilde
+</div>
+
+<div id="timeLeft">
+    <p>Your order will be ready to pick up in <br><span id="timer"></span> minutes</p>
+</div>
 
 </div>
-<p> Your order will be ready to pick up in ... minutes</p>
+
+
+<script src="/scripts/timer.js"></script>
+<script src="/scripts/livepos.js"></script>
 
 </body>
-
-
-
-
-
-
-
-
 </html>
