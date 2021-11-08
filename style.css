@@ -82,6 +82,10 @@ nav ul li a:hover{
   font-style: italic;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 /*End navigation*/
 
 /* this section is for homepage.html */
