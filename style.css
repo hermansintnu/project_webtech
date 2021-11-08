@@ -41,7 +41,7 @@ p, td{
 
 /* Navigation */
 
-#logo {
+.logo {
   float: left;
   display: inline-block;
   width: 212px;
@@ -104,7 +104,7 @@ float: right;
 }
 
 #asphaltandres {
- 
+
   margin-top: 50px;
 
   display: grid;
