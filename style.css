@@ -553,12 +553,27 @@ margin: 10px;
   font-size: 20px;
 }
 
-#thanks{
+.thanks-email{
   width: 490px;
   font-family: BarlowMediumItalic;
   position: absolute;
-  right: 90px;
-  top: 40px;
+  left: 80px;
+  top: 360px;
+}
+#orderNumber{
+  position: absolute;
+  right: 100px;
+  top: 60px;
+  font-family: BarlowMediumItalic, Helvetica, sans-serif;
+  font-size: 36px;
+  width: 310px;
+  text-align: center;
+  margin: 0;
+}
+#orderNumberNumber{
+  font-size: 48px;
+  font-family: BarlowBold;
+  margin: 0;
 }
 .hånd{
   position: absolute;
@@ -571,7 +586,7 @@ margin: 10px;
   float: left;
   position: absolute;
   left: 23%;
-  bottom: -400px;
+  top: 288px;
   z-index: 8;
   width: 100px;
   font-family: BarlowRegular;
@@ -585,6 +600,24 @@ margin: 10px;
   top: 10px;
   text-align: center;
   width: 900px;
+}
+@media only screen and (max-width: 1000px) {
+  .confirmation-clock {
+    width: 600px;
+  }
+  .hånd{
+    top: 120px;
+  }
+  .timeleft{
+    top: 333px;
+    left: 120px;
+    font-size: 1px;
+    color: #FCD116
+  }
+  #timer{
+    color: black;
+    font-size: 18px;
+  }
 }
 
 /* confirmation end */
