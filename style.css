@@ -252,12 +252,17 @@ grid-column-start: 4;
   margin-left: 25px;
 }
 
-.your-order-item {
-  grid-column: 1 / 2;
-  margin-left: 30px;;
-  font-family: BarlowMedium;
-  margin-bottom: 10px;
-  display: inline-inline-flex;
+.cart-row {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.order-item {
+  display: inline-block;
+}
+
+.order-quantity-input {
+  width: 10%;
 }
 
 .checkout-btn{
@@ -282,10 +287,6 @@ grid-column-start: 4;
   font-size: 18px;
 }*/
 
-.cart-quantity-input {
-  width: 20%;
-}
-
 button{
   color: white;
   background-color: #4B5F24;
@@ -300,6 +301,10 @@ button{
 }
 button:hover{
   background-color: #668034;
+}
+
+.btn-danger {
+  float: right;
 }
 
 /* Shopping cart ends*/
