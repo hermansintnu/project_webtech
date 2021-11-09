@@ -26,7 +26,7 @@
   <h3 class="allergies-info">Allergies: Nuts (n), Gluten (g), Lactose (l).</h3>
   <div class="menu-group">
 
-      <div onclick="openOverlay()" class="menu-item">
+      <div onclick="openOverlay1()" class="menu-item">
         <h2>Patacones</h2>
         <p class="allergies">g, n</p>
         <p class="menu-text">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole, salsa or . . .</p>
@@ -78,284 +78,292 @@
 
     <!-- selve overlay-->
 
-
-    <div id="myOverlay0" class="backOverlay"></div>
-
-    <div id="myOverlay" class="overlay">
+    <div id="myOverlay1" class="overlay">
 
       <!-- lukk overlay-->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay1()">&times;</a>
 
       <!--innhold overlay-->
+      
+      <img class="overlayBilde" src="img/patacones.png" alt="">
+
+      <h2 class="dish">Patacones </h2>
+      <p class="allergiesOverlay"> g, n</p>
+      <p class="priceOverlay">69 kr</p>
+      <p class="infoOverlay">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole or salsa. </p>
+
+      <p class="extraTopping">Extra Toppings</p>
+      <ul class="choices">
+        <li><label><input type="checkbox"><span>Meat</span></label></li>
+        <li><label><input type="checkbox"><span>Chicken</span></label></li>
+        <li><label><input type="checkbox"><span>Beans</span></label></li>
+        <li><label><input type="checkbox"><span>Salsa</span></label></li>
+        <li><label><input type="checkbox"><span>Guacamole</span></label></li>
+        <li><label><input type="checkbox"><span>Paprika</span></label></li>
+        <li><label><input type="checkbox"><span>Koriander</span></label></li>
+      </ul>
+
+      <ul class="choicesPrice">
+        <li>30 kr</li>
+        <li>25 kr</li>
+        <li>20 kr</li>
+        <li>15 kr</li>
+        <li>15 kr</li>
+        <li>8 kr</li>
+        <li>5 kr</li>
+      </ul>
+
+      <div class="orderCounter">
+        <button class="minusOverlay">-</button>
+        <div class="tellerOverlay">1</div>
+        <button class="plussOverlay">+</button>
+      </div>
+
       <div>
-        <img class="overlayBilde" src="img/patacones.png" alt="">
+        <button class="addToCart"> Add to cart </button>
+      </div>
+    </div> 
 
-        <h2 class="dish">Patacones </h2>
-        <p class="allergiesOverlay"> g, n</p>
-        <p class="priceOverlay">69 kr</p>
-        <p class="infoOverlay">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole or salsa. </p>
+    <div id="myOverlay2" class="overlay">
 
-        <p class="extraTopping">Extra Toppings</p>
-        <ul class="choices">
-          <li><label><input type="checkbox"><span>Meat</span></label></li>
-          <li><label><input type="checkbox"><span>Chicken</span></label></li>
-          <li><label><input type="checkbox"><span>Beans</span></label></li>
-          <li><label><input type="checkbox"><span>Salsa</span></label></li>
-          <li><label><input type="checkbox"><span>Guacamole</span></label></li>
-          <li><label><input type="checkbox"><span>Paprika</span></label></li>
-          <li><label><input type="checkbox"><span>Koriander</span></label></li>
-        </ul>
+      <!-- lukk overlay-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay2()">&times;</a>
 
-        <ul class="choicesPrice">
-          <li>30 kr</li>
-          <li>25 kr</li>
-          <li>20 kr</li>
-          <li>15 kr</li>
-          <li>15 kr</li>
-          <li>8 kr</li>
-          <li>5 kr</li>
-        </ul>
+      <!--innhold overlay-->
+      
+      <img class="overlayBilde" src="img/ajico.png" alt="">
 
-        <div class="orderCounter">
-          <button class="minusOverlay">-</button>
-          <div class="tellerOverlay">1</div>
-          <button class="plussOverlay">+</button>
-        </div>
-          <button class="addToCart"> Add to cart </button>
-        </div>
-        </div>
+      <h2 class="dish">Ajico </h2>
+      <p class="allergiesOverlay"> g, n</p>
+      <p class="priceOverlay">129 kr</p>
+      <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . .</p>
 
-        <div id="myOverlay2" class="overlay">
+      <p class="extraTopping">Extra Toppings</p>
+      <ul class="choices">
+        <li><label><input type="checkbox"><span>Meat</span></label></li>
+        <li><label><input type="checkbox"><span>Chicken</span></label></li>
+        <li><label><input type="checkbox"><span>Beans</span></label></li>
+        <li><label><input type="checkbox"><span>Salsa</span></label></li>
+        <li><label><input type="checkbox"><span>Guacamole</span></label></li>
+        <li><label><input type="checkbox"><span>Paprika</span></label></li>
+        <li><label><input type="checkbox"><span>Koriander</span></label></li>
+      </ul>
 
-          <!-- lukk overlay-->
-          <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay2()">&times;</a>
+      <ul class="choicesPrice">
+        <li>30 kr</li>
+        <li>25 kr</li>
+        <li>20 kr</li>
+        <li>15 kr</li>
+        <li>15 kr</li>
+        <li>8 kr</li>
+        <li>5 kr</li>
+      </ul>
 
-          <!--innhold overlay-->
-          <div>
-            <img class="overlayBilde" src="img/ajico.png" alt="">
+      <div class="orderCounter">
+        <button class="minusOverlay">-</button>
+        <div class="tellerOverlay">1</div>
+        <button class="plussOverlay">+</button>
+      </div>
 
-            <h2 class="dish">Ajico </h2>
-            <p class="allergiesOverlay"> g, n</p>
-            <p class="priceOverlay">129 kr</p>
-            <p class="infoOverlay">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole or salsa. </p>
+      <div>
+        <button class="addToCart"> Add to cart </button>
+      </div>
+    </div>     
 
-            <p class="extraTopping">Extra Toppings</p>
-            <ul class="choices">
-              <li><label><input type="checkbox"><span>Meat</span></label></li>
-              <li><label><input type="checkbox"><span>Chicken</span></label></li>
-              <li><label><input type="checkbox"><span>Beans</span></label></li>
-              <li><label><input type="checkbox"><span>Salsa</span></label></li>
-              <li><label><input type="checkbox"><span>Guacamole</span></label></li>
-              <li><label><input type="checkbox"><span>Paprika</span></label></li>
-              <li><label><input type="checkbox"><span>Koriander</span></label></li>
-            </ul>
+    <div id="myOverlay3" class="overlay">
 
-            <ul class="choicesPrice">
-              <li>30 kr</li>
-              <li>25 kr</li>
-              <li>20 kr</li>
-              <li>15 kr</li>
-              <li>15 kr</li>
-              <li>8 kr</li>
-              <li>5 kr</li>
-            </ul>
+      <!-- lukk overlay-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay3()">&times;</a>
 
-            <div class="orderCounter">
-              <button class="minusOverlay">-</button>
-              <div class="tellerOverlay">1</div>
-              <button class="plussOverlay">+</button>
-            </div>
-              <button class="addToCart"> Add to cart </button>
-            </div>
-            </div>
+      <!--innhold overlay-->
+      
+      <img class="overlayBilde" src="img/carimanola.png" alt="">
 
-        <div id="myOverlay3" class="overlay">
+      <h2 class="dish">Carimanolas </h2>
+      <p class="allergiesOverlay"> g, n</p>
+      <p class="priceOverlay">79 kr</p>
+      <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
 
-          <!-- lukk overlay-->
-          <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay3()">&times;</a>
+      <p class="extraTopping">Extra Toppings</p>
+      <ul class="choices">
+        <li><label><input type="checkbox"><span>Meat</span></label></li>
+        <li><label><input type="checkbox"><span>Chicken</span></label></li>
+        <li><label><input type="checkbox"><span>Beans</span></label></li>
+        <li><label><input type="checkbox"><span>Salsa</span></label></li>
+        <li><label><input type="checkbox"><span>Guacamole</span></label></li>
+        <li><label><input type="checkbox"><span>Paprika</span></label></li>
+        <li><label><input type="checkbox"><span>Koriander</span></label></li>
+      </ul>
 
-          <!--innhold overlay-->
-          <div>
-            <img class="overlayBilde" src="img/carimanola.png" alt="">
+      <ul class="choicesPrice">
+        <li>30 kr</li>
+        <li>25 kr</li>
+        <li>20 kr</li>
+        <li>15 kr</li>
+        <li>15 kr</li>
+        <li>8 kr</li>
+        <li>5 kr</li>
+      </ul>
 
-            <h2 class="dish">Carimanolas </h2>
-            <p class="allergiesOverlay"> g, n</p>
-            <p class="priceOverlay">79 kr</p>
-            <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
+      <div class="orderCounter">
+        <button class="minusOverlay">-</button>
+        <div class="tellerOverlay">1</div>
+        <button class="plussOverlay">+</button>
+      </div>
 
-            <p class="extraTopping">Extra Toppings</p>
-            <ul class="choices">
-              <li><label><input type="checkbox"><span>Meat</span></label></li>
-              <li><label><input type="checkbox"><span>Chicken</span></label></li>
-              <li><label><input type="checkbox"><span>Beans</span></label></li>
-              <li><label><input type="checkbox"><span>Salsa</span></label></li>
-              <li><label><input type="checkbox"><span>Guacamole</span></label></li>
-              <li><label><input type="checkbox"><span>Paprika</span></label></li>
-              <li><label><input type="checkbox"><span>Koriander</span></label></li>
-            </ul>
+      <div>
+        <button class="addToCart"> Add to cart</button>
+      </div>
+    </div>
+        
 
-            <ul class="choicesPrice">
-              <li>30 kr</li>
-              <li>25 kr</li>
-              <li>20 kr</li>
-              <li>15 kr</li>
-              <li>15 kr</li>
-              <li>8 kr</li>
-              <li>5 kr</li>
-            </ul>
+          
 
-            <div class="orderCounter">
-              <button class="minusOverlay">-</button>
-              <div class="tellerOverlay">1</div>
-              <button class="plussOverlay">+</button>
-            </div>
-              <button class="addToCart"> Add to cart</button>
-            </div>
+    <div id="myOverlay4" class="overlay">
 
-          </div>
+      <!-- lukk overlay-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay4()">&times;</a>
 
-          <div id="myOverlay4" class="overlay">
+      <!--innhold overlay-->
+      
+      <img class="overlayBilde" src="img/bandejapaisa.png" alt="">
 
-            <!-- lukk overlay-->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay4()">&times;</a>
+      <h2 class="dish">Bandeja paisa </h2>
+      <p class="allergiesOverlay"> g, n</p>
+      <p class="priceOverlay">119 kr</p>
+      <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
 
-            <!--innhold overlay-->
-            <div>
-              <img class="overlayBilde" src="img/bandejapaisa.png" alt="">
+      <p class="extraTopping">Extra Toppings</p>
+      <ul class="choices">
+        <li><label><input type="checkbox"><span>Meat</span></label></li>
+        <li><label><input type="checkbox"><span>Chicken</span></label></li>
+        <li><label><input type="checkbox"><span>Beans</span></label></li>
+        <li><label><input type="checkbox"><span>Salsa</span></label></li>
+        <li><label><input type="checkbox"><span>Guacamole</span></label></li>
+        <li><label><input type="checkbox"><span>Paprika</span></label></li>
+        <li><label><input type="checkbox"><span>Koriander</span></label></li>
+      </ul>
 
-              <h2 class="dish">Bandeja paisa </h2>
-              <p class="allergiesOverlay"> g, n</p>
-              <p class="priceOverlay">119 kr</p>
-              <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
+      <ul class="choicesPrice">
+        <li>30 kr</li>
+        <li>25 kr</li>
+        <li>20 kr</li>
+        <li>15 kr</li>
+        <li>15 kr</li>
+        <li>8 kr</li>
+        <li>5 kr</li>
+      </ul>
 
-              <p class="extraTopping">Extra Toppings</p>
-              <ul class="choices">
-                <li><label><input type="checkbox"><span>Meat</span></label></li>
-                <li><label><input type="checkbox"><span>Chicken</span></label></li>
-                <li><label><input type="checkbox"><span>Beans</span></label></li>
-                <li><label><input type="checkbox"><span>Salsa</span></label></li>
-                <li><label><input type="checkbox"><span>Guacamole</span></label></li>
-                <li><label><input type="checkbox"><span>Paprika</span></label></li>
-                <li><label><input type="checkbox"><span>Koriander</span></label></li>
-              </ul>
+      <div class="orderCounter">
+        <button class="minusOverlay">-</button>
+        <div class="tellerOverlay">1</div>
+        <button class="plussOverlay">+</button>
+      </div>
 
-              <ul class="choicesPrice">
-                <li>30 kr</li>
-                <li>25 kr</li>
-                <li>20 kr</li>
-                <li>15 kr</li>
-                <li>15 kr</li>
-                <li>8 kr</li>
-                <li>5 kr</li>
-              </ul>
+      <div>
+        <button class="addToCart"> Add to cart</button>
+      </div>
+    
+    </div>
 
-              <div class="orderCounter">
-                <button class="minusOverlay">-</button>
-                <div class="tellerOverlay">1</div>
-                <button class="plussOverlay">+</button>
-              </div>
-                <button class="addToCart"> Add to cart</button>
-              </div>
+            
 
-            </div>
+    <div id="myOverlay5" class="overlay">
 
-            <div id="myOverlay5" class="overlay">
+      <!-- lukk overlay-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay5()">&times;</a>
 
-              <!-- lukk overlay-->
-              <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay5()">&times;</a>
+      <!--innhold overlay-->
+      <img class="overlayBilde" src="img/Arepas.png" alt="">
 
-              <!--innhold overlay-->
-              <div>
-                <img class="overlayBilde" src="img/Arepas.png" alt="">
+      <h2 class="dish">Arepas </h2>
+      <p class="allergiesOverlay"> g, n</p>
+      <p class="priceOverlay">69 kr</p>
+      <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
 
-                <h2 class="dish">Arepas </h2>
-                <p class="allergiesOverlay"> g, n</p>
-                <p class="priceOverlay">69 kr</p>
-                <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
+      <p class="extraTopping">Extra Toppings</p>
+      <ul class="choices">
+        <li><label><input type="checkbox"><span>Meat</span></label></li>
+        <li><label><input type="checkbox"><span>Chicken</span></label></li>
+        <li><label><input type="checkbox"><span>Beans</span></label></li>
+        <li><label><input type="checkbox"><span>Salsa</span></label></li>
+        <li><label><input type="checkbox"><span>Guacamole</span></label></li>
+        <li><label><input type="checkbox"><span>Paprika</span></label></li>
+        <li><label><input type="checkbox"><span>Koriander</span></label></li>
+      </ul>
 
-                <p class="extraTopping">Extra Toppings</p>
-                <ul class="choices">
-                  <li><label><input type="checkbox"><span>Meat</span></label></li>
-                  <li><label><input type="checkbox"><span>Chicken</span></label></li>
-                  <li><label><input type="checkbox"><span>Beans</span></label></li>
-                  <li><label><input type="checkbox"><span>Salsa</span></label></li>
-                  <li><label><input type="checkbox"><span>Guacamole</span></label></li>
-                  <li><label><input type="checkbox"><span>Paprika</span></label></li>
-                  <li><label><input type="checkbox"><span>Koriander</span></label></li>
-                </ul>
+      <ul class="choicesPrice">
+        <li>30 kr</li>
+        <li>25 kr</li>
+        <li>20 kr</li>
+        <li>15 kr</li>
+        <li>15 kr</li>
+        <li>8 kr</li>
+        <li>5 kr</li>
+      </ul>
 
-                <ul class="choicesPrice">
-                  <li>30 kr</li>
-                  <li>25 kr</li>
-                  <li>20 kr</li>
-                  <li>15 kr</li>
-                  <li>15 kr</li>
-                  <li>8 kr</li>
-                  <li>5 kr</li>
-                </ul>
-
-                <div class="orderCounter">
-                  <button class="minusOverlay">-</button>
-                  <div class="tellerOverlay">1</div>
-                  <button class="plussOverlay">+</button>
-                </div>
-                  <button class="addToCart"> Add to cart</button>
-                </div>
-
-              </div>
-
-              <div id="myOverlay6" class="overlay">
-
-                <!-- lukk overlay-->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay6()">&times;</a>
-
-                <!--innhold overlay-->
-                <div>
-                  <img class="overlayBilde" src="img/carneoreada.png" alt="">
-
-                  <h2 class="dish">Carne Oreada </h2>
-                  <p class="allergiesOverlay"> g, n</p>
-                  <p class="priceOverlay">139 kr</p>
-                  <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
-
-                  <p class="extraTopping">Extra Toppings</p>
-                  <ul class="choices">
-                    <li><label><input type="checkbox"><span>Meat</span></label></li>
-                    <li><label><input type="checkbox"><span>Chicken</span></label></li>
-                    <li><label><input type="checkbox"><span>Beans</span></label></li>
-                    <li><label><input type="checkbox"><span>Salsa</span></label></li>
-                    <li><label><input type="checkbox"><span>Guacamole</span></label></li>
-                    <li><label><input type="checkbox"><span>Paprika</span></label></li>
-                    <li><label><input type="checkbox"><span>Koriander</span></label></li>
-                  </ul>
-
-                  <ul class="choicesPrice">
-                    <li>30 kr</li>
-                    <li>25 kr</li>
-                    <li>20 kr</li>
-                    <li>15 kr</li>
-                    <li>15 kr</li>
-                    <li>8 kr</li>
-                    <li>5 kr</li>
-                  </ul>
-
-                  <div class="orderCounter">
-                    <button class="minusOverlay">-</button>
-                    <div class="tellerOverlay">1</div>
-                    <button class="plussOverlay">+</button>
-                  </div>
-                    <button class="addToCart"> Add to cart </button>
-                  </div>
-
-                </div>
-
-
+      <div class="orderCounter">
+        <button class="minusOverlay">-</button>
+        <div class="tellerOverlay">1</div>
+        <button class="plussOverlay">+</button>            
+      </div>
+      
+      <div>  
+        <button class="addToCart"> Add to cart</button>
+      </div>
 
     </div>
-    <!-- <div id="backOverlay"></div> -->
+
+    <div id="myOverlay6" class="overlay">
+
+                <!-- lukk overlay-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay6()">&times;</a>
+
+      <!--innhold overlay-->
+      <img class="overlayBilde" src="img/carneoreada.png" alt="">
+
+      <h2 class="dish">Carne Oreada </h2>
+      <p class="allergiesOverlay"> g, n</p>
+      <p class="priceOverlay">139 kr</p>
+      <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
+
+      <p class="extraTopping">Extra Toppings</p>
+      <ul class="choices">
+        <li><label><input type="checkbox"><span>Meat</span></label></li>
+        <li><label><input type="checkbox"><span>Chicken</span></label></li>
+        <li><label><input type="checkbox"><span>Beans</span></label></li>
+        <li><label><input type="checkbox"><span>Salsa</span></label></li>
+        <li><label><input type="checkbox"><span>Guacamole</span></label></li>
+        <li><label><input type="checkbox"><span>Paprika</span></label></li>
+        <li><label><input type="checkbox"><span>Koriander</span></label></li>
+      </ul>
+
+      <ul class="choicesPrice">
+        <li>30 kr</li>
+        <li>25 kr</li>
+        <li>20 kr</li>
+        <li>15 kr</li>
+        <li>15 kr</li>
+        <li>8 kr</li>
+        <li>5 kr</li>
+      </ul>
+
+      <div class="orderCounter">
+        <button class="minusOverlay">-</button>
+        <div class="tellerOverlay">1</div>
+        <button class="plussOverlay">+</button>
+      </div>
+      
+      <div>
+        <button class="addToCart"> Add to cart </button>
+      </div>
+
+    </div>
 
 
-
+  <!-- menugroup ends -->
+  </div>
+  
   <div class="your-order-container">
     <p class="your-order-headline">Your order</p>
 

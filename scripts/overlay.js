@@ -1,8 +1,8 @@
 // Pål and Herman
-function openOverlay() {
-    document.getElementById("myOverlay").style.display = "block";}
-function closeOverlay() {
-    document.getElementById("myOverlay").style.display = "none";}
+function openOverlay1() {
+    document.getElementById("myOverlay1").style.display = "block";}
+function closeOverlay1() {
+    document.getElementById("myOverlay1").style.display = "none";}
 
 
 function openOverlay2() {
@@ -33,3 +33,33 @@ function openOverlay6() {
     document.getElementById("myOverlay6").style.display = "block";}
 function closeOverlay6() {
     document.getElementById("myOverlay6",).style.display = "none";}
+
+
+
+var overlayArray = ['myOverlay1','myOverlay2','myOverlay3','myOverlay4','myOverlay5','myOverlay6'];
+window.addEventListener('mouseup', function(event){
+       
+    for(var i=0; i < overlayArray.length; i++){
+         var overlay = document.getElementById(overlayArray[i]);
+         if(event.target !=overlay && event.target.parentNode !=overlay) {
+             overlay.style.display = 'none';
+        }
+    }
+});
+
+// Close on outside overlayclick uten å lukke når trykk på en class inni overlay
+// var overlayArray = ['myOverlay1','myOverlay2','myOverlay3','myOverlay4','myOverlay5','myOverlay6'];
+// var innholdArray = ['overlayBilde','dish','allergiesOverlay','priceOverlay','infoOverlay','extraTopping','choices','choicesPrice','orderCounter','minusOverlay','tellerOverlay','plusOverlay','addToCart',]
+// window.addEventListener('mouseup', function(event){
+       
+
+//     for(var i=0; i < overlayArray.length; i++){
+//         var overlay = document.getElementById(overlayArray[i]);
+//         if(event.target !=overlay && event.target.parentNode !=overlay && event.target !=innhold) {
+//             overlay.style.display = 'none';
+//         }
+//     }
+// });
+
+
+

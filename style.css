@@ -293,7 +293,7 @@ button:hover{
   height: 80%;
   width: 45%;
   max-width: 600px;
-
+  min-width: 600px;
   position: fixed;
   /* padding: 10px; */
   z-index: 10;
