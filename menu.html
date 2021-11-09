@@ -346,48 +346,44 @@
                   </div>
                     <button class="addToCart"> Add to cart </button>
                   </div>
-
                 </div>
-
-
-
     </div>
     <!-- <div id="backOverlay"></div> -->
 
+<!-- Shopping cart -->
+  <section class="your-order-container">
+    <h2 class="your-order-headline"><span>Your order</span></h2>
 
-
-  <div class="your-order-container">
-    <p class="your-order-headline">Your order</p>
-
-    <div class="your-order-gruop">
+    <div class="order-items">
       <div class="your-order-item">
-        <button class="minus" onclick="decrement()">-</button>
-        <h2 id="root" class="pluss-minus"></h2>
-        <button class="plus" onclick="increment()">+</button>
+        <span class="cart-item-title">Patacones</span>
+        <span class="cart-price cart-column">69kr</span>
+        <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" value="1">
+            <button class="btn btn-danger" type="button">REMOVE</button>
+        </div>
       </div>
 
-      <div class="your-order-item">
-        <button class="minus" onclick="decrement()">-</button>
-        <h2 id="root2" class="pluss-minus"></h2>
-        <button class="plus" onclick="increment()">+</button>
-      </div>
+        <div class="your-order-item">
+          <span class="cart-item-title">Arepas</span>
+          <span class="cart-price cart-column">69kr</span>
+          <div class="cart-quantity cart-column">
+              <input class="cart-quantity-input" type="number" value="1">
+              <button class="btn btn-danger" type="button">REMOVE</button>
+          </div>
+        </div>
 
-            <div class="your-order-item">
-        <button class="minus" onclick="decrement()">-</button>
-        <h2 id="root3" class="pluss-minus"></h2>
-        <button class="plus" onclick="increment()">+</button>
-      </div>
     </div>
-    <!-- Button for checkout -->
-    <div class="your-order">
-      <p class="your-order-text">Your order</p>
-      <a href="payment.html">
-      <div class="checkout-button">
-        <h2>Check out</h2>
-      </div></a>
+
+
+    <div class="your-order-total">
+      <p class="your-order-text">Total:</p>
+
+      <!-- Button for checkout -->
+    <a href="payment.html"><button type="button" name="checkout" class="checkout-btn">Check out</button></a>
       <!-- Section for "shopping cart" end -->
     </div>
-  </div>
+  </section>
 </div>
 <script src="scripts/menu.js"></script>
 <script src="scripts/overlay.js"></script>

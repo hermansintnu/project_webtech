@@ -213,57 +213,61 @@ margin-top: 20%;
   height: 600px;
   box-shadow: -7px 0px 4px -3px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  display: grid;
+  grid-template: 80px 1fr 1fr / 100%;
 }
+/* grid-template-rows / grid-template-columns values */
+
 .your-order-headline{
   font-family: BarlowMedium;
   color: #000000bd;
-  margin-top: 45px;
-  padding-left: 1px;
+  grid-row-start: 1;
+  /*margin-top: 45px;
+  padding-left: 1px;*/
   position: relative;
   left: 30px;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.151);
   width: 280px;
   margin-left: 25px;
 }
-.checkout-button{
+
+.your-order-item {
+  grid-column: 1 / 2;
+  margin-left: 30px;;
+  font-family: BarlowMedium;
+  margin-bottom: 10px;
+  display: inline-inline-flex;
+}
+
+.checkout-btn{
   color: white;
+  background-color: #4B5F24;
   position: absolute;
   font-size: 24px;
   bottom: 60px;
   left: 50px;
-  background-color: #4B5F24;
   width: 280px;
   border-radius: 15px;
   box-shadow: inset 0px 0px 3px 3px rgba(255, 255, 255, 0.25);
   text-align: center;
 }
-.your-order-item{
+
+/*.your-order-item{
   position: relative;
   top: 15px;
   left: 55px;
   margin-top: 20px;
   font-family: BarlowMedium;
   font-size: 18px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+}*/
+
+.cart-quantity-input {
+  width: 20%;
 }
-.pluss-minus{
-  margin: 0 10px;
-  font-size: 16px;
-  font-family: BarlowMedium;
-  background-color: rgba(255, 255, 255, 0.281);
-  width: 30px;
-  height: 20px;
-  text-align: center;
-  position: relative;
-  right: 10px;
-}
+
 button{
   color: white;
   background-color: #4B5F24;
-  width: 20px;
-  height: 20px;
   outline: none;
   border-style: none;
   font-family: BarlowMedium;
@@ -275,14 +279,6 @@ button{
 }
 button:hover{
   background-color: #668034;
-}
-.minus{
-  border-radius: 7px 0px 0px 7px;
-}
-.plus{
-  border-radius: 0px 7px 7px 0px;
-  position: absolute;
-  left: 47px;
 }
 
 /* Shopping cart ends*/
@@ -311,7 +307,7 @@ button:hover{
   animation: ease-in;
   animation-duration: 1s;
   display: none;
-  
+
 
 }
 
@@ -564,7 +560,7 @@ margin: 10px;
   background-color:#c4c4c4;
   height: 150px;
   width: 400px;
-  
+
 }
 
 
@@ -676,7 +672,7 @@ float: left;
     left: 10%;
     right: 10%;
   }
-  
+
   .overlayBilde{
     height: 200px;
   }
@@ -687,7 +683,7 @@ float: left;
     margin-left: 10%;
     margin-top: 10px;
   }
-  
+
   .allergiesOverlay {
     position: absolute;
     font-size: 16px;
@@ -696,7 +692,7 @@ float: left;
     right: 31%;
     margin: 0;
   }
-  
+
   .priceOverlay {
     position: absolute;
     top: 183px;
@@ -704,7 +700,7 @@ float: left;
     font-size: 30px;
     font-family: BarlowMediumItalic;
   }
-  
+
   .infoOverlay {
     font-family: BarlowMediumItalic;
     width: auto;
@@ -713,9 +709,9 @@ float: left;
     top: 270px;
     left: 10%;
     right: 10%;
-  
+
   }
-  
+
   .extraTopping {
     font-family: BarlowBold;
     font-size: 20px;
@@ -723,7 +719,7 @@ float: left;
     top: 50%;
     left: 10%;
   }
-  
+
   .choices{
     font-family: BarlowMedium;
     font-size: 20px;
@@ -733,21 +729,21 @@ float: left;
     left: -2%;
     list-style-type: none;
   }
-  
+
   .choices li{
     margin-top: 2px;
   }
-  
+
   .choices input{
     margin-right: 20px;
   }
-  
-  
+
+
   .choicesPrice li{
     margin-top: 2px;
     text-align: right;
   }
-  
+
   .choicesPrice{
     font-family: BarlowMedium;
     font-size: 20px;
@@ -757,8 +753,8 @@ float: left;
     right: 10%;
     list-style-type: none;
   }
-  
-  
+
+
   .orderCounter{
     display: flex;
     align-items: center;
@@ -768,9 +764,9 @@ float: left;
     font-family: BarlowBold;
     font-size: 20px;
   }
-  
-  
-  
+
+
+
   .addToCart{
     position: absolute;
     bottom: 40px;
@@ -785,7 +781,7 @@ float: left;
     height: 30px;
     border-radius: 10px;
     border-style: none;
-  
+
   }
 }
 /* Menu end*/
