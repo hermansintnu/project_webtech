@@ -311,6 +311,7 @@ button:hover{
   width: 45%;
   max-width: 600px;
   min-width: 600px;
+  min-height: 700px;
   position: fixed;
   /* padding: 10px; */
   z-index: 10;
@@ -389,7 +390,7 @@ button:hover{
   font-family: BarlowMedium;
   font-size: 20px;
   position: absolute;
-  margin: 0;
+  margin:0;
   bottom: 100px;
   left: 55px;
   list-style-type: none;
@@ -400,14 +401,10 @@ button:hover{
 }
 
 .choices input{
-  margin-right: 30px;
+  left: 100px;
+  margin-right: 10px;
 }
 
-
-.choicesPrice li{
-  margin-top: 2px;
-  text-align: right;
-}
 
 .choicesPrice{
   font-family: BarlowMedium;
@@ -418,6 +415,13 @@ button:hover{
   right: 100px;
   list-style-type: none;
 }
+
+.choicesPrice li{
+  margin-top: 2px;
+  text-align: right;
+}
+
+
 
 
 .orderCounter{
@@ -530,60 +534,58 @@ margin: 10px;
 
 /* This section is for confirmation.html */
 
-#logoConf {
-  width: 150px;
+
+
+
+.structure {
+  background-color: #FADD44;
+  width: 90%;
+  border-radius: 120px 120px 0px 0px;
+  position: absolute;
+  bottom: 0px;
+  right: 70px;
+  height: 80%;
+}
+#orderNumber{
+  margin-left: 90px;
 }
 
-#structure {
-  position: relative;
-  display: grid;
-  grid-template-columns:auto(1fr);
-  padding: 5px;
-  width: 600px;
-  height: 100%;
-  width: 600px;
+.orderItem{
+  margin-top: 30px;
+  list-style: none;
+  font-family: BarlowMedium, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
-#yourOrder {
-  position: relative;
-  grid-column: auto;
-  left: 10%;
-  top: 10%;
-  background-color: #c4c4c4;
-  width: 400px;
-  height: 330px;
+#thanks{
+  width: 490px;
+  font-family: BarlowMediumItalic;
+  position: absolute;
+  right: 90px;
+  top: 40px;
 }
-
-#orderNumber {
-  position: relative;
-  grid-column: auto;
-  left: 90%;
-  top: -30%;
-  background-color: #c4c4c4;
-  width: 250px;
-  height: 200px;
+.hånd{
+  float: left;
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  width: 620px;
+  min-width: 400px;
+  z-index: 7;
 }
-
-#orderPickUp{
-  position: relative;
-  right: 5%;
-  top: -25%;
-  background-color: #c4c4c4;
-  width: 500px;
-  height: 400px;
+.timeleft{
+  float: left;
+  position: absolute;
+  left: 200px;
+  top: 40%;
+  z-index: 8;
+  width: 100px;
+  font-family: BarlowRegular;
+  text-align: center;
 }
-
-
-#timeLeft {
-  position: relative;
-  top: -60%;
-  left: 5%;
-  background-color:#c4c4c4;
-  height: 150px;
-  width: 400px;
-
+#timer{
+font-family: BarlowBold;
 }
-
 
 
 /* confirmation end */
@@ -691,6 +693,8 @@ float: left;
     top: 10%;
     max-width: 400px;
     min-width: 400px;
+    min-height: 650px;
+    max-height: 650px;
     left: 10%;
     right: 10%;
   }
@@ -747,8 +751,8 @@ float: left;
     font-size: 20px;
     position: absolute;
     margin: 0;
-    top:60%;
-    left: -2%;
+    bottom: 100px;
+    left: -3px;
     list-style-type: none;
   }
 
@@ -757,7 +761,7 @@ float: left;
   }
 
   .choices input{
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
 
@@ -771,7 +775,7 @@ float: left;
     font-size: 20px;
     position: absolute;
     margin: 0;
-    bottom: 120px;
+    bottom: 100px;
     right: 10%;
     list-style-type: none;
   }

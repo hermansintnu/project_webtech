@@ -24,39 +24,28 @@
 </nav>
 
 </div>
-
-    <h1>Order confirmation</h1>
-
-<div id="structure">
-    
-
-<div id="yourOrder">
-<h3>Order summary:</h3>
+<div class="confirmation-item">
+    <p class="timeleft">Your order will be ready to pick up in: <br><span id="timer"></span> minutes</p>
+    <img class="hånd" src="img/tommelopp-01.png" alt="">
 </div>
 
-<div id="orderNumber">
-    <h3> Order number: </h3>
-   
-    <p id="demo"></p>
+<div class="structure">
+    <h1 id="thanks">Thank you for your purchase!</h1>
+    <h3 id="receipt-sent">The receipt has been sent to your e-mail!</h3>
+     <div class="confirmation-item" id="orderNumber">
+        <h3> Order number: 50</h3>
     
-<script>
-document.getElementById("demo").innerHTML = 
-Math.floor(Math.Random() * 100);
-</script>
+    </div>
 
-</div>
-
-<div id="orderPickUp">
+<div class="confirmation-item" id="orderPickUp">
     <h3>Your order can be picked up at: jsfunc livepos</h3>
     google maps bilde
 </div>
 
-<div id="timeLeft">
-    <p>Your order will be ready to pick up in <br><span id="timer"></span> minutes</p>
-</div>
+
+
 
 </div>
-
 
 <script src="/scripts/timer.js"></script>
 <script src="/scripts/livepos.js"></script>
