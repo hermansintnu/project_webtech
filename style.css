@@ -100,12 +100,20 @@ nav ul li a:hover{
   display: grid;
 }
 
-#homepage p {
+#p1 {
   font-family: BarlowSemibold;
-  font-size: 1.2em;
-  margin-left: 10%;
+  max-width: 300px;
+  font-size: 1.5em;
   grid-row-start: 1;
-  grid-column-start: 3;
+  grid-column-start: 4;
+}
+
+#p2 {
+  font-family: BarlowSemibold;
+  max-width: 300px;
+  font-size: 1.5em;
+  grid-row-start: 2;
+  grid-column-start: 4;
 }
 
 #OrderNow {
@@ -116,9 +124,9 @@ height: 106px;
 width: 206px;
 float: right;
 position: relative;
-margin-right: 20%;
+margin-right: 205;
 margin-top: 20%;
-grid-row-start: 2;
+grid-row-start: 3;
 grid-column-start: 4;
 }
 
@@ -133,6 +141,8 @@ grid-column-start: 4;
 #vei {
   margin-top: -9%;
   width: 100%;
+  max-height: 400px;
+  min-height: 200px;
 }
 
 #andreshome {
