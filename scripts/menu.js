@@ -19,7 +19,7 @@ function ready() {
         input.addEventListener('change', quantityChanged)
     }
 
-    var addToCartButtons = document.getElementsByClassName('shop-item-button')
+    var addToCartButtons = document.getElementsByClassName('addToCart')
     for (var i = 0; i < addToCartButtons.length; i++) {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
@@ -32,31 +32,49 @@ function ready() {
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
-    updateCartTotal()
+    //updateCartTotal()
 }
+
+// The following is not implemented
 
 // Add item to cartRow
 function addToCartClicked(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement
-    var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
-    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
-    var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-    addItemToCart(title, price, imageSrc)
-    updateCartTotal()
+    var title = shopItem.getElementsByClassName('dish')[0].innerText
+    var price = shopItem.getElementsByClassName('priceOverlay')[0].innerText
+    addItemToCart(title, price)
+    //updateCartTotal()
 }
 
-function addItemToCart(title, price, imageSrc) {
-    var cartRow = document.createElement('div')
-    cartRow.classList.add('cart-row')
-    var cartItems = document.getElementsByClassName('order-items')[0]
-    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-    for (var i = 0; i < cartItemNames.length; i++) {
-        if (cartItemNames[i].innerText == title) {
-            alert('This item is already added to the cart')
-            return
+    function addItemToCart(title, price) {
+        var cartRow = document.createElement('div')
+        cartRow.classList.add('cart-row')
+        var cartItems = document.getElementsByClassName('order-items')[0]
+        var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+        for (var i = 0; i < cartItemNames.length; i++) {
+            if (cartItemNames[i].innerText == title) {
+                alert('This item is already added to the cart')
+                return
+            }
         }
+        var cartRowContents = `
+            <div class="cart-item cart-column">
+                <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+                <span class="cart-item-title">${title}</span>
+            </div>
+            <span class="cart-price cart-column">${price}</span>
+            <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">REMOVE</button>
+            </div>`
+        cartRow.innerHTML = cartRowContents
+        cartItems.append(cartRow)
+        cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+        cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
     }
+
+
 
 /*
 function quantityChanged(event) {
@@ -66,6 +84,9 @@ function quantityChanged(event) {
     }
     updateCartTotal()
 } */
+
+
+/*
 
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
@@ -80,11 +101,11 @@ function updateCartTotal() {
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
-}s
+    document.getElementsByClassName('your-order-total')[0].innerText = '$' + total
+}
 
 // Following from video:
-/*
+
 @@ -5,95 +5,99 @@ if (document.readyState == 'loading') {
 }
 
@@ -230,4 +251,5 @@ function updateCartTotal() {
 
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + Math.round(total * 100) / 100
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total */
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+*/
