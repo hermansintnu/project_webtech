@@ -100,12 +100,20 @@ nav ul li a:hover{
   display: grid;
 }
 
-#homepage p {
+#p1 {
   font-family: BarlowSemibold;
-  font-size: 1.2em;
-  margin-left: 10%;
+  max-width: 300px;
+  font-size: 1.5em;
   grid-row-start: 1;
-  grid-column-start: 3;
+  grid-column-start: 4;
+}
+
+#p2 {
+  font-family: BarlowSemibold;
+  max-width: 300px;
+  font-size: 1.5em;
+  grid-row-start: 2;
+  grid-column-start: 4;
 }
 
 #OrderNow {
@@ -116,9 +124,9 @@ height: 106px;
 width: 206px;
 float: right;
 position: relative;
-margin-right: 20%;
+margin-right: 205;
 margin-top: 20%;
-grid-row-start: 2;
+grid-row-start: 3;
 grid-column-start: 4;
 }
 
@@ -133,6 +141,8 @@ grid-column-start: 4;
 #vei {
   margin-top: -9%;
   width: 100%;
+  max-height: 400px;
+  min-height: 200px;
 }
 
 #andreshome {
@@ -297,16 +307,15 @@ button:hover{
 /* overlay menu*/
 
 .overlay {
-  height: 80%;
-  width: 45%;
-  max-width: 600px;
-  min-width: 600px;
-  min-height: 700px;
+  max-width: 450px;
+  min-width: 400px;
+  min-height: 550px;
+  max-height: 650px;
   position: fixed;
   /* padding: 10px; */
   z-index: 10;
   top: 10%;
-  bottom: 30%;
+  bottom: min 10%;
   left: 10%;
   background:#FADD44;
   /* border: rgba(161, 94, 94, 0.1) 10px; */
@@ -325,7 +334,7 @@ button:hover{
 
 .overlayBilde {
   width: 100%;
-  height: 260px;
+  height: 160px;
   /* margin-left: 10px;
   margin-top: 10px; */
   margin-bottom: 0px;
@@ -334,55 +343,57 @@ button:hover{
   border-top-right-radius: 30px;
 }
 .dish {
+  position: absolute;
   font-family: BarlowBold;
-  font-size: 40px;
-  margin-left: 100px;
-  margin-top: 10px;
+  font-size: xx-large;
+  top: 150px;
+  left: 50px;
 }
 
 .allergiesOverlay {
   position: absolute;
-  font-size: 25px;
+  font-size: medium;
   color: #0000007a;
-  top: 290px;
-  right: 200px;
+  top: 190px;
+  right: 120px;
   margin: 0;
 }
 
 .priceOverlay {
   position: absolute;
-  top: 235px;
-  right: 100px;
-  font-size: 40px;
+  top: 145px;
+  right: 50px;
+  font-size: xx-large;
   font-family: BarlowMediumItalic;
 }
 
 .infoOverlay {
   font-family: BarlowMediumItalic;
+  font-size: small;
   width: auto;
   position: absolute;
   margin: 0;
-  top: 340px;
-  left: 100px;
-  right: 100px;
+  top: 220px;
+  left: 50px;
+  right: 50px;
 
 }
 
 .extraTopping {
   font-family: BarlowBold;
-  font-size: 20px;
+  font-size: large;
   position: absolute;
-  top: 400px;
-  left: 100px;
+  top: 270px;
+  left: 50px;
 }
 
 .choices{
   font-family: BarlowMedium;
-  font-size: 20px;
+  font-size: large;
   position: absolute;
   margin:0;
-  bottom: 100px;
-  left: 55px;
+  bottom: 60px;
+  left: 6px;
   list-style-type: none;
 }
 
@@ -398,11 +409,11 @@ button:hover{
 
 .choicesPrice{
   font-family: BarlowMedium;
-  font-size: 20px;
+  font-size: large;
   position: absolute;
   margin: 0;
-  bottom: 100px;
-  right: 100px;
+  bottom: 60px;
+  right: 50px;
   list-style-type: none;
 }
 
@@ -415,8 +426,8 @@ button:hover{
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 30px;
-  left: 100px;
+  bottom: 20px;
+  left: 50px;
   font-family: BarlowBold;
   font-size: 20px;
 }
@@ -458,8 +469,8 @@ button:hover{
 
 .addToCart{
   position: absolute;
-  bottom: 30px;
-  right: 100px;
+  bottom: 20px;
+  right: 50px;
   font-family: BarlowMedium;
   font-size: 20px;
   text-align: center;
@@ -674,128 +685,3 @@ float: left;
   }
 }
 
-@media only screen and (max-width: 1045px) {
-  .overlay {
-    position: fixed;
-    height: 80%;
-    top: 10%;
-    max-width: 400px;
-    min-width: 400px;
-    min-height: 650px;
-    max-height: 650px;
-    left: 10%;
-    right: 10%;
-  }
-
-  .overlayBilde{
-    height: 200px;
-  }
-
-  .dish {
-    font-family: BarlowBold;
-    font-size: 30px;
-    margin-left: 10%;
-    margin-top: 10px;
-  }
-
-  .allergiesOverlay {
-    position: absolute;
-    font-size: 16px;
-    color: #0000007a;
-    top: 225px;
-    right: 31%;
-    margin: 0;
-  }
-
-  .priceOverlay {
-    position: absolute;
-    top: 183px;
-    right: 10%;
-    font-size: 30px;
-    font-family: BarlowMediumItalic;
-  }
-
-  .infoOverlay {
-    font-family: BarlowMediumItalic;
-    width: auto;
-    position: absolute;
-    margin: 0;
-    top: 270px;
-    left: 10%;
-    right: 10%;
-
-  }
-
-  .extraTopping {
-    font-family: BarlowBold;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-  }
-
-  .choices{
-    font-family: BarlowMedium;
-    font-size: 20px;
-    position: absolute;
-    margin: 0;
-    bottom: 100px;
-    left: -3px;
-    list-style-type: none;
-  }
-
-  .choices li{
-    margin-top: 2px;
-  }
-
-  .choices input{
-    margin-right: 10px;
-  }
-
-
-  .choicesPrice li{
-    margin-top: 2px;
-    text-align: right;
-  }
-
-  .choicesPrice{
-    font-family: BarlowMedium;
-    font-size: 20px;
-    position: absolute;
-    margin: 0;
-    bottom: 100px;
-    right: 10%;
-    list-style-type: none;
-  }
-
-
-  .orderCounter{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 40px;
-    left: 10%;
-    font-family: BarlowBold;
-    font-size: 20px;
-  }
-
-
-
-  .addToCart{
-    position: absolute;
-    bottom: 40px;
-    right: 10%;
-    font-family: BarlowMedium;
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-    background: #4B5F24;
-    padding-top: 0px;
-    width: 150px;
-    height: 30px;
-    border-radius: 10px;
-    border-style: none;
-
-  }
-}
-/* Menu end*/
