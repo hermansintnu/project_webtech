@@ -540,16 +540,15 @@ margin: 10px;
 
 .structure {
   background-color: #FADD44;
-  width: 90%;
+  width: 94.5%;
+
   border-radius: 120px 120px 0px 0px;
   position: absolute;
+  left: 3%;
   bottom: 0px;
-  right: 70px;
   height: 80%;
 }
-#orderNumber{
-  margin-left: 90px;
-}
+
 
 .orderItem{
   margin-top: 30px;
@@ -563,35 +562,43 @@ margin: 10px;
   font-family: BarlowMediumItalic;
   position: absolute;
   left: 80px;
-  top: 360px;
+  top: 70%;
 }
 #orderNumber{
   position: absolute;
-  right: 100px;
+  right: 13%;
   top: 60px;
   font-family: BarlowMediumItalic, Helvetica, sans-serif;
   font-size: 36px;
   width: 310px;
   text-align: center;
-  margin: 0;
 }
 #orderNumberNumber{
-  font-size: 48px;
+  font-size: 50px;
   font-family: BarlowBold;
   margin: 0;
+}
+#orderPickUp{
+  position: absolute;
+  right: 13%;
+  top: 250px;
+  font-family: BarlowRegular, Helvetica, sans-serif;
+  font-size: 20px;
+  width: 320px;
+  text-align: center;
 }
 .hånd{
   position: absolute;
   left: -10px;
-  width: 70%;
+  width: 75%;
   min-width: 400px;
   z-index: 7;
 }
 .timeleft{
   float: left;
   position: absolute;
-  left: 23%;
-  top: 288px;
+  left: 25.5%;
+  top: 308px;
   z-index: 8;
   width: 100px;
   font-family: BarlowRegular;
@@ -606,16 +613,16 @@ margin: 10px;
   text-align: center;
   width: 900px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1090px) {
   .confirmation-clock {
     width: 600px;
   }
   .hånd{
-    top: 120px;
+    top: 90px;
   }
   .timeleft{
-    top: 333px;
-    left: 120px;
+    top: 320px;
+    left: 133px;
     font-size: 1px;
     color: #FCD116
   }
