@@ -82,16 +82,30 @@ nav ul li a:hover{
   font-style: italic;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 /*End navigation*/
 
 /* this section is for homepage.html */
-#homepagebody {
-  margin: 0%;
+
+#homepage {
+  margin-left: -10%;
+  margin-right: -10%;
+  margin-bottom: -3%;
+}
+
+#homepagetop {
+  display: grid;
 }
 
 #homepage p {
   font-family: BarlowSemibold;
   font-size: 1.2em;
+  margin-left: 10%;
+  grid-row-start: 1;
+  grid-column-start: 3;
 }
 
 #OrderNow {
@@ -101,10 +115,15 @@ background: none;
 height: 106px;
 width: 206px;
 float: right;
+position: relative;
+margin-right: 20%;
+margin-top: 20%;
+grid-row-start: 2;
+grid-column-start: 4;
 }
 
 #asphaltandres {
-  margin-top: 50px;
+  margin-top: -30%;
   width: 100%;
   display: grid;
   grid-template-rows: 1fr;
@@ -112,17 +131,16 @@ float: right;
 }
 
 #vei {
-
-  margin-top: -10%;
+  margin-top: -9%;
   width: 100%;
-  min-width: 70%;
 }
 
 #andreshome {
   grid-row-start: 1;
   grid-column-start: 1;
   max-width: 100%;
-  width: 40%;
+  width: 37%;
+  margin-left: 13%;
 }
 /* homepage ends */
 
@@ -206,57 +224,61 @@ float: right;
   height: 600px;
   box-shadow: -7px 0px 4px -3px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  display: grid;
+  grid-template: 80px 1fr 1fr / 100%;
 }
+/* grid-template-rows / grid-template-columns values */
+
 .your-order-headline{
   font-family: BarlowMedium;
   color: #000000bd;
-  margin-top: 45px;
-  padding-left: 1px;
+  grid-row-start: 1;
+  /*margin-top: 45px;
+  padding-left: 1px;*/
   position: relative;
   left: 30px;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.151);
   width: 280px;
   margin-left: 25px;
 }
-.checkout-button{
+
+.your-order-item {
+  grid-column: 1 / 2;
+  margin-left: 30px;;
+  font-family: BarlowMedium;
+  margin-bottom: 10px;
+  display: inline-inline-flex;
+}
+
+.checkout-btn{
   color: white;
+  background-color: #4B5F24;
   position: absolute;
   font-size: 24px;
   bottom: 60px;
   left: 50px;
-  background-color: #4B5F24;
   width: 280px;
   border-radius: 15px;
   box-shadow: inset 0px 0px 3px 3px rgba(255, 255, 255, 0.25);
   text-align: center;
 }
-.your-order-item{
+
+/*.your-order-item{
   position: relative;
   top: 15px;
   left: 55px;
   margin-top: 20px;
   font-family: BarlowMedium;
   font-size: 18px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
+}*/
+
+.cart-quantity-input {
+  width: 20%;
 }
-.pluss-minus{
-  margin: 0 10px;
-  font-size: 16px;
-  font-family: BarlowMedium;
-  background-color: rgba(255, 255, 255, 0.281);
-  width: 30px;
-  height: 20px;
-  text-align: center;
-  position: relative;
-  right: 10px;
-}
+
 button{
   color: white;
   background-color: #4B5F24;
-  width: 20px;
-  height: 20px;
   outline: none;
   border-style: none;
   font-family: BarlowMedium;
@@ -269,64 +291,43 @@ button{
 button:hover{
   background-color: #668034;
 }
-.minus{
-  border-radius: 7px 0px 0px 7px;
-}
-.plus{
-  border-radius: 0px 7px 7px 0px;
-  position: absolute;
-  left: 47px;
-}
 
 /* Shopping cart ends*/
+
 /* overlay menu*/
-.overlay-container{
-  width: 100%;
-  height: 100%;
-  color: rgba(0, 0, 0, 0.329);
-}
-
-#overlay-back {
-    position   : absolute;
-    top        : 0;
-    left       : 0;
-    width      : 100%;
-    height     : 100%;
-    background : #000;
-    opacity    : 0.6;
-    filter     : alpha(opacity=60);
-    z-index    : 5;
-    display    : none;
-}
-
 
 .overlay {
-  height: 0%;
-  width: 66%;
-  position: absolute;
+  height: 80%;
+  width: 45%;
+  max-width: 600px;
+  min-width: 600px;
+  min-height: 700px;
+  position: fixed;
   /* padding: 10px; */
   z-index: 10;
-  top: -20%;
+  top: 10%;
   bottom: 30%;
-  left: 20%;
+  left: 10%;
   background:#FADD44;
   /* border: rgba(161, 94, 94, 0.1) 10px; */
   /* border-style: solid; */
   /* background-color: rgba(0,0,0,0,5); */
-  box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.18);
-  /* box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.18); */
+  /* box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.18); */
+  box-shadow: 0 0 0 1500px rgba(0, 0, 0, 0.6);
   overflow-y: hidden;
   border-radius: 40px;
-animation: ease-in;
-animation-duration: 1s;
-  /* box-shadow: 0 0 0 2038px rgba(0,0,0,.5); */
+  animation: ease-in;
+  animation-duration: 1s;
+  display: none;
+
+
 }
 
 .overlayBilde {
-  width: 574px;
+  width: 100%;
   height: 260px;
-  margin-left: 10px;
-  margin-top: 10px;
+  /* margin-left: 10px;
+  margin-top: 10px; */
   margin-bottom: 0px;
   object-fit: cover;
   border-top-left-radius: 30px;
@@ -336,7 +337,7 @@ animation-duration: 1s;
   font-family: BarlowBold;
   font-size: 40px;
   margin-left: 100px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .allergiesOverlay {
@@ -350,7 +351,7 @@ animation-duration: 1s;
 
 .priceOverlay {
   position: absolute;
-  top: 240px;
+  top: 235px;
   right: 100px;
   font-size: 40px;
   font-family: BarlowMediumItalic;
@@ -358,11 +359,12 @@ animation-duration: 1s;
 
 .infoOverlay {
   font-family: BarlowMediumItalic;
-  width: 400px;
+  width: auto;
   position: absolute;
   margin: 0;
   top: 340px;
   left: 100px;
+  right: 100px;
 
 }
 
@@ -378,7 +380,7 @@ animation-duration: 1s;
   font-family: BarlowMedium;
   font-size: 20px;
   position: absolute;
-  margin: 0;
+  margin:0;
   bottom: 100px;
   left: 55px;
   list-style-type: none;
@@ -389,14 +391,10 @@ animation-duration: 1s;
 }
 
 .choices input{
-  margin-right: 30px;
+  left: 100px;
+  margin-right: 10px;
 }
 
-
-.choicesPrice li{
-  margin-top: 2px;
-  text-align: right;
-}
 
 .choicesPrice{
   font-family: BarlowMedium;
@@ -407,6 +405,13 @@ animation-duration: 1s;
   right: 100px;
   list-style-type: none;
 }
+
+.choicesPrice li{
+  margin-top: 2px;
+  text-align: right;
+}
+
+
 
 
 .orderCounter{
@@ -474,21 +479,10 @@ animation-duration: 1s;
 .overlay .closebtn {
   position: absolute;
   top: 10px;
-  right: 45px;
+  right: 35px;
   font-size: 60px;
   color: rgb(255, 255, 255);
 }
-
-/* forsøk tinted bakgrunn */
-/* .backOverlay {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0,0,0,0,9);
-
-} */
 
 /* overlay menu ends*/
 /* menu ends */
@@ -598,8 +592,9 @@ margin-bottom: -70%;
 
 #aboutpic {
 float: left;
- margin-bottom: -50%;
+ margin-top: -5%;
  margin-left: 1%;
+ margin-right: 3%;
  position: static;
 }
 
@@ -678,6 +673,131 @@ float: left;
 @media only screen and (min-width: 1045px) {
   .menu-group {
     grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media only screen and (max-width: 1045px) {
+  .overlay {
+    position: fixed;
+    height: 80%;
+    top: 10%;
+    max-width: 400px;
+    min-width: 400px;
+    min-height: 650px;
+    max-height: 650px;
+    left: 10%;
+    right: 10%;
+  }
+
+  .overlayBilde{
+    height: 200px;
+  }
+
+  .dish {
+    font-family: BarlowBold;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-top: 10px;
+  }
+
+  .allergiesOverlay {
+    position: absolute;
+    font-size: 16px;
+    color: #0000007a;
+    top: 225px;
+    right: 31%;
+    margin: 0;
+  }
+
+  .priceOverlay {
+    position: absolute;
+    top: 183px;
+    right: 10%;
+    font-size: 30px;
+    font-family: BarlowMediumItalic;
+  }
+
+  .infoOverlay {
+    font-family: BarlowMediumItalic;
+    width: auto;
+    position: absolute;
+    margin: 0;
+    top: 270px;
+    left: 10%;
+    right: 10%;
+
+  }
+
+  .extraTopping {
+    font-family: BarlowBold;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+
+  .choices{
+    font-family: BarlowMedium;
+    font-size: 20px;
+    position: absolute;
+    margin: 0;
+    bottom: 100px;
+    left: -3px;
+    list-style-type: none;
+  }
+
+  .choices li{
+    margin-top: 2px;
+  }
+
+  .choices input{
+    margin-right: 10px;
+  }
+
+
+  .choicesPrice li{
+    margin-top: 2px;
+    text-align: right;
+  }
+
+  .choicesPrice{
+    font-family: BarlowMedium;
+    font-size: 20px;
+    position: absolute;
+    margin: 0;
+    bottom: 100px;
+    right: 10%;
+    list-style-type: none;
+  }
+
+
+  .orderCounter{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    left: 10%;
+    font-family: BarlowBold;
+    font-size: 20px;
+  }
+
+
+
+  .addToCart{
+    position: absolute;
+    bottom: 40px;
+    right: 10%;
+    font-family: BarlowMedium;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background: #4B5F24;
+    padding-top: 0px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+
   }
 }
 /* Menu end*/
