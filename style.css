@@ -89,13 +89,23 @@ nav ul li a:hover{
 /*End navigation*/
 
 /* this section is for homepage.html */
-#homepagebody {
-  margin: 0%;
+
+#homepage {
+  margin-left: -10%;
+  margin-right: -10%;
+  margin-bottom: -3%;
+}
+
+#homepagetop {
+  display: grid;
 }
 
 #homepage p {
   font-family: BarlowSemibold;
   font-size: 1.2em;
+  margin-left: 10%;
+  grid-row-start: 1;
+  grid-column-start: 3;
 }
 
 #OrderNow {
@@ -108,6 +118,8 @@ float: right;
 position: relative;
 margin-right: 20%;
 margin-top: 20%;
+grid-row-start: 2;
+grid-column-start: 4;
 }
 
 #asphaltandres {
@@ -119,17 +131,16 @@ margin-top: 20%;
 }
 
 #vei {
-
-  margin-top: -10%;
+  margin-top: -9%;
   width: 100%;
-  min-width: 70%;
 }
 
 #andreshome {
   grid-row-start: 1;
   grid-column-start: 1;
   max-width: 100%;
-  width: 40%;
+  width: 37%;
+  margin-left: 13%;
 }
 /* homepage ends */
 
@@ -579,8 +590,9 @@ margin-bottom: -70%;
 
 #aboutpic {
 float: left;
- margin-bottom: -50%;
+ margin-top: -5%;
  margin-left: 1%;
+ margin-right: 3%;
  position: static;
 }
 
