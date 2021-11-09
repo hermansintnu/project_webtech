@@ -411,9 +411,6 @@ button:hover{
   text-align: right;
 }
 
-
-
-
 .orderCounter{
   display: flex;
   align-items: center;
@@ -525,8 +522,6 @@ margin: 10px;
 /* This section is for confirmation.html */
 
 
-
-
 .structure {
   background-color: #FADD44;
   width: 90%;
@@ -555,28 +550,31 @@ margin: 10px;
   top: 40px;
 }
 .hånd{
-  float: left;
   position: absolute;
   left: -10px;
-  top: 10px;
-  width: 620px;
+  width: 70%;
   min-width: 400px;
   z-index: 7;
 }
 .timeleft{
   float: left;
   position: absolute;
-  left: 200px;
-  top: 40%;
+  left: 23%;
+  bottom: -400px;
   z-index: 8;
   width: 100px;
   font-family: BarlowRegular;
   text-align: center;
 }
 #timer{
-font-family: BarlowBold;
+  font-family: BarlowBold;
 }
-
+.confirmation-clock{
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  width: 900px;
+}
 
 /* confirmation end */
 
