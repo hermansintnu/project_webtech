@@ -89,13 +89,17 @@ nav ul li a:hover{
 /*End navigation*/
 
 /* this section is for homepage.html */
-#homepagebody {
-  margin: 0%;
+
+#homepage {
+  margin-left: -10%;
+  margin-right: -10%;
+  margin-bottom: -3%;
 }
 
 #homepage p {
   font-family: BarlowSemibold;
   font-size: 1.2em;
+  margin-left: 10%;
 }
 
 #OrderNow {
@@ -122,7 +126,8 @@ margin-top: 20%;
 
   margin-top: -10%;
   width: 100%;
-  min-width: 70%;
+  
+  
 }
 
 #andreshome {
@@ -130,6 +135,7 @@ margin-top: 20%;
   grid-column-start: 1;
   max-width: 100%;
   width: 40%;
+  margin-left: 15%;
 }
 /* homepage ends */
 
@@ -583,8 +589,9 @@ margin-bottom: -70%;
 
 #aboutpic {
 float: left;
- margin-bottom: -50%;
+ margin-top: -5%;
  margin-left: 1%;
+ margin-right: 3%;
  position: static;
 }
 
