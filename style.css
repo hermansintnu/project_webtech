@@ -100,34 +100,51 @@ nav ul li a:hover{
   display: grid;
 }
 
-#p1 {
+#homepagetop p {
   font-family: BarlowSemibold;
   max-width: 300px;
   font-size: 1.5em;
   grid-row-start: 1;
   grid-column-start: 4;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.045em;
 }
 
-#p2 {
-  font-family: BarlowSemibold;
-  max-width: 300px;
-  font-size: 1.5em;
-  grid-row-start: 2;
+
+#OrderNowBox {
+  grid-row-start: 3;
   grid-column-start: 4;
+  height: 106px;
+  width: 206px;
 }
 
 #OrderNow {
-padding: 0;
-border: none;
-background: none;
+background-color: #0085FF;
+box-shadow: inset 0px 0px 5px 8px rgba(255, 255, 255, 0.15);
 height: 106px;
 width: 206px;
-float: right;
-position: relative;
-margin-right: 205;
-margin-top: 20%;
-grid-row-start: 3;
-grid-column-start: 4;
+position: absolute;
+margin-right: 205px;
+font-size: 32px;
+line-height: 38px;
+text-align: center;
+letter-spacing: 0.045em;
+font-family: BarlowBold;
+z-index: 5;
+}
+
+#OrderNowUnderlay {
+  background: #FFFFFF;
+  border: 7px solid #2093FF;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 5px 8px rgba(255, 255, 255, 0.15);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  height: 106px;
+  width: 206px;
+  position: relative;
+  margin-top: 13px;
+  margin-left: 14px;
 }
 
 #asphaltandres {
@@ -149,7 +166,7 @@ grid-column-start: 4;
   grid-row-start: 1;
   grid-column-start: 1;
   max-width: 100%;
-  width: 37%;
+  width: 35%;
   margin-left: 13%;
 }
 /* homepage ends */
