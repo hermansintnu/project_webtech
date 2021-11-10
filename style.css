@@ -282,7 +282,7 @@ cursor: pointer;
 
 .order-quantity-input {
   grid-column-start: 1;
-  width: 40%;
+  width: 60%;
 }
 
 .order-item-title {
@@ -312,8 +312,8 @@ cursor: pointer;
 
 .checkout-btn{
   color: white;
-  /*background-color: #4B5F24;*/
-  background-color: #003893;
+  background-color: #4B5F24;
+  /* background-color: #003893; */
   position: absolute;
   font-size: 24px;
   bottom: 60px;
