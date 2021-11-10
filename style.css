@@ -102,13 +102,13 @@ nav ul li a:hover{
 
 #homepagetop p {
   font-family: BarlowSemibold;
-  max-width: 300px;
   font-size: 1.5em;
   grid-row-start: 1;
   grid-column-start: 4;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.045em;
+  width: 400px;
 }
 
 
@@ -119,32 +119,28 @@ nav ul li a:hover{
   width: 206px;
 }
 
-#OrderNow {
-background-color: #0085FF;
-box-shadow: inset 0px 0px 5px 8px rgba(255, 255, 255, 0.15);
-height: 106px;
-width: 206px;
-position: absolute;
-margin-right: 205px;
-font-size: 32px;
-line-height: 38px;
-text-align: center;
-letter-spacing: 0.045em;
-font-family: BarlowBold;
-z-index: 5;
+.OrderNow {
+  background: ffffff;
+  border:#0085FF;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 6px;
 }
 
-#OrderNowUnderlay {
-  background: #FFFFFF;
-  border: 7px solid #2093FF;
-  box-sizing: border-box;
+.front {
+  display: block;
+  padding: 12px 46px;
+  font-size: 1.6rem;
+  letter-spacing: 0.045em;
+  background: #0085FF;
   box-shadow: inset 0px 0px 5px 8px rgba(255, 255, 255, 0.15);
-  transform: matrix(1, 0, 0, -1, 0, 0);
-  height: 106px;
-  width: 206px;
-  position: relative;
-  margin-top: 13px;
-  margin-left: 14px;
+  color: white;
+  transform: translateY(-6px) translateX(-6px);
+  font-family: BarlowBold;
+}
+
+.OrderNow:active .front {
+  transform: translateY(-2px);
 }
 
 #asphaltandres {
@@ -304,7 +300,8 @@ z-index: 5;
 
 .checkout-btn{
   color: white;
-  background-color: #4B5F24;
+  /*background-color: #4B5F24;*/
+  background-color: #003893;
   position: absolute;
   font-size: 24px;
   bottom: 60px;
@@ -361,8 +358,6 @@ button:hover{
   animation: ease-in;
   animation-duration: 1s;
   display: none;
-
-
 }
 
 .overlayBilde {
