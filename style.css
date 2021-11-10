@@ -146,18 +146,15 @@ nav ul li a:hover{
 }
 
 .asphaltandres {
-  margin-top: -30%;
   width: 100%;
   display: inline-flex;
 }
 
 #andreshome {
-  grid-row-start: 1;
-  grid-column-start: 1;
   position: relative;
-  width: 25%;
+  width: 27%;
   margin-left: 13%;
-  margin-top: 4%;
+  margin-top: -23%;
   z-index: 20;
 }
 
@@ -166,7 +163,7 @@ nav ul li a:hover{
   width: 120%;
   max-height: 400px;
   min-height: 200px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 /* homepage ends */
@@ -778,6 +775,8 @@ float: left;
   }
 
 }
+
+
 
 /* Menu Start*/
 @media only screen and (min-width: 1045px) {
