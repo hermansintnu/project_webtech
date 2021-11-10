@@ -43,6 +43,12 @@ function addToCartClicked(event) {
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('dish')[0].innerText
     var price = shopItem.getElementsByClassName('priceOverlay')[0].innerText
+    document.getElementById('myOverlay1').style.display = "none"
+    document.getElementById('myOverlay2').style.display = "none"
+    document.getElementById('myOverlay3').style.display = "none"
+    document.getElementById('myOverlay4').style.display = "none"
+    document.getElementById('myOverlay5').style.display = "none"
+    document.getElementById('myOverlay6').style.display = "none"
     addItemToCart(title, price)
     updateCartTotal()
 }
