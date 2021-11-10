@@ -71,6 +71,7 @@ nav ul{
 
 nav ul li{
   list-style-type: none;
+  display: inline;
 }
 
 nav ul li a{
@@ -100,6 +101,7 @@ nav ul li a:hover{
 
 #homepagetop {
   display: grid;
+  margin-right: 3%;
 }
 
 #homepagetop p {
@@ -122,6 +124,8 @@ nav ul li a:hover{
   width: 300px;
   z-index: 20;
   margin-bottom: 2%;
+  margin-left: 25%;
+  margin-top: -3%;
 }
 
 .OrderNow {
@@ -162,7 +166,7 @@ nav ul li a:hover{
 
 #vei {
   width: 100%;
-  max-height: 250px;
+  max-height: 270px;
   position: static;
   bottom: 0;
 }
@@ -787,6 +791,8 @@ float: left;
 @media only screen and (max-width: 900px) {
   #OrderNowBox {
    margin-bottom: 17%;
+   margin-top: 3%;
+   margin-left: 13%;
   }
 
 }
