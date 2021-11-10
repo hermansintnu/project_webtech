@@ -640,7 +640,7 @@ margin: 10px;
   text-align: center;
   width: 900px;
 }
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 1120px) {
   .confirmation-clock {
     width: 600px;
   }
@@ -658,7 +658,19 @@ margin: 10px;
     font-size: 18px;
   }
 }
-
+@media only screen and (max-width: 840px) {
+  .hånd {
+    display: none;
+  }
+  .timeleft{
+    color: black;
+    font-size: 18px;
+    position: relative;
+    left: 20%;
+    width: 300px;
+    text-align: block;
+  }
+}
 /* confirmation end */
 
 
