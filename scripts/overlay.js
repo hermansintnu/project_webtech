@@ -43,6 +43,30 @@ function closeOverlay6() {
 
 
 
+// Er jeg på riktig spor?
+function checkboxChecked() {
+  var checkboxBoxes = document.getElementsByClassName('choices')
+  for (var i = 0; i < checkboxBoxes.length; i++) {
+      var button = checkboxBoxes[i]
+      button.addEventListener('click', updateOrderTotal)
+  }
+  console.log(checkboxChecked())
+}
+
+// Prøve meg på dette i morgen
+// Få updatert prisen på lik måte som total i shopping cart
+function updateOrderTotal() {
+  var overlayContent = document.getElementsByClassName('myOverlay1')[0]
+  var total = 0
+  for (var i = 0; i< overlayContent.length; i++) {
+    var overlayCont = overlayContent[i]
+    var priceElement = overlayCont.getElementsByClassName('choicesPrice')
+    total = total + price
+  }
+  document.getElementsByClassName('order-total-price')[0].innerText = total + 'kr'
+}
+
+
 
 /* var overlayArray = ['myOverlay1','myOverlay2','myOverlay3','myOverlay4','myOverlay5','myOverlay6'];
 

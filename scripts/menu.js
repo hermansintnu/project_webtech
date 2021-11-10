@@ -65,7 +65,7 @@ function addItemToCart(title, price) {
         <span class="order-item-title">${title}</span>
         <span class="order-price cart-column">${price}</span>
         <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>`
+      </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)

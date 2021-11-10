@@ -722,7 +722,7 @@ float: left;
 
 #abouttext {
   float: right;
-  max-width: 40%; 
+  max-width: 40%;
   min-width: 40%;
   margin-right: 200px;
   position: static;
@@ -806,7 +806,7 @@ float: left;
   }
 }
 @media only screen and (max-width: 750px) {
-  .your-order-container { 
+  .your-order-container {
     height: 220px;
     width: 200px;
     border-radius: 49px 0px 0px 49px;
@@ -829,7 +829,7 @@ float: left;
   .order-total-price{
     margin-left: 0px;
   }
-  
+
  .your-order-container:hover {
   background-color: #FCD116;
   font-family: BarlowRegular, helvetica, sans-serif;
@@ -842,20 +842,20 @@ float: left;
   box-shadow: -7px 0px 4px -3px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   display: grid;
-  grid-template: 80px 1fr 1fr / 100%; 
+  grid-template: 80px 1fr 1fr / 100%;
  }
  .your-order-container:hover .order-item{
    display: block;
    margin: 20px 10px;
    display: grid;
    grid-template-columns: 20% 40% 1fr 1fr;
- } 
+ }
  .your-order-container:hover .order-item{
   display: block;
   margin: 20px 10px;
   display: grid;
   grid-template-columns: 20% 40% 1fr 1fr;
-} 
+}
 .your-order-container:hover .checkout-btn{
   color: white;
   background-color: #4B5F24;
