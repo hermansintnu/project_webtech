@@ -270,7 +270,7 @@ nav ul li a:hover{
 
 .order-quantity-input {
   grid-column-start: 1;
-  width: 40%;
+  width: 60%;
 }
 
 .order-item-title {
@@ -300,8 +300,8 @@ nav ul li a:hover{
 
 .checkout-btn{
   color: white;
-  /*background-color: #4B5F24;*/
-  background-color: #003893;
+  background-color: #4B5F24;
+  /* background-color: #003893; */
   position: absolute;
   font-size: 24px;
   bottom: 60px;

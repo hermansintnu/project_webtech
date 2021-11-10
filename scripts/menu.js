@@ -58,13 +58,14 @@ function addItemToCart(title, price) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('order-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('order-item-title')
+    
 // Not working, not sure if needed
-    for (var i = 0; i < cartItemNames.length; i++) {
-        if (cartItemNames[i].innerText == title) {
-            alert('This item is already added to the cart')
-            return
-        }
-    }
+//for (var i = 0; i < cartItemNames.length; i++) {
+  //  if (cartItemNames[i].innerText == title) {
+      //  alert('This item is already added to the cart')
+    //    return
+  //  }
+//}
     var cartRowContents = `
       <div class="order-item cart-column">
         <input class="order-quantity-input" type="number" value="1">
