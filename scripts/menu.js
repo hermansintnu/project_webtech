@@ -23,12 +23,12 @@ function ready() {
         button.addEventListener('click', addToCartClicked)
     }
 
-    document.getElementsByClassName('checkout-btn')[0].addEventListener('click', purchaseClicked)
+    //document.getElementsByClassName('checkout-btn')[0].addEventListener('click', purchaseClicked)
 }
 
-function purchaseClicked() {
-    alert('Thank you for your purchase')
-}
+//function purchaseClicked() {
+//    alert('Thank you for your purchase')
+//}
 
 function removeCartItem(event) {
     var buttonClicked = event.target
@@ -58,7 +58,7 @@ function addItemToCart(title, price) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('order-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('order-item-title')
-    
+
 // Not working, not sure if needed
 //for (var i = 0; i < cartItemNames.length; i++) {
   //  if (cartItemNames[i].innerText == title) {
