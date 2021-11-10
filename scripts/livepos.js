@@ -32,5 +32,4 @@ function whichDay() {
       document.getElementById('kalvh2').innerHTML = "Kalvskinnet position";
       document.getElementById('dragvollh2').innerHTML = "Dragvoll position";
     }
-    console.log(whichDay())
 }

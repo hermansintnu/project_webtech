@@ -41,16 +41,17 @@ p, td{
 
 /* Navigation */
 
-.logo {
-  float: left;
-  display: inline-block;
-  width: 212px;
-}
 
 #navcontainer {
   width: 100%;
   padding-bottom: 10%;
   position: static;
+}
+
+.logo {
+  float: left;
+  display: inline-block;
+  width: 212px;
 }
 
 nav{
@@ -65,17 +66,18 @@ nav ul{
   float: right;
   margin-right: 100px;
   margin-top: 30px;
+  display: inline-flex;
 }
 
 nav ul li{
   list-style-type: none;
-  display: inline-block;
 }
 
 nav ul li a{
   color: black;
   text-decoration: none;
   padding: 30px;
+  padding-top: 0px;
 }
 
 nav ul li a:hover{
@@ -117,6 +119,7 @@ nav ul li a:hover{
   grid-column-start: 4;
   height: 200px;
   width: 300px;
+  z-index: 20;
 }
 
 .OrderNow {
@@ -134,7 +137,7 @@ nav ul li a:hover{
   background: #0085FF;
   box-shadow: inset 0px 0px 5px 8px rgba(255, 255, 255, 0.15);
   color: white;
-  transform: translateY(-6px) translateX(-6px);
+  transform: translateY(-7px) translateX(-7px);
   font-family: BarlowBold;
 }
 
@@ -142,27 +145,26 @@ nav ul li a:hover{
   transform: translateY(-2px);
 }
 
-#asphaltandres {
-  margin-top: -30%;
+.asphaltandres {
   width: 100%;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  display: inline-flex;
+}
+
+#andreshome {
+  position: relative;
+  width: 27%;
+  margin-left: 13%;
+  margin-top: -23%;
+  z-index: 20;
 }
 
 #vei {
   margin-top: -9%;
-  width: 100%;
+  width: 120%;
   max-height: 400px;
   min-height: 200px;
-}
-
-#andreshome {
-  grid-row-start: 1;
-  grid-column-start: 1;
-  max-width: 100%;
-  width: 35%;
-  margin-left: 13%;
+  position: fixed;
+  bottom: 0;
 }
 /* homepage ends */
 
@@ -535,6 +537,15 @@ button:hover{
 
 /* This section is for payment.html */
 
+#payment-body {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.payment-method-left {
+  grid-column: 1 / 2;
+}
+
 #payment-form {
 margin: 10px;
 }
@@ -544,13 +555,13 @@ margin: 10px;
 }
 
 .payment-name input {
-  width: 20%;
+  width: 60%;
   height: 30px;
 }
 
 .payment-option-choice {
   background-color: white;
-  width: 20%;
+  width: 60%;
   margin-bottom: 10px;
   height: 30px;
   border-style: solid;
@@ -682,8 +693,9 @@ margin: 10px;
 .about {
 display: flex;
 max-width: 100%;
-margin-top: 5%;
-margin-bottom: -70%;
+margin-top: 1%;
+margin-left: 3%;
+margin-right: 3%;
 }
 
 #aboutpic {
@@ -694,17 +706,27 @@ float: left;
  position: static;
 }
 
+
+#aboutpic {
+float: left;
+ margin-top: -5%;
+ margin-left: 1%;
+ margin-right: 3%;
+ position: static;
+}
+
+
 #abouttext {
   float: right;
-  max-width: 45%;
-  min-width: 45%;
+  max-width: 40%; 
+  min-width: 40%;
   margin-right: 200px;
   position: static;
 }
 
 #abouttext p{
   font-family: BarlowMedium;
-  font-size: 1.3em;
+  font-size: 1.35em;
 }
 
 /* about ends */
@@ -755,17 +777,14 @@ float: left;
 
 /* Responsive design below*/
 
-@media only screen and (max-width: 772px) {
+@media only screen and (max-width: 900px) {
   nav ul{
-
-    margin-right: 100px;
-    margin-top: 30px;
-    margin-left: -30px;
-    position: absolute;
-    display: inline-block;
+   position: absolute;
   }
 
 }
+
+
 
 /* Menu Start*/
 @media only screen and (min-width: 1045px) {
