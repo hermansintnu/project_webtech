@@ -300,7 +300,8 @@ nav ul li a:hover{
 
 .checkout-btn{
   color: white;
-  background-color: #4B5F24;
+  /*background-color: #4B5F24;*/
+  background-color: #003893;
   position: absolute;
   font-size: 24px;
   bottom: 60px;
@@ -357,8 +358,6 @@ button:hover{
   animation: ease-in;
   animation-duration: 1s;
   display: none;
-
-
 }
 
 .overlayBilde {
