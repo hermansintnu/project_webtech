@@ -36,7 +36,11 @@ function closeOverlay6() {
 
 
 
+
 var overlayArray = ['myOverlay1','myOverlay2','myOverlay3','myOverlay4','myOverlay5','myOverlay6'];
+
+
+
 window.addEventListener('mouseup', function(event){
        
     for(var i=0; i < overlayArray.length; i++){
@@ -47,7 +51,32 @@ window.addEventListener('mouseup', function(event){
     }
 });
 
+
+// Add class to parent visstnok
+
+// function setParent(){
+//     document.myOverlay1.appendChild(document.getElementsByClassName('choices'));}
+
+// const myElement = document.querySelector('.choices');
+// myElement.parentElement.classList.add('overlay');
+
+// $(this).parent('overlay').addClass('choices');
+
+
+// $('#bx-pager').parent('overlay').addClass('choices');
+
+// jQuery(this).parent('overlay').addClass('choices');
+
+
+// $().ready(function(){
+//     $('.overlay').addClass('choices');
+// });
+
+// $(overlay.parentNode).addClass('choices,choicesPrice');
+
+
 // Close on outside overlayclick uten å lukke når trykk på en class inni overlay
+
 // var overlayArray = ['myOverlay1','myOverlay2','myOverlay3','myOverlay4','myOverlay5','myOverlay6'];
 // const innhold = ['overlayBilde','dish','allergiesOverlay','priceOverlay','infoOverlay','extraTopping','choices','choicesPrice','orderCounter','minusOverlay','tellerOverlay','plusOverlay','addToCart',]
 // window.addEventListener('mouseup', function(event){
