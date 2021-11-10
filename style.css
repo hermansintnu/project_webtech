@@ -71,6 +71,7 @@ nav ul{
 
 nav ul li{
   list-style-type: none;
+  display: inline;
 }
 
 nav ul li a{
@@ -100,6 +101,7 @@ nav ul li a:hover{
 
 #homepagetop {
   display: grid;
+  margin-right: 3%;
 }
 
 #homepagetop p {
@@ -122,6 +124,8 @@ nav ul li a:hover{
   width: 300px;
   z-index: 20;
   margin-bottom: 2%;
+  margin-left: 25%;
+  margin-top: -3%;
 }
 
 .OrderNow {
@@ -162,7 +166,7 @@ nav ul li a:hover{
 
 #vei {
   width: 100%;
-  max-height: 250px;
+  max-height: 270px;
   position: static;
   bottom: 0;
 }
@@ -339,7 +343,6 @@ button{
 button:hover{
   background-color: #668034;
 }
-
 
 
 /* Shopping cart ends*/
@@ -788,6 +791,8 @@ float: left;
 @media only screen and (max-width: 900px) {
   #OrderNowBox {
    margin-bottom: 17%;
+   margin-top: 3%;
+   margin-left: 13%;
   }
 
 }
@@ -799,15 +804,35 @@ float: left;
     grid-template-columns:repeat(2,1fr);
   }
 }
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 750px) {
   .your-order-container { 
+    height: 220px;
+    width: 200px;
+    border-radius: 49px 0px 0px 49px;
+  }
+  .order-item{
     display: none;
   }
-}
+  .checkout-btn{
+    position: relative;
+    bottom: 20px;
+    width: 125px;
+    font-size: 23px;
+  }
+  .your-order-total{
+    position: relative;
+    bottom: 9px;
+    left: 55px;
+    margin: 0;
+  }
+  .order-total-price{
+    margin-left: 0px;
+  }
+ 
 
 /* Location start */
 @media only screen and (max-width: 1170px) {
-  iframe {
+  .map {
     display: none;
   }
-}
+}}
