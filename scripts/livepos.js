@@ -1,9 +1,8 @@
 // Pål and Herman
-function whichDay() {
 //  const WEEK_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 //  const literalDayOfWeek = WEEK_DAYS[date.getDay()];
 
-
+function whichDay() {
   var d = new Date();
   var tunga = document.getElementById("tungah2");
   var kalvskinnet = document.getElementById("kalvh2");
@@ -33,4 +32,5 @@ function whichDay() {
       document.getElementById('kalvh2').innerHTML = "Kalvskinnet position";
       document.getElementById('dragvollh2').innerHTML = "Dragvoll position";
     }
+    console.log(whichDay())
 }
