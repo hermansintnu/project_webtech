@@ -10,6 +10,7 @@
       <img class="logo" src="homepage.html" alt="">
     </figure>
 
+<section class="payment-method-left">
 <h1>Select payment method</h1>
 
 <form id="payment-form" action="confirmation.html" method="post">
@@ -21,41 +22,76 @@
     </div>
     <div class="mail">
       <label for="mail">Insert your e-mail</label> <br>
-      <input type="email" id="mail" name="mail" placeholder="email">
+      <input type="email" id="mail" name="mail" placeholder="Your email" required>
     </div>
   </div>
     <h2>Payment method</h2>
   <div class="payment-option">
     <div class="payment-option-choice">
-      <input type="radio" id="visa" name="option" value="">
+      <input type="radio" id="visa" name="option" value="" required>
       <label for="visa">Visa</label> <br>
     </div>
     <div class="payment-option-choice">
-      <input type="radio" id="paypal" name="option" value="">
+      <input type="radio" id="paypal" name="option" value="" required>
       <label for="paypal">PayPal</label> <br>
     </div>
     <div class="payment-option-choice">
-      <input type="radio" id="vipps" name="option" value="">
+      <input type="radio" id="vipps" name="option" value="" required>
       <label for="vipps">Vipps</label> <br>
     </div>
   </div>
   <h2>Where do you want to pick up the food?</h2>
   <div class="payment-location">
     <div class="payment-option-choice">
-      <input type="radio" id="gloshaugen" name="location" value="">
+      <input type="radio" id="gloshaugen" name="location" value="" required>
       <label for="gloshaugen"> Gløshaugen </label>
     </div>
     <div class="payment-option-choice">
-      <input type="radio" id="annet" name="location" value="">
+      <input type="radio" id="annet" name="location" value="" required>
       <label for="annet" id="choice2"></label>
     </div>
   </div>
 
     <a href="confirmation.html"><input type="submit" id="submitbtn" name="pay now" value="pay now"> </a>
   </form>
+</section>
 
-    <ul class="order_summary">
-    </ul>
+<section class="payment-location">
+  <div class="maps">
+    <h1 id="livePosH1">Live position</h1>
+
+    <div id="map1">
+      <h2 id="h2glos">Gløshaugen position</h2>
+      <iframe class="map" id="gloshaugen"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1669.0161822774346!2d10.401111651783774!3d63.419824491431356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d31c29641f393%3A0x4ae390bf3fc7917c!2sMaroquinier!5e1!3m2!1sno!2sno!4v1635857376938!5m2!1sno!2sno">
+      </iframe>
+    </div>
+
+  <!-- The following maps are to be hidden and displayed based on day of the week -->
+    <h2 id="tungah2"></h2>
+    <div id="map2">
+      <iframe id="monday-tuesday" class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761.193312974152!2d10.46500072299877!3d63.42330912707459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjPCsDI1JzIzLjkiTiAxMMKwMjcnNTcuOCJF!5e0!3m2!1sno!2sno!4v1635864160077!5m2!1sno!2sno">
+      </iframe>
+    </div>
+
+    <div id="map3">
+      <h2 id="kalvh2"></h2>
+      <iframe class="map" id="wednesday"
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841.2173687915397!2d10.387021253769987!3d63.42882899741943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjPCsDI1JzQzLjgiTiAxMMKwMjMnMTYuNCJF!5e1!3m2!1sno!2sno!4v1635864348135!5m2!1sno!2sno">
+      </iframe>
+    </div>
+
+    <div id="map4">
+      <h2 id="dragvollh2"></h2>
+      <iframe class="map" id="thursday-friday"
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841.8098418337048!2d10.470344578557015!3d63.40864499783967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjPCsDI0JzMxLjEiTiAxMMKwMjgnMTYuMSJF!5e1!3m2!1sno!2sno!4v1635864497867!5m2!1sno!2sno">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
     <script>
     function chooseLocation() {
         var d = new Date();
