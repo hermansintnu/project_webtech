@@ -121,6 +121,7 @@ nav ul li a:hover{
   height: 200px;
   width: 300px;
   z-index: 20;
+  margin-bottom: 2%;
 }
 
 .OrderNow {
@@ -153,10 +154,10 @@ nav ul li a:hover{
 
 #andreshome {
   position: absolute;
-  width: 30%;
+  width: 40%;
   margin-left: 14%;
   z-index: 20;
-  margin-top: -20%;
+  margin-top: -28%;
 }
 
 #vei {
@@ -783,6 +784,13 @@ float: left;
 
 }
 
+
+@media only screen and (max-width: 900px) {
+  #OrderNowBox {
+   margin-bottom: 17%;
+  }
+
+}
 
 
 /* Menu Start*/
