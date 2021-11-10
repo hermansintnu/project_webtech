@@ -51,13 +51,18 @@ window.addEventListener('mouseup', function(event){
 
 // Add class to parent visstnok
 
-// function setParent(){
-//     document.myOverlay1.appendChild(document.getElementsByClassName('choices'));}
+// function setParent() {
+//     document.overlay.appendChild(document.getElementsByClassName('choices'));
+// }
+
+// $("#choices").appendTo("#overlay");
 
 // const myElement = document.querySelector('.choices');
 // myElement.parentElement.classList.add('overlay');
 
-// $(this).parent('overlay').addClass('choices');
+// function addParent(){
+//     $(this).parent('myOverlay1').addClass('choices');
+// }
 
 
 // $('#bx-pager').parent('overlay').addClass('choices');

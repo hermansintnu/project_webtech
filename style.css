@@ -532,6 +532,15 @@ button:hover{
 
 /* This section is for payment.html */
 
+#payment-body {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.payment-method-left {
+  grid-column: 1 / 2;
+}
+
 #payment-form {
 margin: 10px;
 }
@@ -541,13 +550,13 @@ margin: 10px;
 }
 
 .payment-name input {
-  width: 20%;
+  width: 60%;
   height: 30px;
 }
 
 .payment-option-choice {
   background-color: white;
-  width: 20%;
+  width: 60%;
   margin-bottom: 10px;
   height: 30px;
   border-style: solid;
