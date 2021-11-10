@@ -71,6 +71,7 @@ nav ul{
 
 nav ul li{
   list-style-type: none;
+  display: inline;
 }
 
 nav ul li a{
@@ -100,6 +101,7 @@ nav ul li a:hover{
 
 #homepagetop {
   display: grid;
+  margin-right: 3%;
 }
 
 #homepagetop p {
@@ -111,6 +113,7 @@ nav ul li a:hover{
   line-height: 29px;
   letter-spacing: 0.045em;
   width: 400px;
+  z-index: 50;
 }
 
 
@@ -120,6 +123,9 @@ nav ul li a:hover{
   height: 200px;
   width: 300px;
   z-index: 20;
+  margin-bottom: 2%;
+  margin-left: 25%;
+  margin-top: -3%;
 }
 
 .OrderNow {
@@ -147,23 +153,21 @@ nav ul li a:hover{
 
 .asphaltandres {
   width: 100%;
-  display: inline-flex;
+  display: flex;
 }
 
 #andreshome {
-  position: relative;
-  width: 27%;
-  margin-left: 13%;
-  margin-top: -23%;
+  position: absolute;
+  width: 40%;
+  margin-left: 14%;
   z-index: 20;
+  margin-top: -28%;
 }
 
 #vei {
-  margin-top: -9%;
-  width: 120%;
-  max-height: 400px;
-  min-height: 200px;
-  position: fixed;
+  width: 100%;
+  max-height: 270px;
+  position: static;
   bottom: 0;
 }
 /* homepage ends */
@@ -242,11 +246,11 @@ nav ul li a:hover{
   background-color: #FCD116;
   font-family: BarlowRegular, helvetica, sans-serif;
   width: 364px;
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 180px;
   border-radius: 80px 0px 0px 80px;
-  height: 600px;
+  height: 81%;
   box-shadow: -7px 0px 4px -3px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   display: grid;
@@ -265,7 +269,7 @@ nav ul li a:hover{
 }
 
 .order-item{
-  margin: 8px 10px;
+  margin: 20px 10px;
   display: grid;
   grid-template-columns: 20% 40% 1fr 1fr;
 }
@@ -277,11 +281,12 @@ nav ul li a:hover{
 
 .order-item-title {
   grid-column-start: 2;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .order-price {
   grid-column-start: 3;
+  font-size: 18px;
 }
 
 .btn-danger {
@@ -293,11 +298,15 @@ nav ul li a:hover{
   grid-row-start: 3;
   bottom: 120px;
   position: absolute;
+  left: 62px;
 }
 
 .your-order-text, .order-total-price {
   font-family: BarlowMedium;
   font-size: 20px;
+}
+.order-total-price{
+  margin-left: 84px;
 }
 
 .checkout-btn{
@@ -314,6 +323,9 @@ nav ul li a:hover{
   width: 293px;
   box-shadow: inset 0px 0px 3px 3px rgba(255, 255, 255, 0.25);
   text-align: center;
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
 }
 
 button{
@@ -322,16 +334,16 @@ button{
   outline: none;
   border-style: none;
   font-family: BarlowMedium;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 2px;
 }
 button:hover{
   background-color: #668034;
 }
-
 
 
 /* Shopping cart ends*/
@@ -777,6 +789,15 @@ float: left;
 }
 
 
+@media only screen and (max-width: 900px) {
+  #OrderNowBox {
+   margin-bottom: 17%;
+   margin-top: 3%;
+   margin-left: 13%;
+  }
+
+}
+
 
 /* Menu Start*/
 @media only screen and (min-width: 1045px) {
@@ -784,10 +805,87 @@ float: left;
     grid-template-columns:repeat(2,1fr);
   }
 }
+@media only screen and (max-width: 750px) {
+  .your-order-container { 
+    height: 220px;
+    width: 200px;
+    border-radius: 49px 0px 0px 49px;
+  }
+  .order-item{
+    display: none;
+  }
+  .checkout-btn{
+    position: relative;
+    bottom: 20px;
+    width: 125px;
+    font-size: 23px;
+  }
+  .your-order-total{
+    position: relative;
+    bottom: 9px;
+    left: 55px;
+    margin: 0;
+  }
+  .order-total-price{
+    margin-left: 0px;
+  }
+  
+ .your-order-container:hover {
+  background-color: #FCD116;
+  font-family: BarlowRegular, helvetica, sans-serif;
+  width: 364px;
+  position: fixed;
+  right: 0px;
+  top: 180px;
+  border-radius: 80px 0px 0px 80px;
+  height: 600px;
+  box-shadow: -7px 0px 4px -3px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: grid;
+  grid-template: 80px 1fr 1fr / 100%; 
+ }
+ .your-order-container:hover .order-item{
+   display: block;
+   margin: 20px 10px;
+   display: grid;
+   grid-template-columns: 20% 40% 1fr 1fr;
+ } 
+ .your-order-container:hover .order-item{
+  display: block;
+  margin: 20px 10px;
+  display: grid;
+  grid-template-columns: 20% 40% 1fr 1fr;
+} 
+.your-order-container:hover .checkout-btn{
+  color: white;
+  background-color: #4B5F24;
+  position: absolute;
+  font-size: 24px;
+  bottom: 60px;
+  left: 50px;
+  width: 280px;
+  border-radius: 9px;
+  height: 45px;
+  width: 293px;
+  box-shadow: inset 0px 0px 3px 3px rgba(255, 255, 255, 0.25);
+  text-align: center;
+  border-style: solid;
+  border-width: 0px;
+}
+.your-order-container:hover .your-order-total{
+  margin-left: 5%;
+  grid-row-start: 3;
+  bottom: 120px;
+  position: absolute;
+  left: 62px;
+}
+.your-order-container:hover .order-total-price{
+  margin-left: 84px;
+}
 
 /* Location start */
 @media only screen and (max-width: 1170px) {
-  iframe {
+  .map {
     display: none;
   }
-}
+}}
