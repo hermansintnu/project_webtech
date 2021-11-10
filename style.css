@@ -115,22 +115,21 @@ nav ul li a:hover{
 #OrderNowBox {
   grid-row-start: 3;
   grid-column-start: 4;
-  height: 106px;
-  width: 206px;
+  height: 200px;
+  width: 300px;
 }
 
 .OrderNow {
-  background: ffffff;
-  border:#0085FF;
+  border:none;
   padding: 0;
   cursor: pointer;
-  outline-offset: 6px;
+  outline-offset: 15px;
 }
 
 .front {
   display: block;
-  padding: 12px 46px;
-  font-size: 1.6rem;
+  padding: 30px 45px;
+  font-size: 1.9rem;
   letter-spacing: 0.045em;
   background: #0085FF;
   box-shadow: inset 0px 0px 5px 8px rgba(255, 255, 255, 0.15);
