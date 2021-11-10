@@ -1,23 +1,27 @@
 // Pål and Herman
 function whichDay() {
-    var d = new Date();
-    var tunga = document.getElementById("tungah2");
-    var kalvskinnet = document.getElementById("kalvh2");
-    var dragvoll = document.getElementById("dragvollh2");
+//  const WEEK_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+//  const literalDayOfWeek = WEEK_DAYS[date.getDay()];
 
-    if (d.getDay() == 1,2) {
+
+  var d = new Date();
+  var tunga = document.getElementById("tungah2");
+  var kalvskinnet = document.getElementById("kalvh2");
+  var dragvoll = document.getElementById("dragvollh2");
+
+    if (d.getDay() == 1 && 2) {
         tunga.innerHTML = "Tunga position";
         tunga.className = "tunga";
         document.getElementById('map3').style.display = "none";
         document.getElementById('map4').style.display = "none";
     }
     else if (d.getDay() == 3) {
-      kalvskinner.innerHTML = "Kalvskinnet position";
+      kalvskinnet.innerHTML = "Kalvskinnet position";
       kalvskinnet.className = "kalvskinnet";
       document.getElementById('map2').style.display = "none";
       document.getElementById('map4').style.display = "none";
     }
-    else if (d.getDay() == 4,5) {
+    else if (d.getDay() == 4 && 5) {
       dragvoll.innerHTML = "Dragvoll position"
       dragvoll.className = "dragvoll"
       document.getElementById('map2').style.display = "none";
