@@ -22,13 +22,7 @@ function ready() {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
-
-    //document.getElementsByClassName('checkout-btn')[0].addEventListener('click', purchaseClicked)
 }
-
-//function purchaseClicked() {
-//    alert('Thank you for your purchase')
-//}
 
 function removeCartItem(event) {
     var buttonClicked = event.target
