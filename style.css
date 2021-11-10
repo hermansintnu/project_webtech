@@ -111,6 +111,7 @@ nav ul li a:hover{
   line-height: 29px;
   letter-spacing: 0.045em;
   width: 400px;
+  z-index: 50;
 }
 
 
@@ -147,23 +148,21 @@ nav ul li a:hover{
 
 .asphaltandres {
   width: 100%;
-  display: inline-flex;
+  display: flex;
 }
 
 #andreshome {
-  position: relative;
-  width: 27%;
-  margin-left: 13%;
-  margin-top: -23%;
+  position: absolute;
+  width: 30%;
+  margin-left: 14%;
   z-index: 20;
+  margin-top: -20%;
 }
 
 #vei {
-  margin-top: -9%;
-  width: 120%;
-  max-height: 400px;
-  min-height: 200px;
-  position: fixed;
+  width: 100%;
+  max-height: 250px;
+  position: static;
   bottom: 0;
 }
 /* homepage ends */
