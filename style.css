@@ -256,6 +256,7 @@ nav ul li a:hover{
   font-family: BarlowMedium, sans-serif;
   color: #000000bd;
   position: relative;
+  top: 15px;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.151);
   width: 280px;
   margin-left: 55px;
@@ -319,7 +320,7 @@ button{
   outline: none;
   border-style: none;
   font-family: BarlowMedium;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   display: flex;
   justify-content: center;
