@@ -531,6 +531,15 @@ button:hover{
 
 /* This section is for payment.html */
 
+#payment-body {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.payment-method-left {
+  grid-column: 1 / 2;
+}
+
 #payment-form {
 margin: 10px;
 }
