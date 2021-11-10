@@ -38,9 +38,6 @@ function closeOverlay6() {
 
 
 var overlayArray = ['myOverlay1','myOverlay2','myOverlay3','myOverlay4','myOverlay5','myOverlay6'];
-
-
-
 window.addEventListener('mouseup', function(event){
        
     for(var i=0; i < overlayArray.length; i++){
