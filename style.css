@@ -341,7 +341,6 @@ button:hover{
 }
 
 
-
 /* Shopping cart ends*/
 
 /* overlay menu*/
@@ -794,13 +793,33 @@ float: left;
 }
 @media only screen and (max-width: 630px) {
   .your-order-container { 
+    height: 220px;
+    width: 200px;
+    border-radius: 49px 0px 0px 49px;
+  }
+  .order-item{
     display: none;
   }
-}
+  .checkout-btn{
+    position: relative;
+    bottom: 20px;
+    width: 125px;
+    font-size: 23px;
+  }
+  .your-order-total{
+    position: relative;
+    bottom: 9px;
+    left: 55px;
+    margin: 0;
+  }
+  .order-total-price{
+    margin-left: 0px;
+  }
+ 
 
 /* Location start */
 @media only screen and (max-width: 1170px) {
   iframe {
     display: none;
   }
-}
+}}
