@@ -10,10 +10,19 @@
       <img class="logo" src="homepage.html" alt="">
     </figure>
 
+<h1>Select payment method</h1>
+
 <form id="payment-form" action="confirmation.html" method="post">
   <div class="payment-name">
-    <label for="name">Full name</label> <br>
-    <input type="text" id="name" placeholder="Your full name" required>
+    <h2>Personalia</h2>
+    <div class="payment-name">
+      <label for="name">Full name</label> <br>
+      <input type="text" id="name" placeholder="Your full name" required>
+    </div>
+    <div class="mail">
+      <label for="mail">Insert your e-mail</label> <br>
+      <input type="email" id="mail" name="mail" placeholder="email">
+    </div>
   </div>
     <h2>Payment method</h2>
   <div class="payment-option">
@@ -41,11 +50,10 @@
       <label for="annet" id="choice2"></label>
     </div>
   </div>
-    <br>
-    <a href="confirmation.html">
-    <input type="submit" id="submitbtn" name="pay now" value="pay now">
+    
+    <a href="confirmation.html"><input type="submit" id="submitbtn" name="pay now" value="pay now"> </a>
   </form>
-  
+
     <ul class="order_summary">
     </ul>
     <script>
