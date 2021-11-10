@@ -148,7 +148,7 @@ nav ul li a:hover{
 .asphaltandres {
   margin-top: -30%;
   width: 100%;
-  display: grid;
+  display: inline-flex;
 }
 
 #andreshome {
@@ -690,6 +690,7 @@ display: flex;
 max-width: 100%;
 margin-top: 1%;
 margin-left: 3%;
+margin-right: 3%;
 }
 
 #aboutpic {
