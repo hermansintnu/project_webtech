@@ -41,6 +41,25 @@ function closeOverlay6() {
     document.getElementById("myOverlay6",).style.display = "none";
 }
 
+var overlayArray = ['myOverlay1','myOverlay2','myOverlay3','myOverlay4','myOverlay5','myOverlay6'];
+
+function addToCartClicked() {
+    var cartItems = document.getElementsByClassName('choices')[0]
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+}
+
+
+/*
+function addToCartClicked() {
+  var clist = document.getElementsByClassName("choices");
+  for (var i = 0; i < clist.length; ++i) {
+    clist[i].checked = false;
+  }
+} */
+
+
 
 /*
 var overlayArray = ['myOverlay1','myOverlay2','myOverlay3','myOverlay4','myOverlay5','myOverlay6'];
