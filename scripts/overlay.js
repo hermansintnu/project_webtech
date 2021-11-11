@@ -41,13 +41,24 @@ function closeOverlay6() {
     document.getElementById("myOverlay6",).style.display = "none";
 }
 
+var overlayAmount = document.getElementsByClassName('.input-overlay')
+for (var i = 0; i < overlayAmount.length; i++) {
+    var input = overlayAmount[i]
+    input.addEventListener('change', amountChanged)
+}
 
+function amountChanged(event) {
+    var input = event.target
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+}
 
 // Er jeg på riktig spor?
 function checkboxChecked() {
-  var checkboxBoxes = document.getElementsByClassName('choices')
-  for (var i = 0; i < checkboxBoxes.length; i++) {
-      var button = checkboxBoxes[i]
+  var checkedValue = document.querySelector('.choices:checked').value;
+  for (var i = 0; i < checkValue.length; i++) {
+      var button = checkedValue[i]
       button.addEventListener('click', updateOrderTotal)
   }
   console.log(checkboxChecked())
