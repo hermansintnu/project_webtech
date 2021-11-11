@@ -24,7 +24,7 @@
 <section class="payment-method-left">
 <h1>Select payment method</h1>
 
-<form id="payment-form" action="confirmation.html" method="post">
+<form id="payment-form" method="post">
   <div class="payment-name">
     <h2>Personalia</h2>
     <div class="payment-name">
@@ -54,16 +54,16 @@
   <h2>Where do you want to pick up the food?</h2>
   <div class="payment-location">
     <div class="payment-option-choice">
-      <input type="radio" id="gloshaugen" name="location" value="" required>
+      <input class="location-java" type="radio" id="gloshaugen" name="location" value="" required>
       <label for="gloshaugen"> Gløshaugen </label>
     </div>
     <div class="payment-option-choice">
-      <input type="radio" id="annet" name="location" value="" required>
+      <input class="location-java" type="radio" id="annet" name="location" value="" required>
       <label for="annet" id="choice2"></label>
     </div>
   </div>
 
-    <a href="confirmation.html"><input type="submit" id="submitbtn" name="pay now" value="Pay now"> </a>
+    <a href="confirmation.html"><input type="submit" id="submitbtn" name="pay now" value="Pay now" onclick="changeAction()"> </a>
   </form>
 </section>
 
@@ -101,26 +101,7 @@
     </div>
   </div>
 </section>
-
-    <script>
-    function chooseLocation() {
-        var d = new Date();
-        if (d.getDay() == 1 &&2) {
-          document.getElementById('choice2').innerHTML = "Tunga"
-          document.getElementById('map3').style.display = "none";
-          document.getElementById('map4').style.display = "none";
-        }
-        else if (d.getDay() == 3) {
-          document.getElementById('choice2').innerHTML = "Kalvskinnet"
-          document.getElementById('map2').style.display = "none";
-          document.getElementById('map4').style.display = "none";
-        }
-        else {
-          document.getElementById('choice2').innerHTML = "Dragvoll"
-          document.getElementById('map2').style.display = "none";
-          document.getElementById('map3').style.display = "none";
-        }
-      }
+    <script src="scripts/payment.js">
     </script>
     </div>
   </body>
