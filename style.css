@@ -291,9 +291,17 @@ nav ul li a:hover{
 
 .btn-danger {
   grid-column-start: 4;
+  cursor: pointer;
 }
-.btn-danger:hover input {display:none}
-.btn-danger:hover:before {content:"X!"}
+.btn-danger:hover{
+background-color: rgb(121, 25, 1);
+}
+.btn-danger:hover .remove-text {
+  display:none
+}
+.btn-danger:hover:before {
+  content:"X";
+}
 
 .your-order-total {
   margin-left: 5%;
@@ -502,7 +510,7 @@ button:hover{
   border: none;
 }
 
-.input-overlay{
+.tellerOverlay{
   width: 30px;
   height: 24px;
   text-align: center;
@@ -538,6 +546,8 @@ button:hover{
 
 /* overlay menu ends*/
 /* menu ends */
+
+
 
 /* This section is for payment.html */
 
@@ -691,7 +701,9 @@ margin: 10px;
 }
 /* confirmation end */
 
+
 /* this section is for about.html */
+
 .about {
 display: flex;
 max-width: 100%;
@@ -708,6 +720,7 @@ float: left;
  position: static;
 }
 
+
 #aboutpic {
 float: left;
  margin-top: -5%;
@@ -715,6 +728,7 @@ float: left;
  margin-right: 3%;
  position: static;
 }
+
 
 #abouttext {
   float: right;
@@ -728,7 +742,9 @@ float: left;
   font-family: BarlowMedium;
   font-size: 1.35em;
 }
+
 /* about ends */
+
 
 /* This section is for location.html */
 #location-container {
@@ -769,6 +785,8 @@ float: left;
   font-size: 20px;
 }
 
+/* 1170 */
+
 /* location end */
 
 /* Responsive design below*/
@@ -780,13 +798,16 @@ float: left;
 
 }
 
+
 @media only screen and (max-width: 900px) {
   #OrderNowBox {
    margin-bottom: 17%;
    margin-top: 3%;
    margin-left: 13%;
   }
+
 }
+
 
 /* Menu Start*/
 @media only screen and (min-width: 1045px) {
@@ -795,8 +816,8 @@ float: left;
   }
 }
 @media only screen and (max-width: 750px) {
-
-  .your-order-container {
+  
+  .your-order-container { 
     margin-top: 70px;
     height: 220px !important;
     width: 200px;
@@ -834,7 +855,7 @@ float: left;
   overflow: hidden;
   display: grid;
   grid-template: 80px 1fr 1fr / 100%;
-  margin-top: 0px;
+  margin-top: 0px; 
  }
  .your-order-container:hover .order-item{
    display: block;
@@ -878,6 +899,7 @@ float: left;
 @media only screen and (max-height: 700px) {
   .your-order-container{
     height: 75%;
+  
   }
 
 /* Location start */
@@ -885,4 +907,4 @@ float: left;
   .map {
     display: none;
   }
-}
+}}
