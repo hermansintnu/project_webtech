@@ -58,6 +58,7 @@ p, td{
   position: static;
 }
 
+
 .logo {
   float: left;
   display: inline-block;
@@ -510,6 +511,7 @@ button:hover{
 #payment-body {
   display: grid;
   grid-template-columns: 40% 1fr;
+  padding-left: 10px;
 }
 
 .payment-method-left {
@@ -655,6 +657,8 @@ margin: 10px;
 }
 #timer{
   font-family: BarlowBold;
+  font-size: 24px;
+  color: rgb(204, 42, 1);
 }
 .confirmation-clock{
   position: absolute;
@@ -761,15 +765,39 @@ float: left;
 
 
 /* Responsive design below*/
-
+/*navbar start*/
+@media only screen and (max-width: 400px) {
+  #navbar{
+    background-color: #4B5F24;
+    position: fixed;
+    text-align: left;
+    left: 0px;
+    bottom: 0px;
+    z-index: 12;
+    height: 90px;
+    width: 100%;
+  }
+  #navbar ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  
+  #navbar a{
+    color: rgb(255, 255, 255);
+    padding-left: 50%;
+    padding-right: 50%;
+    font-size: 22px;
+  }
+}
 @media only screen and (max-width: 900px) {
   nav ul{
    position: absolute;
   }
 
 }
+/*navbar end*/
 
-
+/*confirmation start*/
 @media only screen and (max-width: 900px) {
   #OrderNowBox {
    margin-bottom: 17%;
@@ -787,15 +815,12 @@ float: left;
     top: 90px;
   }
   .timeleft{
-    top: 320px;
+    top: 315px;
     left: 133px;
     font-size: 1px;
     color: #FCD116
   }
-  #timer{
-    color: black;
-    font-size: 18px;
-  }
+  
   .map-location{
     width: 350px;
     margin-left: 50px;
@@ -856,7 +881,7 @@ float: left;
     margin-top: -10px;
   }
 }
-
+/*navbar end*/
 
 /* Menu Start*/
 @media only screen and (min-width: 1045px) {
@@ -905,6 +930,7 @@ float: left;
   display: grid;
   grid-template: 80px 1fr 1fr / 100%;
   margin-top: 0px;
+  z-index: 15;
  }
  .your-order-container:hover .order-item{
    display: block;
@@ -985,6 +1011,7 @@ float: left;
   display: grid;
   grid-template: 80px 1fr 1fr / 100%;
   margin-top: 0px;
+  z-index: 15;
  }
  .your-order-container:hover .order-item{
    display: block;
