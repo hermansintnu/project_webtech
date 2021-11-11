@@ -766,12 +766,7 @@ float: left;
 
 /* Responsive design below*/
 /*navbar start*/
-@media only screen 
-and (min-device-width: 275px)
-and (max-device-width: 812px)
-and (-webkit-min-device-pixel-ratio: 3) 
-and (orientation: portrait) {
-
+@media only screen and (max-width: 500px) {
   #navbar{
     background-color: #4B5F24;
     position: fixed;
