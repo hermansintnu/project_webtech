@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
+<body onload="locationConfirmation()">
     <div id="navcontainer">
         <a href="homepage.html">
             <img src="img/logo.png" class="logo" alt="Logo">
@@ -41,37 +39,27 @@
 
 <div class="confirmation-item" id="orderPickUp">
     <h3 class="pick-up"></h3>
-    <div id="map1">
-      <iframe class="map-location" id="gloshaugen"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1669.0161822774346!2d10.401111651783774!3d63.419824491431356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d31c29641f393%3A0x4ae390bf3fc7917c!2sMaroquinier!5e1!3m2!1sno!2sno!4v1635857376938!5m2!1sno!2sno">
+    <div id="map2">
+      <h2 id="tungah2"> Tunga position</h2>
+      <iframe id="monday-tuesday" class="map-location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761.193312974152!2d10.46500072299877!3d63.42330912707459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjPCsDI1JzIzLjkiTiAxMMKwMjcnNTcuOCJF!5e0!3m2!1sno!2sno!4v1635864160077!5m2!1sno!2sno">
       </iframe>
     </div>
 
-    <div class="structure">
-        <div class="thanks-email">
-            <h1 id="thanks">Thank you for your purchase!</h1>
-            <h3 id="receipt-sent">The receipt has been sent to your e-mail!</h3>
-        </div>
-        <div id="orderNumber">
-            <h3> Order number: <p id="orderNumberNumber">50</p>
-            </h3>
-        </div>
-
-        <div class="confirmation-item" id="orderPickUp">
-            <h3>Your order can be picked up at:</h3>
-            <div id="map1">
-                <h4 id="h2glos">Gløshaugen position</h4>
-                <iframe class="map-location" id="gloshaugen"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1669.0161822774346!2d10.401111651783774!3d63.419824491431356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d31c29641f393%3A0x4ae390bf3fc7917c!2sMaroquinier!5e1!3m2!1sno!2sno!4v1635857376938!5m2!1sno!2sno">
-                </iframe>
-            </div>
-        </div>
-
+    <div id="map3">
+      <h2 id="kalvh2">Kalskinnet position</h2>
+      <iframe class="map-location" id="wednesday"
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841.2173687915397!2d10.387021253769987!3d63.42882899741943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjPCsDI1JzQzLjgiTiAxMMKwMjMnMTYuNCJF!5e1!3m2!1sno!2sno!4v1635864348135!5m2!1sno!2sno">
+      </iframe>
     </div>
 
+    <div id="map4">
+      <h2 id="dragvollh2">Dragvoll position</h2>
+      <iframe class="map-location" id="thursday-friday"
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841.8098418337048!2d10.470344578557015!3d63.40864499783967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjPCsDI0JzMxLjEiTiAxMMKwMjgnMTYuMSJF!5e1!3m2!1sno!2sno!4v1635864497867!5m2!1sno!2sno">
+      </iframe>
+    </div>
     <script src="scripts/timer.js"></script>
-    <script src="scripts/livepos.js"></script>
-
+    <script src="scripts/payment.js"></script>
 </body>
-
 </html>
