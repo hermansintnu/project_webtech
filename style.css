@@ -35,6 +35,12 @@ h2{
   font-family: BarlowBold, helvetica, sans-serif;
   font-size: 22px;
 }
+
+h3 {
+  font-family: BarlowBold, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
 p, td{
   font-family: BarlowRegular, helvetica, sans-serif;
 }
