@@ -200,7 +200,7 @@ nav ul li a:hover{
 }
 .menu-group{
   display: grid;
-  grid-template-columns: (1, 1fr);
+  grid-template-columns: 1fr;
   width: 900px;
   column-gap: 17px;
   row-gap: 17px;
