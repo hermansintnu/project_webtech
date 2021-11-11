@@ -10,7 +10,9 @@ function openOverlay2() {
     document.getElementById("myOverlay2").style.display = "block";
   }
 function closeOverlay2() {
-    document.getElementById("myOverlay2",).style.display = "none";
+  var overlay2 = document.getElementById("myOverlay2",)
+  overlay2.style.display = "none";
+  document.getElementsByClassName('input').checked = false
   }
 
 function openOverlay3() {
@@ -41,18 +43,11 @@ function closeOverlay6() {
     document.getElementById("myOverlay6",).style.display = "none";
 }
 
-var overlayAmount = document.getElementsByClassName('.input-overlay')
-for (var i = 0; i < overlayAmount.length; i++) {
-    var input = overlayAmount[i]
-    input.addEventListener('change', amountChanged)
-}
 
-function amountChanged(event) {
-    var input = event.target
-    if (isNaN(input.value) || input.value <= 0) {
-        input.value = 1
-    }
-}
+
+
+
+/*
 
 // Er jeg på riktig spor?
 function checkboxChecked() {
@@ -75,7 +70,7 @@ function updateOrderTotal() {
     total = total + price
   }
   document.getElementsByClassName('order-total-price')[0].innerText = total + 'kr'
-}
+} */
 
 
 
