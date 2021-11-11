@@ -3,7 +3,6 @@ body {
   background-color: lightgrey;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  margin: 10%;
 }
 
 header, footer {
@@ -29,6 +28,101 @@ li {
 }
 
 
+
+/* From P2  */
+
+ /*General styles*/
+body {
+  background-color: lightgrey;
+  font-family: "Times New Roman", times, serif;
+  font-size: 18px;
+}
+
+header, footer {
+  margin-left: 1.5rem;
+  font-family: courier, monospace;
+}
+
+p::first-letter, li::first-letter, h2::first-letter, h3::first-letter, td::first-letter {
+  text-transform: uppercase;
+}
+
+h2, h3 {
+  margin-bottom: 0%;
+}
+
+p {
+  line-height: 1.2em;
+  margin-top: 1%;
+}
+
+li {
+  margin-bottom: 0.6em;
+}
+
+.list_title {
+list-style-type: none;
+font-weight: bold;
+margin-left: -39px;
+}
+
+
+/* Styles for the content */
+#container {
+  width: 60%;
+  border-style: solid;
+  padding: 2px 2em 2px 2em;
+  margin-left: 2em;
+  background-color: rgba(252, 209, 22, 1);
+}
+
+.in_container {
+  margin-top: 1em;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+/* For the grid at client section */
+
+/*
+#client {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+#client h2 {
+  grid-column: 1 / 2;
+}
+
+#client p {
+  grid-row: 2 / 3;
+  width: 80%;
+}
+*/
+
+#content li {
+  padding: 10px;
+  width: 90%;
+  border-style: solid;
+  border-width: thin;
+}
+
+#content p {
+  font-style: italic;
+}
+
+figure img {
+  width: 100%;
+  border-style: groove;
+  border-color: blue;
+}
+
+.title {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
 
 
 
