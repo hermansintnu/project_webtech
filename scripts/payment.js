@@ -1,4 +1,4 @@
-var option1 = document.getElementById('gloshaugen')
+/*var option1 = document.getElementById('gloshaugen')
 var option2 = document.getElementById('annet')
 
 // Sends customer to the right confirmation page

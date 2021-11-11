@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>P2 group 46</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>P2 Project Design</h1>
+    <h2>Herman, Marius, Pål, Ståle</h2>
+    <p>september 20, 2021</p>
+    <hr>
+  </header>
+  <div id="container">
+
+<!-- The following part is for the administrative details -->
+    <div id="client" class="in_container">
+      <h2>Administrative details</h2>
+      <p>Client name: Andrés Jaime with Andrés Bananas!</p>
+      <p>Website name: andresbananas.no</p>
+      <p>contact person: Andrés Jaime</p>
+    </div>
+
+<!-- The following part is for purpose and audience -->
+    <div class="in_container">
+      <h3>purpose and audience</h3>
+      <p>The purpose of the project for Andres’ Bananas! food trucks, is to help Andrés business to grow
+        by giving him a website that's gripping and clear. To promote his brand and provide possible
+        customers with enough information to know what his food truck provides, its history
+        and how to order food from his food truck. </p>
+        <p>Therefore, this site will provide the user with a menu, an option for ordering food and
+        the location of the food trucks. There will also be information about Colombian food and history.</p>
+        <p> Seeing how there are two trucks, located at Gløshaugen and the second alternating between Kalvskinnet, Tunga and Dragvoll,
+        the audience will mainly be students and employees of NTNU. </p>
+    </div>
+
+<!-- the following part is the design requirements -->
+    <div class="in_container">
+      <h2>The Design</h2>
+
+<!-- Navigation structure -->
+      <div class="in_container">
+        <h3>Navigation structure</h3>
+        <p> It is possible to access every startingpage from all the pages through a navigation bar.
+          This means they can access the menu, about us and location through a navigation bar.
+          This is to give the user freedom to explore the website and always have an exit form the page they are on.  </p>
+          <figure>
+            <img src="img/structure.png" alt="picture of the navigation structure">
+          </figure>
+      </div>
+
+      <!-- Page layout and apperance -->
+
+      <div class="in_container">
+        <h3>Page layout and apperance</h3>
+        <p> The idea is to have a Colombian inspired website through the use of traditional colombian colors i.e.
+          the ones from the Colombian flag. The backgroundcolor is yellow and has the same RGB value as the yellow in
+          the flag. The design will be simplistic so the user experience is simple and easy.
+        </p>
+
+        <!-- Styles -->
+          <ul>
+            <li class="list_title">Style</li>
+            <li> Font: Barlow (fallback Arial) </li>
+            <li> Cholor scheme:
+              <ul>
+                <li>Body: #FCD116</li>
+                <li>Order-button: 0085FF</li>
+                <li>Text: #000000</li>
+                <li>Text Order-button: #FFFFFF</li>
+              </ul>
+            </li>
+            <li> Body width: 1440 px</li>
+            <li> Links:
+              <ul>
+                <li>The logo will be a clikable link that takes user to the homepage.</li>
+                <li>the navbar will have links to: menu, about and live position</li>
+                <li>On hover the font size will expand a few pixles </li>
+              </ul>
+            </li>
+            <li> Navbar and style: The navbar will be at the top of the page, three options to the right:
+              menu, about and live position. On the top left will be the websites logo which functions as a
+              link to the homepage. </li>
+            <li> Logo: The logo will be in the top left corner for the desktop version and also be the favicon </li>
+              <li>Footer: the footer will contain contact information with a phone number and email addresss for Andrés Bananas!</li>
+          </ul>
+      </div>
+
+      <!-- Website content -->
+
+    <div class="in_container">
+      <h3>Content</h3>
+      <ol id="content">
+        <li> Homepage (homepage.html)
+          <p> The homepage is simple with the logo, a picture and an “order now” button that takes the user to the menu.
+            Also there is a navigtionbar at the top of the homepage that leads to the other pages.  </p>
+            <figure>
+              <img src="img/homepage.png" alt="picture of homepage">
+            </figure>
+        </li>
+        <li> About (about.html)
+          <p>The “about” page is just an overview of Andrés’ history and the reason for opening Andrés Bananas! </p>
+          <figure>
+            <img src="img/about.png" alt="picture of about page">
+          </figure>
+        </li>
+        <li> Location (location.html)
+          <p>On this page there will be two pictures containg the live position of the food trucks and also a schedule
+            for the different days they are on each campus.</p>
+            <figure>
+              <img src="img/live_position.png" alt="mockup of live position page">
+            </figure>
+        </li>
+        <li> Menu (menu.html)
+          <p>  The menupage has an overview of the different food options at Andrés Bananas! Along with information
+            regarding allergies and price. Also it is the page for ordering food, so when a user chooses a dish it will
+            be included in the “your order” section next to the menu. With the option to discard the choice, see the price
+            and quantity and go forward with the order. </p>
+            <figure>
+              <img src="img/menu.png" alt="mockup of menu page">
+            </figure>
+        </li>
+        <li> Confirm and pay (payment.html)
+          <p> Here the user will get the same overview of their order on the right, and some options on the left.
+            They have to write in their name and choose their preferred method of payment.</p>
+            <figure>
+              <img src="img/payment.png" alt="">
+            </figure>
+        </li>
+        <li> Order summary (confirmation.html)
+          <p>After the payment is done the user gets feedback telling them the order is being made,
+            with a summary of the order, where to collect it and how long it is until it is finished. </p>
+            <figure>
+              <img src="img/confirm.png" alt="">
+            </figure>
+        </li>
+      </ol>
+    </div>
+
+<!-- Minumum requirements -->
+
+    <div class="in_container">
+      <h3>Minimum requirements</h3>
+      <p>The webiste will have four distinct javascript applications to fulfill the minumum requirements</p>
+      <p>Pål and Herman will be in charge of implementing</p>
+      <ol>
+        <li>A javascript function that will update the position of the trucks depending on which day it is.
+        Seeing how one of the trucks moves during the week it is important to always show its live position</li>
+        <li>An overlay for the different dishes in the menu. When the user clicks on a dish an overlay
+        will show with different options such as adding ingredients or choosing a vegetarian/vegan option.</li>
+      </ol>
+      <p>Marius and Ståle will be in charge of implementing</p>
+      <ol>
+        <li>a timer that counts down after a user has ordered food. I.e. "the food will be done in "X-minutes""</li>
+        <li>An a javascript function that keeps track of the dishes the user has chosen. After adding patacones
+        to the cart, a dynamic overview of the users order will be displayed next to the menu. Here the users
+        will have the option to add another or remove the order. </li>
+      </ol>
+    </div>
+
+
+<!-- Plan -->
+    <div class="in_container">
+      <h3>Plan</h3>
+      <p>All of the following files will be stored in a folder called P3 and we will use Github to collaborate during
+      the project.</p>
+      <p>List of files and folders</p>
+      <ul>
+        <li>hompage.html</li>
+        <li>about.html</li>
+        <li>location.html</li>
+        <li>menu.html</li>
+        <li>payment.html</li>
+        <li>confirmation.html</li>
+        <li>style.css</li>
+        <li>images/
+          <ul>
+            <li>andres.png</li>
+            <li>patacones.png</li>
+            <li>food2.png</li>
+            <li>food3.png</li>
+            <li>food4.png</li>
+            <li>food5.png</li>
+            <li>...</li>
+            <li>logo.png</li>
+          </ul>
+        </li>
+        <li>scripts/
+          <ul>
+            <li>order.js</li>
+            <li>livepos.js</li>
+            <li>timer.js</li>
+            <li>overlay.js</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="table">
+  <h3> Work organisation</h3>
+  <table>
+    <thead>
+    <tr>
+    <th>Filename</th>
+    <th>Description</th>
+    <th>In Charge</th>
+    <th>Deadline</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+    <td>homepage.html</td>
+    <td>The landingpage</td>
+    <td>Marius</td>
+    <td>23.oktober</td>
+    </tr>
+    <tr>
+    <td>menu.html</td>
+    <td>An overview of the menu available and the option of ordering the dishes.</td>
+    <td>Ståle</td>
+    <td>23.oktober</td>
+    </tr>
+    <tr>
+    <td>payment.html</td>
+    <td>Here the user gets an overview of their order and chooses a payment method.</td>
+    <td>Herman</td>
+    <td>23.oktober</td>
+    </tr>
+    <tr>
+    <td>confrimation.html</td>
+    <td>A confirmation that the order went through, where to collect it and information about when it is finished.</td>
+    <td>Pål</td>
+    <td>23.oktober</td>
+    </tr>
+    <tr>
+    <td>about.html</td>
+    <td>This page will have the information about the store and its story</td>
+    <td>Marius</td>
+    <td>23.oktober</td>
+    </tr>
+    <tr>
+    <td>location.html</td>
+    <td>a map with the location of the trucks and a list of schedules for the trucks</td>
+    <td>Everyone</td>
+    <td>23.oktober</td>
+    </tr>
+    <tr>
+    <td>style.css</td>
+    <td>The stylesheet for the entire website</td>
+    <td>Everyone</td>
+    <td>23.oktober</td>
+    </tr>
+    <tr>
+    <td>order.js</td>
+    <td>The ordering system for the food</td>
+    <td>Marius and Ståle</td>
+    <td>13.november</td>
+    </tr>
+    <tr>
+    <td>livepos.js</td>
+    <td>the live position of the trucks, and choice of pickup place, according to day</td>
+    <td>Herman and Pål</td>
+    <td>13. november</td>
+    </tr>
+    <tr>
+    <td>timer.js</td>
+    <td>order ready in X minutes</td>
+    <td>Marius and Ståle</td>
+    <td>13.november</td>
+    </tr>
+    <tr>
+    <td>overlay.js</td>
+    <td>an overlay for selecting the food and extra options in the menu</td>
+    <td>Herman and Pål</td>
+    <td>13. november</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+
+  <footer>
+    <hr>
+    <p>Herman, Marius, Pål, Ståle</p>
+  </footer>
+
+</body>
