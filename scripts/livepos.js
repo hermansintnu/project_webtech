@@ -8,19 +8,19 @@ function whichDay() {
   var dragvoll = document.getElementById("dragvollh2");
 
     if (d.getDay() == 1 && 2) {
-        tunga.innerHTML = "Tunga position";
+        tunga.innerHTML = "Tunga";
         document.getElementById('choice2').innerHTML = "Tunga"
         document.getElementById('map3').style.display = "none";
         document.getElementById('map4').style.display = "none";
     }
     else if (d.getDay() == 3) {
-      kalvskinnet.innerHTML = "Kalvskinnet position";
+      kalvskinnet.innerHTML = "Kalvskinnet";
       document.getElementById('choice2').innerHTML = "Kalvskinnet"
       document.getElementById('map2').style.display = "none";
       document.getElementById('map4').style.display = "none";
     }
     else if (d.getDay() == 4 && 5) {
-      dragvoll.innerHTML = "Dragvoll position"
+      dragvoll.innerHTML = "Dragvoll"
       document.getElementById('map2').style.display = "none";
       document.getElementById('map3').style.display = "none";
     }
@@ -32,7 +32,7 @@ function whichDay() {
     }
 }
 
-
+// Function to specify the
 function chooseLocation() {
     if (d.getDay() == 1 && 2) {
       document.getElementById('choice2').innerHTML = "Tunga"
@@ -51,9 +51,9 @@ function chooseLocation() {
     }
   }
 
+
 var option1 = document.getElementById('gloshaugen')
 var option2 = document.getElementById('annet')
-
 // Sends customer to the right confirmation page
 function changeAction() {
   if(option1.checked == true ) {
