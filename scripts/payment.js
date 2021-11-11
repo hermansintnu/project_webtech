@@ -30,39 +30,3 @@ function chooseLocation() {
       document.getElementById('map3').style.display = "none";
     }
   }
-
-
-/*
-function showMap1() {
-  if(option1.checked == true) {
-    document.getElementById('map2').style.display = "block";
-    document.getElementById('map2').style.display = "none";
-    document.getElementById('map3').style.display = "none";
-    document.getElementById('map4').style.display = "none";
-  }
- else {
- }
-}
-
-function showMap2() {
-  var d = new Date();
-  if ( d.getDay() == 1 & 2 || option2.checked == true &&) {
-    document.getElementById('map1').style.display = "none";
-    document.getElementById('choice2').innerHTML = "Tunga"
-    document.getElementById('map3').style.display = "none";
-    document.getElementById('map4').style.display = "none";
-  }
-  else if(d.getDay() == 3 || option2.checked == true) {
-    document.getElementById('map1').style.display = "none";
-    document.getElementById('choice2').innerHTML = "Kalvskinnet"
-    document.getElementById('map2').style.display = "none";
-    document.getElementById('map4').style.display = "none";
-  }
-  else if (d.getDay() == 4 && 5 || option2.checked == true){
-    document.getElementById('map1').style.display = "none";
-    document.getElementById('choice2').innerHTML = "Dragvoll"
-    document.getElementById('map2').style.display = "none";
-    document.getElementById('map3').style.display = "none";
-  }
-}
-*/
