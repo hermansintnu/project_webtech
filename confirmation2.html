@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="chooseLocation()">
+<body onload="whichDay()">
     <div id="navcontainer">
         <a href="homepage.html">
             <img src="img/logo.png" class="logo" alt="Logo">
@@ -34,7 +34,13 @@
     <h3 id="receipt-sent">The receipt has been sent to your e-mail!</h3>
     </div>
      <div id="orderNumber">
-        <h3> Order number: <p id="orderNumberNumber">50</p></h3>
+        <h3> Order number: <p id="orderNumberNumber"></p></h3>
+        <div id="numGen">
+          <script>
+            document.getElementById("orderNumberNumber").innerHTML=
+            Math.floor(Math.random() * 100) + 1;
+          </script>
+        </div>
     </div>
 
 <div class="confirmation-item" id="orderPickUp">
@@ -56,6 +62,10 @@
        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d841.8098418337048!2d10.470344578557015!3d63.40864499783967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjPCsDI0JzMxLjEiTiAxMMKwMjgnMTYuMSJF!5e1!3m2!1sno!2sno!4v1635864497867!5m2!1sno!2sno">
       </iframe>
     </div>
+
+    
+
+
     <script src="scripts/timer.js"></script>
     <script src="scripts/livepos.js"></script>
 </body>

@@ -127,7 +127,7 @@ figure img {
 /* table */
 
 table {
-  border: 3px solid blue;
+  border: 3px solid darkgrey;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
@@ -136,7 +136,7 @@ table {
 }
 
 table td, table th {
-  border: 1px solid blue;
+  border: 1px solid darkgrey;
   padding: 5px 4px;
 }
 
@@ -145,7 +145,7 @@ table tbody td {
 }
 
 table thead {
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid darkgrey;
 }
 
 table thead th {
