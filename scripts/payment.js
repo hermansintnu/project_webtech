@@ -30,3 +30,4 @@ function chooseLocation() {
       document.getElementById('map3').style.display = "none";
     }
   }
+*/
