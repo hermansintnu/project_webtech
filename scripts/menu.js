@@ -24,25 +24,29 @@ function ready() {
     }
 }
 
+// event for removing items from the cart
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
-    updateCartTotal()
+    updateCartTotal() // Updates the order total
 }
 
+// Event for not allowing the quantity to go below 0
 function quantityChanged(event) {
     var input = event.target
     if (isNaN(input.value) || input.value <= 0) {
         input.value = 1
     }
-    updateCartTotal()
+    updateCartTotal() // Updates the order total
 }
 
+// Event for adding items to the cart
 function addToCartClicked(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('dish')[0].innerText
     var price = shopItem.getElementsByClassName('priceOverlay')[0].innerText
+    // Closes overlays on pressing "add to cart"
     document.getElementById('myOverlay1').style.display = "none"
     document.getElementById('myOverlay2').style.display = "none"
     document.getElementById('myOverlay3').style.display = "none"
@@ -72,6 +76,7 @@ function addItemToCart(title, price) {
     cartRow.getElementsByClassName('order-quantity-input')[0].addEventListener('change', quantityChanged)
 }
 
+// Updates the order total based on elements in shopping cart and quantity
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('order-items')[0]
     var cartRows = cartItemContainer.getElementsByClassName('cart-row')
@@ -84,6 +89,5 @@ function updateCartTotal() {
         var quantity = quantityElement.value
         total = total + (price * quantity)
     }
-    total = Math.round(total * 100) / 100
     document.getElementsByClassName('order-total-price')[0].innerText = total + 'kr'
 }

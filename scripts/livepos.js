@@ -1,4 +1,3 @@
-// Pål and Herman
 
 // Function whichDay is for displaying the right location on the location page
 function whichDay() {
