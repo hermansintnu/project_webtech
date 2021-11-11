@@ -292,6 +292,8 @@ nav ul li a:hover{
 .btn-danger {
   grid-column-start: 4;
 }
+.btn-danger:hover input {display:none}
+.btn-danger:hover:before {content:"X!"}
 
 .your-order-total {
   margin-left: 5%;
