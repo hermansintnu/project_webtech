@@ -14,7 +14,7 @@ function whichDay() {
       document.getElementById('map2').style.display = "none";
       document.getElementById('map4').style.display = "none";
     }
-    else if (d.getDay() == 5) {
+    else if (d.getDay() == 4 && 5) {
       document.getElementById('choice2').innerHTML = "Dragvoll" //Pick-up option and h3 span confiramtion2
       document.getElementById('map2').style.display = "none";
       document.getElementById('map3').style.display = "none";
