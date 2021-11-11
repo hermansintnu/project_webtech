@@ -12,104 +12,114 @@
 
   
     <div id="container">
-      <h2>1. Document Details</h2>
-      <p>P3 changes</p>
-      <p>Herman, Ståle, Pål and Marius</p>
-      <p>Group Number: 46</p>
-      <p>IT 2805 2021</p>
+      <div id="in_container">
+        <h2>1. Document Details</h2>
+        <p>P3 changes</p>
+        <p>Herman, Ståle, Pål and Marius</p>
+        <p>Group Number: 46</p>
+        <p>IT 2805 2021</p>
+      </div>
+
+      <div id="in_container">
+        <h2>2. Administrative Details</h2>
+        <p>Client Name: Andres Bananas</p>
+        <p>Website name: Andrés' Bananas</p>
+        <p> Fictional Client</p>
+        <p>Link to our Website: <a href="https://folk.ntnu.no/hermansi/webtech/project/P3/project_webtech/homepage.html" target="_blank">click here</a></p>
+      </div>
 
 
+      <div id="in_container">
+        <h2>3. Fullfillments</h2>
+        <p>
+          Ståle made the artwork for the homepage with the bananacart, as well as making the layout of the menu.html, and the styling of the your order container, which changes depending on the width of the page, when its small, it is possible to open the entirity by hovering. <br><br>
+          Pål implenented the opening and closing of overlays on menu.html with javascript, he tried to implement a close on outside click, but couldnt get it to work as the "extra topping" list was counted as an outside element. As well as coding the countdown timer on confirmation.html <br><br>
+          Herman implenented the javascript for filling, removing and summing up the shopping cart, as well as the code for the displayed locations, on the different days(all days on gløshauge, alternating days on Kalvskinnet and Dragvoll). <br> <br>
+          Marius implemented the rolling road and the moving "order now" button on homepage.html <br><br>
+        </p>
+      </div>
 
-      <h2>2. Administrative Details</h2>
-      <p>Client Name: Andres Bananas</p>
-      <p>Website name: Andrés' Bananas</p>
-      <p> Fictional Client</p>
-      <p>Link to our Website: <a href="https://folk.ntnu.no/hermansi/webtech/project/P3/project_webtech/homepage.html" target="_blank">click here</a></p>
+      <div id="in_container">
+        <h2>4. Modularity</h2>
+        <p>The modularity on this site is pretty simple, it consists of a banner stretching over 
+          the top, with the different home, menu, about and location sites. Beneath this there are 
+          multiple divs. A good example is the menu.html page, where there is a body, which contains 
+          multiple divs, like the navbar, and menu group div, containing the different dishes 
+          available. On the right side there is a your orer div, which contains the items youre 
+          planning on buying. Layered above this, is the overlay which pops up if clicked on one of the menu items. </p>
+      </div>
 
+      <div id="in_container">
+        <h2>5. Changes made in the design</h2>
+        <ol>
+          <li>Changed order box on menu page</li>
+          <li>Changed the homepage, added an animation</li>
+          <li>Chose not to display your order on the payment page, or the confirmation page</li>
+          <li>Added a choice for which cart location the user buys from on payment page</li>
+          <li>When less than 1170 px the schedule on "location" will be displayed beneath the maps</li>
+          <li>Some alterations to the shopping cart on menu page</li>
+          <li>Removed quantity in the overlay</li>
+          <li>Added two different confirmation pages, for the different locations, gløs is always open, but the three other change depending on the day</li>
+          <li>Had a function on the menu.html overlay which closes the overlay on click outside, it worked but the ul inside was counted as "outside the overlay" so changed it to close only on X-click. A problem with this is beeing able to click the elements underneath, resulting in multiple open overlays, and a darkening backdrop</li>
+          <li>After testing; implied the location of pickup in payment site when choosing between the two alternatives</li>
+          <li>We've changed the included toppings, to be free, instead of priced, due to problems with adding and summing to cart</li>
+          <li>Big change on the order confirmation site, from a boxy design, to a more soft and fun design.</li>
+        </ol>
+      </div>
 
-
-
-      <h2>3. Fullfillments</h2>
-      <p>
-        Ståle made the artwork for the homepage with the bananacart, as well as making the layout of the menu.html, and the styling of the your order container, which changes depending on the width of the page, when its small, it is possible to open the entirity by hovering. <br><br>
-        Pål implenented the opening and closing of overlays on menu.html with javascript, he tried to implement a close on outside click, but couldnt get it to work as the "extra topping" list was counted as an outside element. As well as coding the countdown timer on confirmation.html <br><br>
-        Herman implenented the javascript for filling, removing and summing up the shopping cart, as well as the code for the displayed locations, on the different days(all days on gløshauge, alternating days on Kalvskinnet and Dragvoll). <br> <br>
-        Marius implemented the rolling road and the moving "order now" button on homepage.html <br><br>
-      </p>
-
-      <h2>4. Modularity</h2>
-      <p>The modularity on this site is pretty simple, it consists of a banner stretching over 
-        the top, with the different home, menu, about and location sites. Beneath this there are 
-        multiple divs. A good example is the menu.html page, where there is a body, which contains 
-        multiple divs, like the navbar, and menu group div, containing the different dishes 
-        available. On the right side there is a your orer div, which contains the items youre 
-        planning on buying. Layered above this, is the overlay which pops up if clicked on one of the menu items. </p>
-
-
-        
-      <h2>5. Changes made in the design</h2>
-      <ol>
-        <li>Changed order box on menu page</li>
-        <li>Changed the homepage, added an animation</li>
-        <li>Chose not to display your order on the payment page, or the confirmation page</li>
-        <li>Added a choice for which cart location the user buys from on payment page</li>
-        <li>When less than 1170 px the schedule on "location" will be displayed beneath the maps</li>
-        <li>Some alterations to the shopping cart on menu page</li>
-        <li>Removed quantity in the overlay</li>
-        <li>Added two different confirmation pages, for the different locations, gløs is always open, but the three other change depending on the day</li>
-        <li>Had a function on the menu.html overlay which closes the overlay on click outside, it worked but the ul inside was counted as "outside the overlay" so changed it to close only on X-click. A problem with this is beeing able to click the elements underneath, resulting in multiple open overlays, and a darkening backdrop</li>
-        <li>After testing; implied the location of pickup in payment site when choosing between the two alternatives</li>
-        <li>We've changed the included toppings, to be free, instead of priced, due to problems with adding and summing to cart</li>
-        <li>Big change on the order confirmation site, from a boxy design, to a more soft and fun design.</li>
-      </ol>
-      
-
-    
-      <h2>6. Updated Organizational scheme</h2>
-      <p>List of Files and folders</p>
-      <ul>
-        <li>about.html</li>
-        <li>confirmation2.html</li>
-        <li>confirmationglos.html</li>
-        <li>homepage.html</li>
-        <li>location.html</li>
-        <li>menu.html</li>
-        <li>payment.html</li>
-        <li>style.css</li>
-        <li>Barlow</li>
-        <ul><li>Different versions of the BarlowFont</li></ul>
-        <li>img</li>
+      <div id="in_container">
+        <h2>6. Updated Organizational scheme</h2>
+        <p>List of Files and folders</p>
         <ul>
-          <li>ajico.png</li>
-          <li>arepas.png</li>
-          <li>asphalt.jbg</li>
-          <li>banandres_ny.jpg</li>
-          <li>bandejapaisa.png</li>
-          <li>carimanola.png</li>
-          <li>carneoreada.png</li>
-          <li>hånd-01.png</li>
-          <li>logo.png</li>
-          <li>orderbutton.png</li>
-          <li>patacones.png</li>
-          <li>paypallogo.jpeg</li>
-          <li>structure.png</li>
-          <li>tommelopp-01.png</li>
-          <li>tostones.png</li>
-          <li>vei_4.gif</li>
-          <li>vei.gif</li>
-          <li>vippslogo.png</li>
-          <li>visalogo.jpeg</li>          
-      </ul>
-      <li>scripts</li>
-      <ul>
-        <li>livepos.js</li>
-        <li>menu.js</li>
-        <li>overlay.js</li>
-        <li>payment.js</li>
-        <li>timer</li>
-      </ul>
+          <li>about.html</li>
+          <li>confirmation2.html</li>
+          <li>confirmationglos.html</li>
+          <li>homepage.html</li>
+          <li>location.html</li>
+          <li>menu.html</li>
+          <li>payment.html</li>
+          <li>style.css</li>
+          <li>Barlow</li>
+          <ul><li>Different versions of the BarlowFont</li></ul>
+          <li>img</li>
+          <ul>
+            <li>ajico.png</li>
+            <li>arepas.png</li>
+            <li>asphalt.jbg</li>
+            <li>banandres_ny.jpg</li>
+            <li>bandejapaisa.png</li>
+            <li>carimanola.png</li>
+            <li>carneoreada.png</li>
+            <li>hånd-01.png</li>
+            <li>logo.png</li>
+            <li>orderbutton.png</li>
+            <li>patacones.png</li>
+            <li>paypallogo.jpeg</li>
+            <li>structure.png</li>
+            <li>tommelopp-01.png</li>
+            <li>tostones.png</li>
+            <li>vei_4.gif</li>
+            <li>vei.gif</li>
+            <li>vippslogo.png</li>
+            <li>visalogo.jpeg</li>          
+        </ul>
+        <li>scripts</li>
+        <ul>
+          <li>livepos.js</li>
+          <li>menu.js</li>
+          <li>overlay.js</li>
+          <li>payment.js</li>
+          <li>timer</li>
+        </ul>
 
-      </ul>
+        </ul>
+
+        <div id="in_container">'
+          <h2>Final Work division</h2>
+
+        </div>
+     
+      </div>
     </div>
   </body>
 </html>
