@@ -1,7 +1,6 @@
 // Pål and Herman
-//  const WEEK_DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-//  const literalDayOfWeek = WEEK_DAYS[date.getDay()];
 
+// Function whichDay is for displaying the right location on the location page
 function whichDay() {
   var d = new Date();
   var tunga = document.getElementById("tungah2");
@@ -10,19 +9,16 @@ function whichDay() {
 
     if (d.getDay() == 1 && 2) {
         tunga.innerHTML = "Tunga position";
-        tunga.className = "tunga";
         document.getElementById('map3').style.display = "none";
         document.getElementById('map4').style.display = "none";
     }
     else if (d.getDay() == 3) {
       kalvskinnet.innerHTML = "Kalvskinnet position";
-      kalvskinnet.className = "kalvskinnet";
       document.getElementById('map2').style.display = "none";
       document.getElementById('map4').style.display = "none";
     }
     else if (d.getDay() == 4 && 5) {
       dragvoll.innerHTML = "Dragvoll position"
-      dragvoll.className = "dragvoll"
       document.getElementById('map2').style.display = "none";
       document.getElementById('map3').style.display = "none";
     }
@@ -33,3 +29,24 @@ function whichDay() {
       document.getElementById('dragvollh2').innerHTML = "Dragvoll position";
     }
 }
+
+
+// The following function is for the maps on the payment page and confirmation page
+function chooseLocation() {
+    var d = new Date();
+    if (d.getDay() == 1 &&2) {
+      document.getElementById('choice2').innerHTML = "Tunga"
+      document.getElementById('map3').style.display = "none";
+      document.getElementById('map4').style.display = "none";
+    }
+    else if (d.getDay() == 3) {
+      document.getElementById('choice2').innerHTML = "Kalvskinnet"
+      document.getElementById('map2').style.display = "none";
+      document.getElementById('map4').style.display = "none";
+    }
+    else {
+      document.getElementById('choice2').innerHTML = "Dragvoll"
+      document.getElementById('map2').style.display = "none";
+      document.getElementById('map3').style.display = "none";
+    }
+  }
