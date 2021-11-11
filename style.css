@@ -609,7 +609,7 @@ margin: 10px;
   position: absolute;
   left: 80px;
   top: 70%;
-  
+
 }
 #orderNumber{
   position: absolute;
@@ -781,7 +781,7 @@ float: left;
     display: grid;
     grid-template-columns: repeat(4,1fr);
   }
-  
+
   #navbar a{
     color: rgb(255, 255, 255);
     padding-left: 50%;
@@ -820,7 +820,7 @@ float: left;
     font-size: 1px;
     color: #FCD116
   }
-  
+
   .map-location{
     width: 350px;
     margin-left: 50px;
@@ -1051,7 +1051,7 @@ float: left;
 .your-order-container:hover .order-total-price{
   margin-left: 84px;
 }}
-  
+
 
 /* Location start */
 @media only screen and (max-width: 1170px) {
