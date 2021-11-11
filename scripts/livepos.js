@@ -1,4 +1,3 @@
-// Pål and Herman
 
 // Function whichDay is for displaying the right location on the location page
 function whichDay() {
@@ -29,24 +28,3 @@ function whichDay() {
       document.getElementById('dragvollh2').innerHTML = "Dragvoll position";
     }
 }
-
-
-// The following function is for the maps on the payment page and confirmation page
-function chooseLocation() {
-    var d = new Date();
-    if (d.getDay() == 1 &&2) {
-      document.getElementById('choice2').innerHTML = "Tunga"
-      document.getElementById('map3').style.display = "none";
-      document.getElementById('map4').style.display = "none";
-    }
-    else if (d.getDay() == 3) {
-      document.getElementById('choice2').innerHTML = "Kalvskinnet"
-      document.getElementById('map2').style.display = "none";
-      document.getElementById('map4').style.display = "none";
-    }
-    else {
-      document.getElementById('choice2').innerHTML = "Dragvoll"
-      document.getElementById('map2').style.display = "none";
-      document.getElementById('map3').style.display = "none";
-    }
-  }

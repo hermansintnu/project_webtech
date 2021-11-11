@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body id="menu_body">
- <div id="navcontainer">
-<a href="homepage.html">
-    <img src="img/logo.png" class="logo" alt="Logo">
-</a>
-<nav>
-    <ul>
-    <li><a href="homepage.html">Home</a></li>
-    <li><a href="menu.html" class="active">Menu</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="location.html">Location</a></li>
-    </ul>
-</nav>
-</div>
+  <div id="navcontainer">
+    <a href="homepage.html">
+      <img src="img/logo.png" class="logo" alt="Logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Location</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <h1 class="menu-title">Menu</h1>
   <h3 class="allergies-info">Allergies: Nuts (n), Gluten (g), Lactose (l).</h3>
   <div class="menu-group">
 
-      <div onclick="openOverlay1()" class="menu-item">
-        <h2>Patacones</h2>
-        <p class="allergies">g, n</p>
-        <p class="menu-text">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole, salsa or . . .</p>
-        <p class="pris"> 69 NOK</p>
-        <img class="menu-bilde" src="img/patacones.png" alt="">
-      </div>
+    <div onclick="openOverlay1()" class="menu-item">
+      <h2>Patacones</h2>
+      <p class="allergies">g, n</p>
+      <p class="menu-text">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that
+        can be dipped in guacamole, salsa or . . .</p>
+      <p class="pris"> 69 NOK</p>
+      <img class="menu-bilde" src="img/patacones.png" alt="">
+    </div>
 
 
     <div onclick="openOverlay2()" class="menu-item">
       <h2>Ajiaco</h2>
       <p class="allergies">g, n</p>
-      <p class="menu-text">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . .</p>
+      <p class="menu-text">Ajiaco is a unique Colombian dish, especially beloved in the city of Bogota. It's a hearty
+        chicken soup made with potatoes and corn...</p>
       <p class="pris"> 129 NOK</p>
       <img class="menu-bilde" src="img/ajico.png" alt="">
     </div>
@@ -46,7 +50,8 @@
     <div onclick="openOverlay3()" class="menu-item">
       <h2>Carimanolas</h2>
       <p class="allergies">g, n</p>
-      <p class="menu-text">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . .</p>
+      <p class="menu-text">A carimañola is a South American meat-pie in a torpedo-shaped yuca fritter, stuffed with
+        cheese, seasoned ground meat or shredded...</p>
       <p class="pris"> 79 NOK</p>
       <img class="menu-bilde" src="img/carimanola.png" alt="">
     </div>
@@ -54,7 +59,8 @@
     <div onclick="openOverlay4()" class="menu-item">
       <h2>Bandeja paisa</h2>
       <p class="allergies">g, n</p>
-      <p class="menu-text">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . .</p>
+      <p class="menu-text">Bandeja Paisa consists of two types of Colombian sausage, ground beef, rice, red beans, a
+        fried pork rind called chicharrón, an arepa...</p>
       <p class="pris"> 119 NOK</p>
       <img class="menu-bilde" src="img/bandejapaisa.png" alt="">
     </div>
@@ -62,7 +68,8 @@
     <div onclick="openOverlay5()" class="menu-item">
       <h2>Arepas</h2>
       <p class="allergies">g, n</p>
-      <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At maxime odio ea officiis dolores nostrum smultring kneipp . . .</p>
+      <p class="menu-text">Arepas are a traditional South American round flatbread prepared from unleavened corn flour.
+        These flatbreads are a popular food staple...</p>
       <p class="pris"> 69 NOK</p>
       <img class="menu-bilde" src="img/Arepas.png" alt="">
     </div>
@@ -70,18 +77,18 @@
     <div onclick="openOverlay6()" class="menu-item">
       <h2>Carne Oreada</h2>
       <p class="allergies">g, n</p>
-      <p class="menu-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At maxime odio ea officiis dolores nostrum smultring kneipp . . .</p>
+      <p class="menu-text">Sun-dried steak, with an almost jerky-like consistency but a lot of flavor. This is a
+        specialty of Santander.</p>
       <p class="pris"> 139 NOK</p>
       <img class="menu-bilde" src="img/carneoreada.png" alt="">
-      </div>
-
+    </div>
 
     <!-- selve overlay-->
 
     <div id="myOverlay1" class="overlay">
 
       <!-- lukk overlay-->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay1()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
 
       <!--innhold overlay-->
 
@@ -90,7 +97,8 @@
       <h2 class="dish">Patacones </h2>
       <p class="allergiesOverlay"> g, n</p>
       <p class="priceOverlay">69 kr</p>
-      <p class="infoOverlay">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that can be dipped in guacamole or salsa. </p>
+      <p class="infoOverlay">Twice-fried and sprinkled plantains (bananas) with salt for a crunchy, delicious bite that
+        can be dipped in guacamole or salsa. </p>
 
       <p class="extraTopping">Extra Toppings</p>
 
@@ -122,7 +130,7 @@
     <div id="myOverlay2" class="overlay">
 
       <!-- lukk overlay-->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay2()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
 
       <!--innhold overlay-->
 
@@ -131,7 +139,8 @@
       <h2 class="dish">Ajiaco </h2>
       <p class="allergiesOverlay"> g, n</p>
       <p class="priceOverlay">129 kr</p>
-      <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . .</p>
+      <p class="infoOverlay">Ajiaco is a unique Colombian dish, especially beloved in the city of Bogota. It's a hearty
+        chicken soup made with potatoes and corn on the cob.</p>
 
       <p class="extraTopping">Extra Toppings</p>
       <ul class="choices">
@@ -162,7 +171,7 @@
     <div id="myOverlay3" class="overlay">
 
       <!-- lukk overlay-->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay3()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
 
       <!--innhold overlay-->
 
@@ -171,7 +180,8 @@
       <h2 class="dish">Carimanolas </h2>
       <p class="allergiesOverlay"> g, n</p>
       <p class="priceOverlay">79 kr</p>
-      <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
+      <p class="infoOverlay">A carimañola is a South American meat-pie in a torpedo-shaped yuca fritter, stuffed with
+        cheese, seasoned ground meat or shredded chicken and fried.</p>
 
       <p class="extraTopping">Extra Toppings</p>
       <ul class="choices">
@@ -204,7 +214,7 @@
     <div id="myOverlay4" class="overlay">
 
       <!-- lukk overlay-->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay4()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
 
       <!--innhold overlay-->
 
@@ -213,7 +223,9 @@
       <h2 class="dish">Bandeja paisa </h2>
       <p class="allergiesOverlay"> g, n</p>
       <p class="priceOverlay">119 kr</p>
-      <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
+      <p class="infoOverlay">Bandeja Paisa consists of two types of Colombian sausage, ground beef, rice, red beans, a
+        fried pork rind called chicharrón, an arepa, a plantain, a slice of avocado and a
+        fried egg to top it all off.</p>
 
       <p class="extraTopping">Extra Toppings</p>
       <ul class="choices">
@@ -244,7 +256,7 @@
     <div id="myOverlay5" class="overlay">
 
       <!-- lukk overlay-->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay5()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
 
       <!--innhold overlay-->
       <img class="overlayBilde" src="img/Arepas.png" alt="">
@@ -252,7 +264,8 @@
       <h2 class="dish">Arepas </h2>
       <p class="allergiesOverlay"> g, n</p>
       <p class="priceOverlay">69 kr</p>
-      <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
+      <p class="infoOverlay">Arepas are a traditional South American round flatbread prepared from unleavened corn
+        flour. These flatbreads are a popular food staple eaten at most meals across Venezuela and Colombia.</p>
 
       <p class="extraTopping">Extra Toppings</p>
       <ul class="choices">
@@ -283,8 +296,8 @@
 
     <div id="myOverlay6" class="overlay">
 
-                <!-- lukk overlay-->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay6()">&times;</a>
+      <!-- lukk overlay-->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
 
       <!--innhold overlay-->
       <img class="overlayBilde" src="img/carneoreada.png" alt="">
@@ -292,7 +305,8 @@
       <h2 class="dish">Carne Oreada </h2>
       <p class="allergiesOverlay"> g, n</p>
       <p class="priceOverlay">139 kr</p>
-      <p class="infoOverlay">Lorem ipsum dolor sit amet consectetur lociu adipisicing elit. At maxime odio ea officiiso magn dolores nostrum smultring kneipp nugg . . . </p>
+      <p class="infoOverlay">Sun-dried steak, with an almost jerky-like consistency but a lot of flavor. This is a
+        specialty of Santander.</p>
 
       <p class="extraTopping">Extra Toppings</p>
       <ul class="choices">
@@ -321,28 +335,29 @@
   </div>
   <!-- menugroup ends -->
 
-<!-- Shopping cart -->
+  <!-- Shopping cart -->
   <section class="your-order-container">
     <h2 class="your-order-headline"><span>Your order</span></h2>
-      <div class="order-items">
-        <div class="order-row">
-        </div>
+    <div class="order-items">
+      <div class="order-row">
       </div>
+    </div>
 
-<!-- Total for the order -->
+    <!-- Total for the order -->
     <div class="your-order-total">
       <span class="your-order-text"> Total:</span>
       <span class="order-total-price">0kr</span>
     </div>
-      <!-- Button for checkout -->
-      <form class="checkout-btn-form" action="payment.html">
-            <input type="submit" name="checkout" value="Checkout" class="checkout-btn">
-      </form>
+    <!-- Button for checkout -->
+    <form class="checkout-btn-form" action="payment.html">
+      <input type="submit" name="checkout" value="Checkout" class="checkout-btn">
+    </form>
 
-      <!-- Section for "shopping cart" end -->
+    <!-- Section for "shopping cart" end -->
 
   </section>
-<script src="scripts/menu.js"></script>
-<script src="scripts/overlay.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/overlay.js"></script>
 </body>
+
 </html>
