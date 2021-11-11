@@ -1,5 +1,5 @@
-// Pål and Herman
 
+// Functions for opening overlays
 function openOverlay1() {
     document.getElementById("myOverlay1").style.display = "block";
   }
@@ -33,21 +33,3 @@ function closeOverlay() {
   document.getElementById('myOverlay5').style.display = "none"
   document.getElementById('myOverlay6').style.display = "none"
 }
-
-/*
-function closeOverlay() {
-  var close = document.getElementsByClassName('closebtn')
-  for (var i = 0; i < close.length; i++) {
-      var button = close[i]
-      button.addEventListener('click', closeOverlayClicked)
- }
-}
-
-function closeOverlayClicked() {
-  document.getElementById('myOverlay1').style.display = "none"
-  document.getElementById('myOverlay2').style.display = "none"
-  document.getElementById('myOverlay3').style.display = "none"
-  document.getElementById('myOverlay4').style.display = "none"
-  document.getElementById('myOverlay5').style.display = "none"
-  document.getElementById('myOverlay6').style.display = "none"
-} */
