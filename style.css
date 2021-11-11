@@ -571,6 +571,12 @@ margin: 10px;
 .payment-name input {
   width: 60%;
   height: 30px;
+  font-family: BarlowMedium;
+  border: none;
+}
+
+.payment-name label {
+  font-family: BarlowMedium;
 }
 
 .payment-option-choice {
@@ -578,8 +584,28 @@ margin: 10px;
   width: 60%;
   margin-bottom: 10px;
   height: 30px;
-  border-style: solid;
-  border-width: thin;
+  font-family: BarlowMedium;
+}
+
+#visabackground {
+  background: url(img/visalogo.jpeg);
+  background-size: contain;
+  background-repeat:no-repeat;
+  height: 55px;
+}
+
+#vippsbackground {
+  background: url(img/vippslogo.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  height: 60px;
+}
+
+#paypalbackground {
+  background: url(img/paypallogo.jpeg);
+  background-size: contain;
+  background-repeat:no-repeat;
+  height: 60px;
 }
 
 #submitbtn {
@@ -587,7 +613,7 @@ margin: 10px;
   height: 70px;
   margin-top: 10px;
   font-size: 1.50em;
-  letter-spacing: 0.045em;
+  letter-spacing: 0.10em;
   background-color: #4B5F24;
   color: #ffffff;
   font-family: BarlowBold;
