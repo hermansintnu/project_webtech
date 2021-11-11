@@ -11,7 +11,7 @@ function changeAction() {
   }
 }
 
-// Maps for payment and confirmation
+// Maps for payment
 function chooseLocation() {
     var d = new Date();
     if (d.getDay() == 1 &&2) {
@@ -30,3 +30,22 @@ function chooseLocation() {
       document.getElementById('map3').style.display = "none";
     }
   }
+
+  function locationConfirmation() {
+      var d = new Date();
+      if (d.getDay() == 1 &&2) {
+        document.getElementByClassName('pick-up').innerHTML = "Tunga"
+        document.getElementById('map3').style.display = "none";
+        document.getElementById('map4').style.display = "none";
+      }
+      else if (d.getDay() == 3) {
+        document.getElementsByClassName('pick-up').innerHTML = "Kalvskinnet"
+        document.getElementById('map2').style.display = "none";
+        document.getElementById('map4').style.display = "none";
+      }
+      else {
+        document.getElementsByClassName('pick-up').innerHTML = "Dragvoll"
+        document.getElementById('map2').style.display = "none";
+        document.getElementById('map3').style.display = "none";
+      }
+    }
