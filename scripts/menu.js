@@ -43,6 +43,12 @@ function addToCartClicked(event) {
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('dish')[0].innerText
     var price = shopItem.getElementsByClassName('priceOverlay')[0].innerText
+    document.getElementById('myOverlay1').style.display = "none"
+    document.getElementById('myOverlay2').style.display = "none"
+    document.getElementById('myOverlay3').style.display = "none"
+    document.getElementById('myOverlay4').style.display = "none"
+    document.getElementById('myOverlay5').style.display = "none"
+    document.getElementById('myOverlay6').style.display = "none"
     addItemToCart(title, price)
     updateCartTotal()
 }
@@ -53,20 +59,13 @@ function addItemToCart(title, price) {
     var cartItems = document.getElementsByClassName('order-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('order-item-title')
 
-// Not working, not sure if needed
-//for (var i = 0; i < cartItemNames.length; i++) {
-  //  if (cartItemNames[i].innerText == title) {
-      //  alert('This item is already added to the cart')
-    //    return
-  //  }
-//}
     var cartRowContents = `
       <div class="order-item cart-column">
         <input class="order-quantity-input" type="number" value="1">
         <span class="order-item-title">${title}</span>
         <span class="order-price cart-column">${price}</span>
         <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>`
+      </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)

@@ -722,7 +722,7 @@ float: left;
 
 #abouttext {
   float: right;
-  max-width: 40%; 
+  max-width: 40%;
   min-width: 40%;
   margin-right: 200px;
   position: static;
@@ -831,7 +831,7 @@ float: left;
   .order-total-price{
     margin-left: 0px;
   }
-  
+
  .your-order-container:hover {
   background-color: #FCD116;
   font-family: BarlowRegular, helvetica, sans-serif;
@@ -852,13 +852,13 @@ float: left;
    margin: 20px 10px;
    display: grid;
    grid-template-columns: 20% 40% 1fr 1fr;
- } 
+ }
  .your-order-container:hover .order-item{
   display: block;
   margin: 20px 10px;
   display: grid;
   grid-template-columns: 20% 40% 1fr 1fr;
-} 
+}
 .your-order-container:hover .checkout-btn{
   color: white;
   background-color: #4B5F24;
