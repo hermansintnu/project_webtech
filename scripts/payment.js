@@ -4,10 +4,10 @@ var option2 = document.getElementById('annet')
 // Sends customer to the right confirmation page
 function changeAction() {
   if(option1.checked == true ) {
-    document.getElementById('payment-form').action = "menu.html"
+    document.getElementById('payment-form').action = "confirmationglos.html"
   }
   else {
-    document.getElementById('payment-form').action = "confirmation.html"
+    document.getElementById('payment-form').action = "confirmation2.html"
   }
 }
 

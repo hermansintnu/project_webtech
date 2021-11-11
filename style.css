@@ -580,10 +580,10 @@ margin: 10px;
 
 .structure {
   background-color: #FADD44;
-  width: 94.5%;
+  width: 94%;
 
   border-radius: 120px 120px 0px 0px;
-  position: absolute;
+  position: fixed;
   left: 3%;
   bottom: 0px;
   height: 80%;
@@ -624,7 +624,7 @@ margin: 10px;
   top: 250px;
   font-family: BarlowRegular, Helvetica, sans-serif;
   font-size: 20px;
-  width: 320px;
+  width: 360px;
   text-align: center;
 }
 .hånd{
@@ -652,6 +652,13 @@ margin: 10px;
   top: 10px;
   text-align: center;
   width: 900px;
+}
+.map-location{
+  width: 450px;
+  height: 230px;
+  position: relative;
+  right: 40px;
+  border-radius: 20px;
 }
 /* confirmation end */
 
@@ -743,6 +750,19 @@ float: left;
 
 /* location end */
 
+/* This section is for index.html in p4-testing*/
+
+#Testdiv {
+width: 60%;
+border: solid 3px;
+padding-top: 10px;
+padding-left: 10px;
+padding-right: 10px;
+margin-left: 30px;
+}
+
+/* testing end */
+
 /* Responsive design below*/
 
 @media only screen and (max-width: 900px) {
@@ -784,12 +804,46 @@ float: left;
   .hånd {
     display: none;
   }
+  .map-location{
+    display: none;
+  }
   .timeleft{
     color: black;
     font-size: 18px;
-    position: relative;
-    left: 20%;
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    margin-left: -140px;
+    width: 270px;
+    display: block;
+    background-color: #FCD116;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  #orderPickUp{
+    position: absolute;
+    left: 50%;
+    margin-top: 60px;
+    margin-left: -143px;
+    width: 290px;
+    text-align: left;
+  }
+  #orderNumber{
+    position: absolute;
+    left: 50%;
+    top: 360px;
+    margin-left: -145px;
     width: 300px;
+    display: block;
+    text-align: left;
+  }
+  .thanks-email{
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    margin-left: -140px;
+    width: 300px;
+    display: block;
   }
 }
 
@@ -960,12 +1014,8 @@ float: left;
 .your-order-container:hover .order-total-price{
   margin-left: 84px;
 }}
+  
 
-/*@media only screen and (max-height: 600px) {
-  .overlay {
-    position: absolute;
-    top: -150px;
-  } */
 /* Location start */
 @media only screen and (max-width: 1170px) {
   #location-container {
