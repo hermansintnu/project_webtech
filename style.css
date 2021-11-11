@@ -19,6 +19,10 @@
   font-family: BarlowMedium;
   src: url('Barlow/Barlow-Medium.ttf');
 }
+@font-face {
+  font-family: BarlowItalic;
+  src: url('Barlow/Barlow-Italic.ttf');
+}
 
 /* Fonts end*/
 
@@ -812,15 +816,15 @@ float: left;
     position: absolute;
     left: 50%;
     margin-top: 60px;
-    margin-left: -143px;
+    margin-left: -140px;
     width: 290px;
     text-align: left;
   }
   #orderNumber{
     position: absolute;
     left: 50%;
-    top: 360px;
-    margin-left: -145px;
+    top: 390px;
+    margin-left: -140px;
     width: 300px;
     display: block;
     text-align: left;
@@ -832,6 +836,9 @@ float: left;
     margin-left: -140px;
     width: 300px;
     display: block;
+  }
+  #receipt-sent{
+    font-family: BarlowItalic;
   }
 }
 
