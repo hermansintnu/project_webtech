@@ -291,6 +291,16 @@ nav ul li a:hover{
 
 .btn-danger {
   grid-column-start: 4;
+  cursor: pointer;
+}
+.btn-danger:hover{
+background-color: rgb(121, 25, 1);
+}
+.btn-danger:hover .remove-text {
+  display:none
+}
+.btn-danger:hover:before {
+  content:"X";
 }
 
 .your-order-total {

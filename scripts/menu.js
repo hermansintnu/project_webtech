@@ -64,7 +64,7 @@ function addItemToCart(title, price) {
         <input class="order-quantity-input" type="number" value="1">
         <span class="order-item-title">${title}</span>
         <span class="order-price cart-column">${price}</span>
-        <button class="btn btn-danger" type="button">REMOVE</button>
+        <button class="btn btn-danger" type="button"><span class="remove-text">REMOVE</span></button>
       </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
