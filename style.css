@@ -607,16 +607,21 @@ margin: 10px;
   position: absolute;
   left: 80px;
   top: 70%;
+  
 }
 #orderNumber{
   position: absolute;
   right: 13%;
   top: 60px;
   font-family: BarlowMediumItalic, Helvetica, sans-serif;
-  font-size: 36px;
   width: 310px;
   text-align: center;
 }
+
+#orderNumber h3 {
+  font-size: 36px;
+}
+
 #orderNumberNumber{
   font-size: 50px;
   font-family: BarlowBold;
@@ -791,6 +796,13 @@ float: left;
     color: black;
     font-size: 18px;
   }
+  .map-location{
+    width: 350px;
+    margin-left: 50px;
+  }
+  .thanks-email{
+    width: 250px;
+  }
 }
 @media only screen and (max-width: 840px) {
   .hånd {
@@ -815,8 +827,8 @@ float: left;
   #orderPickUp{
     position: absolute;
     left: 50%;
-    margin-top: 60px;
-    margin-left: -140px;
+    margin-top: 20px;
+    margin-left: -135px;
     width: 290px;
     text-align: left;
   }
@@ -827,18 +839,21 @@ float: left;
     margin-left: -140px;
     width: 300px;
     display: block;
-    text-align: left;
+    text-align: center;
+    background-color: #FCD116;
+    border-radius: 30px;
   }
   .thanks-email{
     position: absolute;
     left: 50%;
-    top: 150px;
-    margin-left: -140px;
+    top: 100px;
+    margin-left: -135px;
     width: 300px;
     display: block;
   }
   #receipt-sent{
     font-family: BarlowItalic;
+    margin-top: -10px;
   }
 }
 
