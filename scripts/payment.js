@@ -11,7 +11,7 @@ function changeAction() {
   }
 }
 
-// Maps for payment
+// Maps for payment and confirmation
 function chooseLocation() {
     var d = new Date();
     if (d.getDay() == 1 &&2) {
