@@ -573,9 +573,16 @@ margin: 10px;
 }
 
 #submitbtn {
-  width: 110px;
-  height: 75px;
-  font-size: 1.5em;
+  width: 60%;
+  height: 70px;
+  margin-top: 10px;
+  font-size: 1.50em;
+  letter-spacing: 0.045em;
+  background-color: #4B5F24;
+  color: #ffffff;
+  font-family: BarlowBold;
+  border-radius: 9px;
+  cursor: pointer;
 }
 
 /* payment end */
