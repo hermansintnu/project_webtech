@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> java question</title>
+</head>
+    <body>
+        <script type="text/javascript">
+            var nasjonalDag, idag, ndag, diff, dager;
+            nasjonalDag = [17,5];
+            idag = new Date();
+            ndag = new Date(idag.getFullYear(),nasjonalDag[1]-1, nasjonalDag[0]);
+            if( idag.getTime() > ndag.getTime()) {
+                ndag.setFullYear(ndag.getFullYear()+1);
+            }
+
+            diff = ndag.getTime()-idag.getTime();
+            dager= Math.floor(diff/(1000*60*60*24));
+            if(dager % 2 == 0){
+            alert(dager+" igjen til 17. Mai!"+ dager+" er partall");}
+            
+            else{
+                alert(dager+" igjen til 17. Mai!"+ dager+" er oddetall");}
+            
+
+      
+        </script>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> question12</title>
+</head>
+    <body>
+        <canvas 
+        id="myCanvas" 
+        width="400" height="120" 
+        style="border:1px solid #d3d3d3; background-color: black;">
+
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+
+
+        <script>
+            window.onload = function() {
+                var canvas = document.getElementById("myCanvas");
+                var context = canvas.getContext("2d");
+
+                //pacmans hode
+                context.beginPath();
+                context.lineCap = "round";
+                context.strokeStyle = "#FFF";
+                context.lineWidth = 4;
+                context.lineTo(60,60);
+                context.arc(60,60,50, 0.2*Math.PI, 1.8* Math.PI);
+                context.lineTo(60,60);
+                context.stroke();
+                // øyet
+                context.beginPath();
+                context.arc(69,30,7,0, 2* Math.PI);
+                context.fillStyle="#FFF";
+                context.fill();
+                
+
+                // the circles
+                context.beginPath();
+                context.arc(120, 60, 15, 0, 2*Math.PI)
+                context.stroke();
+                context.beginPath();
+                context.arc(170, 60, 15, 0, 2*Math.PI)
+                context.stroke();
+                context.beginPath();
+                context.arc(280, 60, 15, 0, 2*Math.PI)
+                context.stroke();
+
+                //cherry
+                context.beginPath();
+                context.arc(215, 70, 12, 0, 2*Math.PI)
+                context.stroke();
+                context.beginPath();
+                context.arc(240, 80, 9, 0, 2*Math.PI)
+                context.stroke();
+
+                //left stem
+                context.beginPath();
+                context.moveTo(220,58);
+                context.quadraticCurveTo(250,40,240,30);
+                context.stroke();
+                //right stem
+                context.beginPath();
+                context.moveTo(245,72);
+                context.quadraticCurveTo(250,40,240,30);
+                context.stroke();
+
+                //ghost
+                context.beginPath();
+                context.moveTo(320,100);
+                context.bezierCurveTo(290,-10, 410,-10,380,100);
+                context.stroke();
+                
+                context.beginPath;
+                context.moveTo(320,100);
+                context.lineTo(330,80);
+                context.stroke();
+
+                context.beginPath;
+                context.moveTo(330,80);
+                context.lineTo(340,100);
+                context.stroke();
+
+                context.beginPath;
+                context.moveTo(340,100);
+                context.lineTo(350,80);
+                context.stroke();
+
+                context.beginPath;
+                context.moveTo(350,80);
+                context.lineTo(360,100);
+                context.stroke();
+
+                context.beginPath;
+                context.moveTo(360,100);
+                context.lineTo(370,80);
+                context.stroke();
+
+                context.beginPath;
+                context.moveTo(370,80);
+                context.lineTo(380,100);
+                context.stroke();
+
+                //eyes of ghost
+                context.beginPath();
+                context.arc(340,40,6,0, 2* Math.PI);
+                context.fillStyle="#FFF";
+                context.fill();
+                
+                context.beginPath();
+                context.arc(360,40,6,0, 2* Math.PI);
+                context.fillStyle="#FFF";
+                context.fill();
+            }
+        </script>
+    </body>
+</html>
